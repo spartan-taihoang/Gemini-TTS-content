@@ -48,6 +48,21 @@ Every output file is written next to its JSON file.
    ```
    To replace the key later, run `security delete-generic-password -a "$USER" -s gemini-api-key`, then repeat step 3.
 
+### Alternative: a `.env` file
+
+Instead of steps 3–4, you can put settings in a `.env` file next to `tts_episode.py`. The script reads it on every run, so there is nothing to export:
+
+```
+GEMINI_API_KEY=your-key-here
+# Optional:
+TTS_MODEL=gemini-3.8-flash-tts
+TTS_PARTS_PER_REQUEST=12
+```
+
+- One `KEY=value` per line. Lines starting with `#` are comments; don't put a comment after a value on the same line. Quotes around a value and a leading `export` are allowed.
+- A variable already set in the terminal wins over `.env`, so `TTS_MODEL=gemini-3.8-flash-lite-tts python3 tts_episode.py ...` still works as a one-off override.
+- `.env` is listed in `.gitignore`. Keep it that way: the key is stored as plain text, so never commit or share this file.
+
 ## Running
 
 ```bash
@@ -57,7 +72,7 @@ python3 tts_episode.py daily_prayer/genesis_2_18.json
 
 | Environment variable | Default | Meaning |
 |---|---|---|
-| `GEMINI_API_KEY` | (required) | Gemini API key |
+| `GEMINI_API_KEY` | (required) | Gemini API key, from the terminal or `.env` |
 | `TTS_MODEL` | `gemini-3.8-flash-tts` | Model to use. Switch to `gemini-3.8-flash-lite-tts` when the main model is overloaded |
 | `TTS_PARTS_PER_REQUEST` | `12` | Parts per API call. 12 is about 3 minutes of audio, so an episode takes 2–3 requests |
 | `TTS_PER_PART` | (off) | `1` = one request per part (same as `TTS_PARTS_PER_REQUEST=1`) and also write `_timings.csv` |

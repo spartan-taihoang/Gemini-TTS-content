@@ -1,9 +1,29 @@
 # Render a styled episode JSON ({voice, parts:[{style,text}], ambience?}) to MP3 with Gemini TTS.
-# Usage: GEMINI_API_KEY=... python3 tts_episode.py podcast/salvation_and_grace_ep1.json
+# Usage: python3 tts_episode.py podcast/<episode>/<episode>.json  (settings from the shell or .env next to this script)
 # Outputs land next to the JSON: <name>.mp3 (voice only) and, if "ambience" is set, <name>_ambience.mp3.
 # Calls the v1beta REST endpoint directly: the SDK rejected speech_metadata/speechConfig.
 import base64, csv, json, os, re, subprocess, sys, time, urllib.error, urllib.request, wave
 from pathlib import Path
+
+
+def load_dotenv(path):
+    # Minimal .env reader (KEY=value lines, # comments, optional quotes) so no package is needed.
+    # Variables already set in the shell win, so `TTS_MODEL=... python3 tts_episode.py` still overrides the file.
+    if not path.is_file():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        name, value = line.split("=", 1)
+        name = name.strip().removeprefix("export ").strip()
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+            value = value[1:-1]
+        os.environ.setdefault(name, value)
+
+
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 # TTS_MODEL=gemini-3.8-flash-lite-tts switches models when the default one is overloaded.
 MODEL = os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
@@ -18,7 +38,7 @@ if PARTS_PER_REQUEST < 1:
 
 key = os.environ.get("GEMINI_API_KEY", "").strip()
 if not key:
-    sys.exit("GEMINI_API_KEY is not set")
+    sys.exit("GEMINI_API_KEY is not set (export it, or put it in .env next to tts_episode.py)")
 
 src = Path(sys.argv[1]).resolve()
 ep = json.loads(src.read_text(encoding="utf-8"))
