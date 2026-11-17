@@ -1,6 +1,6 @@
 # Gemini TTS – audio for podcasts and daily prayers
 
-These scripts turn a script file (JSON) into an MP3 with Gemini TTS (`gemini-3.8-flash-tts`). They are used for SleepFit content. **The audio and folder structure is for reference. You only need the python script.**
+These scripts turn a script file (JSON) into an MP3 with Gemini TTS (`gemini-3.8-flash-tts`). They are used for SleepFit content.
 
 ## Layout
 
@@ -12,7 +12,7 @@ gemini-tts/
 │   └── <episode>/
 │       ├── <episode>.json
 │       ├── <episode>.mp3            # generated
-│       ├── <episode>_timings.csv    # generated (TTS_PER_PART=1 mode)
+│       ├── <episode>_timings.csv    # start_seconds per line (TTS_PER_PART=1 or align_timings.py)
 │       └── <episode>_parts/         # per-chunk audio cache
 └── daily_prayer/
     ├── ambience_soft_pad.flac       # self-made background pad, no third-party license, loops seamlessly every 60 s
@@ -23,21 +23,30 @@ gemini-tts/
 
 Every output file is written next to its JSON file.
 
-## Setup (once)
+## Setup on macOS (once)
 
-```bash
-cd ~/tools/gemini-tts
-python3 -m venv .venv && source .venv/bin/activate   # optional: the scripts use only the standard library
-sudo apt install -y ffmpeg                          # needed to join and mix audio
-```
+1. Install Homebrew if it is not installed yet (see https://brew.sh). Then install Python 3 and ffmpeg:
+   ```bash
+   brew install python ffmpeg
+   ```
+   ffmpeg is needed to join and mix audio. The scripts use only Python's standard library, so there is nothing to `pip install`.
 
-Create an API key in Google AI Studio. To set it without showing it on screen or saving it in your shell history:
+2. Check that both tools are available:
+   ```bash
+   python3 --version && ffmpeg -version | head -1
+   ```
 
-```bash
-read -rs GEMINI_API_KEY && export GEMINI_API_KEY
-```
+3. Create an API key in Google AI Studio and store it in the macOS Keychain, so it is never written to a file or your shell history. Paste the key when prompted:
+   ```bash
+   security add-generic-password -a "$USER" -s gemini-api-key -w
+   ```
+   After pasting, check that the key does not start with `200~`. Some terminals insert those characters when you paste, and they are not part of the key.
 
-After pasting, check that the key does not start with `200~`. Some terminals insert those characters when you paste, and they are not part of the key.
+4. Load the key in each new terminal before running the scripts:
+   ```bash
+   export GEMINI_API_KEY="$(security find-generic-password -a "$USER" -s gemini-api-key -w)"
+   ```
+   To replace the key later, run `security delete-generic-password -a "$USER" -s gemini-api-key`, then repeat step 3.
 
 ## Running
 
@@ -50,15 +59,16 @@ python3 tts_episode.py daily_prayer/genesis_2_18.json
 |---|---|---|
 | `GEMINI_API_KEY` | (required) | Gemini API key |
 | `TTS_MODEL` | `gemini-3.8-flash-tts` | Model to use. Switch to `gemini-3.8-flash-lite-tts` when the main model is overloaded |
-| `TTS_PER_PART` | (off) | `1` = send one request per part and also write `_timings.csv` |
+| `TTS_PARTS_PER_REQUEST` | `12` | Parts per API call. 12 is about 3 minutes of audio, so an episode takes 2–3 requests |
+| `TTS_PER_PART` | (off) | `1` = one request per part (same as `TTS_PARTS_PER_REQUEST=1`) and also write `_timings.csv` |
 
 ### What the script does
 
-1. Groups the `parts` into chunks: 6 parts per request by default, or 1 part per request with `TTS_PER_PART=1`.
-2. Calls the Gemini API (REST `v1beta`) once per chunk and saves each result in `<name>_parts/n6/` or `<name>_parts/n1/`.
+1. Groups the `parts` into chunks: 12 parts per request by default (`TTS_PARTS_PER_REQUEST`), or 1 part per request with `TTS_PER_PART=1`.
+2. Calls the Gemini API (REST `v1beta`) once per chunk and saves each result in `<name>_parts/n<N>/`, where N is the parts per request (e.g. `n12/`, `n1/`). Changing N starts a new folder, so takes made with different settings are never mixed.
 3. Joins the chunks into `<name>.mp3`.
 4. If the JSON has `ambience`, also writes `<name>_ambience.mp3` with the background mixed in.
-5. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the start time of each part, ready to enter as `start_seconds` in web-admin.
+5. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the exact start time of each part. In the default mode, use `align_timings.py` instead (see below).
 
 On HTTP 429, 500 or 503 (overload or quota), the script retries up to 6 times. The wait starts at 15 seconds, doubles after each failure, and is capped at 5 minutes.
 
@@ -139,11 +149,14 @@ Tips:
 - **New audio:** run with `TTS_PER_PART=1` and copy the numbers from `_timings.csv`. Each CSV row is one **part** of the JSON. If a part contains several transcript lines, only the first line of that part gets an exact time.
 - **Audio already made in the default mode, which you want to keep:**
   ```bash
-  python3 align_timings.py <name>.json transcript.txt <name>_parts/n6 <name>_timings.csv
+  python3 align_timings.py <name>.json transcript.txt <name>_parts/n12 <name>_timings.csv
   ```
   `transcript.txt` holds one transcript line per line. The times are estimated from the silences in the audio:
   - Rows marked `exact=yes` are exact.
   - Rows marked `check=listen` may be off; play the audio at that time and correct the value by hand if needed.
+  - Only the first line of each chunk is exact, so larger chunks mean fewer exact rows. On episode 1, most estimates were within 1 second, but some lines in the middle of a 12-part chunk were off by about 3 seconds. Spot-check a few rows mid-chunk even when they are not flagged.
+  - The script reads the parts-per-chunk count from the folder name (`n12` = 12). Chunks stored directly in `<name>_parts/` come from older runs, which always used 6.
+  - It uses the pause tags in the JSON as hints: a line followed by `<long pause>` should end at a long silence.
 - Always take timings from the **voice-only** file. The `_ambience` version is shifted by `lead_in` seconds.
 - A CSV only matches the MP3 from **the same run**. Every new API call produces a slightly different reading, because Gemini TTS does not give identical output between runs.
 
@@ -158,6 +171,6 @@ Tips:
 
 ## Limits & cost
 
-- Per request: up to 8,192 input tokens and 16,384 output audio tokens (about 10 minutes of audio). A 6-part request uses far less than this.
+- Per request: up to 8,192 input tokens and 16,384 output audio tokens (about 10 minutes of audio). A 12-part request is about 3 minutes of audio. Don't put a whole episode in one request: long takes drift in voice and are expensive to redo.
 - Flash TTS costs about $0.014 per minute of audio (estimated from 25 tokens per second at $9 per 1M output tokens). A 10-minute episode costs about $0.14.
 - Never commit an API key. Revoke and replace any key that has been exposed.

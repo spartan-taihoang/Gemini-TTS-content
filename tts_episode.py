@@ -2,14 +2,19 @@
 # Usage: GEMINI_API_KEY=... python3 tts_episode.py podcast/salvation_and_grace_ep1.json
 # Outputs land next to the JSON: <name>.mp3 (voice only) and, if "ambience" is set, <name>_ambience.mp3.
 # Calls the v1beta REST endpoint directly: the SDK rejected speech_metadata/speechConfig.
-import base64, json, os, subprocess, sys, time, urllib.error, urllib.request, wave
+import base64, csv, json, os, re, subprocess, sys, time, urllib.error, urllib.request, wave
 from pathlib import Path
 
 # TTS_MODEL=gemini-3.8-flash-lite-tts switches models when the default one is overloaded.
 MODEL = os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
 MAX_RETRIES = 6  # backoff 15s, 30s, 60s ... capped at 5 min
 URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
-PARTS_PER_REQUEST = 6  # small requests: a bad take is cheap to redo
+# Parts per API call. 12 (~3 min of audio) keeps an episode at 2-3 requests, which matters on a
+# 10-requests-per-day quota, while a bad take stays cheap to redo. TTS_PER_PART=1 is shorthand for 1:
+# every part then gets an exact start time, at the cost of one request per part.
+PARTS_PER_REQUEST = 1 if os.environ.get("TTS_PER_PART") == "1" else int(os.environ.get("TTS_PARTS_PER_REQUEST", "12"))
+if PARTS_PER_REQUEST < 1:
+    sys.exit("TTS_PARTS_PER_REQUEST must be at least 1")
 
 key = os.environ.get("GEMINI_API_KEY", "").strip()
 if not key:
@@ -68,8 +73,9 @@ def wav_seconds(path):
         return w.getnframes() / w.getframerate()
 
 
-work = src.parent / (src.stem + "_parts")
-work.mkdir(exist_ok=True)
+# Chunk cache per chunk size: switching TTS_PER_PART never mixes old and new takes.
+work = src.parent / (src.stem + "_parts") / f"n{PARTS_PER_REQUEST}"
+work.mkdir(parents=True, exist_ok=True)
 files = []
 for n, i in enumerate(range(0, len(ep["parts"]), PARTS_PER_REQUEST)):
     wav = work / f"chunk_{n:02d}.wav"
@@ -78,6 +84,21 @@ for n, i in enumerate(range(0, len(ep["parts"]), PARTS_PER_REQUEST)):
         continue
     save_wav(wav, synth(ep["parts"][i:i + PARTS_PER_REQUEST]))
     print("ok", wav)
+
+# With one part per request every part start is exact, so write them out; otherwise use align_timings.py.
+if PARTS_PER_REQUEST == 1:
+    timings, t = [], 0.0
+    for n, f in enumerate(files):
+        i = n * PARTS_PER_REQUEST
+        preview = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", ep["parts"][i]["text"])).strip()
+        timings.append({"part": i + 1, "start_seconds": round(t, 1), "text": preview[:80]})
+        t += wav_seconds(f)
+    tpath = src.with_name(src.stem + "_timings.csv")
+    with open(tpath, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=["part", "start_seconds", "text"])
+        w.writeheader()
+        w.writerows(timings)
+    print("timings", tpath)
 
 lst = work / "list.txt"
 lst.write_text("".join(f"file '{f.resolve()}'\n" for f in files))
