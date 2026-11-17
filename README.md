@@ -1,6 +1,6 @@
 # Gemini TTS – audio for podcasts and daily prayers
 
-These scripts turn a script file (JSON) into an MP3 with Gemini TTS (`gemini-3.8-flash-tts`). They are used for SleepFit content.
+These scripts turn a script file (JSON) into an MP3 with Gemini TTS (`gemini-3.8-flash-tts`). They are used for SleepFit content. **The audio and folder structure is for reference. You only need the python script.**
 
 ## Layout
 
@@ -77,6 +77,8 @@ On HTTP 429, 500 or 503 (overload or quota), the script retries up to 6 times. T
 The script skips any chunk that already has a file in `_parts/`. To redo a chunk, delete its `chunk_XX.wav` and run the same command again. Only the missing chunk is sent to the API, and the MP3 is rebuilt.
 
 ## JSON format
+
+To turn a plain-text script into this JSON (or to have an AI assistant do it), follow [SCRIPT_GUIDE.md](SCRIPT_GUIDE.md).
 
 ```json
 {
