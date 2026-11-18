@@ -1,0 +1,18 @@
+{
+  "title": "Bible audio - Psalms 23",
+  "voice": "Charon",
+  "parts": [
+    {"style": "warm, reassuring, quiet confidence, speaking slowly",
+     "text": "The Lord is my shepherd; I shall not want. <short pause>"},
+    {"style": "tender, peaceful, slow",
+     "text": "He maketh me to lie down in green pastures: he leadeth me beside the still waters. <short pause>"},
+    {"style": "soft, heartfelt, slower",
+     "text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake. <short pause>"},
+    {"style": "quiet, steady, reassuring conviction",
+     "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me. <short pause>"},
+    {"style": "warm, grateful, gently rejoicing",
+     "text": "Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over. <short pause>"},
+    {"style": "slow, reflective, letting the words sink in",
+     "text": "Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the Lord for ever. <long pause>"}
+  ]
+}
