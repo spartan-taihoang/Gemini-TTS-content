@@ -1,0 +1,68 @@
+{
+ "title": "Breath Prayer",
+ "voice": "Olin",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -12,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body find its place of rest. <short pause> Feel the weight of your head on the pillow... your shoulders releasing into the bed. <short pause> Let your hands open, palms up or down... whatever feels natural. <long pause> Now bring your attention to your breath. <long pause> Breathe in slowly through your nose... and out through your mouth. <long pause> Again, in and out... a little slower this time. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "For centuries, people of faith have used breath prayer... a simple prayer, said in rhythm with breathing. <short pause> Tonight, we'll rest in this ancient practice. <long pause> The prayer is just a few words. <short pause> As you breathe in, you pray the first half. As you breathe out, the second half. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let's use these words. <short pause> Lord Jesus Christ, have mercy on me. <long pause>"
+  },
+  {
+   "style": "prayerful, hushed, very slow, unhurried",
+   "text": "Breathe in... Lord Jesus Christ. <long pause> Breathe out... have mercy on me. <long pause> In... Lord Jesus Christ. <long pause> Out... have mercy on me. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You don't need to think about the words. <short pause> Just let them ride on your breath. <long pause> In and out... like a gentle tide. <long pause> If your mind wanders, that's fine. <short pause> Simply return to the breath... return to the prayer. <long pause>"
+  },
+  {
+   "style": "prayerful, hushed, very slow, unhurried",
+   "text": "In... Lord Jesus Christ. <long pause> Out... have mercy on me. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "This prayer is not about striving, or achieving. <short pause> It's about resting in God's presence. <long pause> Your breath becomes prayer. <short pause> Your body becomes still. <long pause>"
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Be still, and know that I am God. <short pause> Psalm forty-six, verse ten. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Be still. <short pause> Know that he is God. <long pause>"
+  },
+  {
+   "style": "prayerful, hushed, very slow, unhurried",
+   "text": "In... Lord Jesus Christ. <long pause> Out... have mercy on me. <long pause> Let the prayer continue... as you drift. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "There's nothing you need to do now. <short pause> Nothing you need to fix, or finish. <long pause> Just breathe. <short pause> Just pray. <long pause> In... and out. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The Lord is near. <short pause> He hears your breath. <short pause> He knows your heart. <long pause> Rest in his mercy tonight. <long pause>"
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May the peace of Christ settle over you like a blanket... and may you sleep in the shelter of his love. <long pause>"
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

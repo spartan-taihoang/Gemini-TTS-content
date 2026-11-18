@@ -1,0 +1,68 @@
+{
+ "title": "Laying Down the Day",
+ "voice": "Charon",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -12,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Find a comfortable position... and let your body settle into rest. <short pause> Close your eyes, if you haven't already. <short pause> Let your shoulders drop, away from your ears. <long pause> Take a slow breath in through your nose... and let it go. <long pause> Again, breathe in slowly... and release. <long pause> One more time. Breathing in God's peace... breathing out the tension of the day. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, you are laying down the day. <short pause> All the things you meant to finish. All the words you wish you'd said differently. All the tasks still waiting. <short pause> You are handing them back... to the One who holds time itself. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "There is a kind of work that belongs to daylight... and there is a rest that belongs to night. <short pause> God made both. <short pause> He set the sun to rise and set... the rhythm of waking and sleeping, working and resting. <short pause> This rhythm is his gift to you. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Take another slow breath. <short pause> And as you breathe out... let go of one thing you've been carrying. <short pause> It might be something you said today. Or something left undone. <long pause> Picture yourself opening your hands... and releasing it upward. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "God does not need you to hold the world together while you sleep. <short pause> He is awake. <short pause> He does not grow tired... or forget. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "There is a verse that speaks to this... a truth that cuts through our striving. <long pause>"
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep. <short pause> Psalm one hundred twenty-seven, verse two. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Sleep is not something you must earn, by finishing everything first. <short pause> It is something God gives. <short pause> He gives it to his beloved. <long pause> You are his beloved. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in that truth now... slowly, and deeply. <long pause> Breathe out anything that tells you otherwise. <long pause>"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your thoughts begin to slow... like leaves settling on still water. <short pause> If a worry surfaces, acknowledge it... and let it pass. <short pause> You can pick it up again tomorrow, if you need to. <short pause> Tonight, it does not belong to you. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Feel the weight of your body, sinking into the surface beneath you. <short pause> Notice the quiet around you. <short pause> This is the space God has made for you to rest. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You do not have to do anything else. <short pause> You do not have to be anything else. <short pause> You are held. <long pause> Take one more slow breath... drawing in rest... releasing the day. <long pause>"
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "And now, receive this blessing. <short pause> May the Lord give you sleep... not because you have earned it, but because you are loved. <long pause> May you rest in the knowledge that he is near... that he watches over you... and that the work of holding all things together has never been yours to carry. <long pause> May you wake tomorrow with strength that comes not from your own striving, but from his grace. <long pause>"
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Sleep now, beloved."
+  }
+ ]
+}
