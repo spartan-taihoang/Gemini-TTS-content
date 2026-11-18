@@ -105,7 +105,7 @@ for n, i in enumerate(range(0, len(ep["parts"]), PARTS_PER_REQUEST)):
     save_wav(wav, synth(ep["parts"][i:i + PARTS_PER_REQUEST]))
     print("ok", wav)
 
-# With one part per request every part start is exact, so write them out; otherwise use align_timings.py.
+# With one part per request every part start is exact, so write them out; otherwise use whisper_timings.py.
 if PARTS_PER_REQUEST == 1:
     timings, t = [], 0.0
     for n, f in enumerate(files):

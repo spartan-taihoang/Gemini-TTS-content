@@ -7,12 +7,13 @@ These scripts turn a script file (JSON) into an MP3 with Gemini TTS (`gemini-3.8
 ```
 gemini-tts/
 ├── tts_episode.py          # main script: JSON -> MP3
-├── align_timings.py        # estimates start_seconds from existing audio (no API calls)
+├── whisper_timings.py      # measures start_seconds from the audio with local Whisper (no API calls)
+├── to_m4a.py               # MP3 -> M4A, the only format SleepFit accepts
 ├── podcast/
 │   └── <episode>/
 │       ├── <episode>.json
 │       ├── <episode>.mp3            # generated
-│       ├── <episode>_timings.csv    # start_seconds per line (TTS_PER_PART=1 or align_timings.py)
+│       ├── <episode>_timings.csv    # start_seconds per line (TTS_PER_PART=1 or whisper_timings.py)
 │       └── <episode>_parts/         # per-chunk audio cache
 └── daily_prayer/
     ├── ambience_soft_pad.flac       # self-made background pad, no third-party license, loops seamlessly every 60 s
@@ -84,7 +85,7 @@ python3 tts_episode.py daily_prayer/genesis_2_18/genesis_2_18.json
 2. Calls the Gemini API (REST `v1beta`) once per chunk and saves each result in `<name>_parts/n<N>/`, where N is the parts per request (e.g. `n12/`, `n1/`). Changing N starts a new folder, so takes made with different settings are never mixed.
 3. Joins the chunks into `<name>.mp3`.
 4. If the JSON has `ambience`, also writes `<name>_ambience.mp3` with the background mixed in.
-5. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the exact start time of each part. In the default mode, use `align_timings.py` instead (see below).
+5. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the exact start time of each part. In the default mode, use `whisper_timings.py` instead (see below).
 
 On HTTP 429, 500 or 503 (overload or quota), the script retries up to 6 times. The wait starts at 15 seconds, doubles after each failure, and is capped at 5 minutes.
 
@@ -165,16 +166,14 @@ Tips:
 ## Entering `start_seconds` in web-admin
 
 - **New audio:** run with `TTS_PER_PART=1` and copy the numbers from `_timings.csv`. Each CSV row is one **part** of the JSON. If a part contains several transcript lines, only the first line of that part gets an exact time.
-- **Audio already made in the default mode, which you want to keep:**
+- **Audio made in the default mode (12 parts per request):** measure with Whisper. `whisper_timings.py` transcribes the finished audio locally (no Gemini requests) and matches the words to `transcript.txt`, which holds one transcript line per line and must match what was spoken. It needs `faster-whisper` in a virtualenv (setup is at the top of the script):
   ```bash
-  python3 align_timings.py <name>.json transcript.txt <name>_parts/n12 <name>_timings.csv
+  .venv/bin/python whisper_timings.py <name>.m4a transcript.txt <name>_timings.csv
   ```
-  `transcript.txt` holds one transcript line per line. The times are estimated from the silences in the audio:
-  - Rows marked `exact=yes` are exact.
-  - Rows marked `check=listen` may be off; play the audio at that time and correct the value by hand if needed.
-  - Only the first line of each chunk is exact, so larger chunks mean fewer exact rows. On episode 1, most estimates were within 1 second, but some lines in the middle of a 12-part chunk were off by about 3 seconds. Spot-check a few rows mid-chunk even when they are not flagged.
-  - The script reads the parts-per-chunk count from the folder name (`n12` = 12). Chunks stored directly in `<name>_parts/` come from older runs, which always used 6.
-  - It uses the pause tags in the JSON as hints: a line followed by `<long pause>` should end at a long silence.
+  - Columns: `line,start_seconds,exact,check,text`; `exact` and `check` stay empty. web-admin needs whole seconds, so round the values.
+  - Matching is by words, so any edit to the JSON text after the audio was made must also go into `transcript.txt`, or lines will be placed wrongly. The script prints how many words matched; below about 95% means the transcript does not match the audio.
+  - Rows are measured from the audio, so regenerating one chunk only needs a re-run, not special handling.
+  - Spot-check a few rows by ear. Whisper can mishear archaic Scripture wording, but the line start is matched on several words, so errors are usually under half a second.
 - Always take timings from the **voice-only** file. The `_ambience` version is shifted by `lead_in` seconds.
 - A CSV only matches the MP3 from **the same run**. Every new API call produces a slightly different reading, because Gemini TTS does not give identical output between runs.
 

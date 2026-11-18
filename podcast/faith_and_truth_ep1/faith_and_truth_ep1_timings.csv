@@ -1,32 +1,84 @@
-part,start_seconds,text
-1,0.0,Welcome to our brand new SleepFit podcast series! This is the very first episode
-2,34.7,"Hebrews, chapter eleven, opens with what might be the most famous definition of "
-3,42.2,"Now faith is the substance of things hoped for, the evidence of things not seen."
-4,51.2,Faith is the substance of things hoped for... the evidence of things not seen.
-5,61.6,"You've probably seen those words painted on a church wall, or stitched onto a cu"
-6,70.5,"But what do they mean for you, tonight? Here in the quiet... with the day behind"
-7,86.6,"Start with that word, substance. It means something solid. Something you can lea"
-8,108.0,Think of a chair. You don't sit down because you feel certain about the chair. Y
-9,117.7,That's faith. You rest your weight on God... and he's the solid thing beneath yo
-10,125.7,"The passage says faith is also the evidence of things not seen. Now, evidence us"
-11,141.2,"Picture a child in the dark, reaching for a parent's hand. She can't see it... b"
-12,156.0,And the very next verse says something important.
-13,159.6,For by it the elders obtained a good report.
-14,164.6,By faith. Not by sight... not by feeling... not by perfect understanding. By fai
-15,181.4,Every man and woman who walked with God before us walked the same way you're inv
-16,193.1,Then the writer of Hebrews does something unexpected. He takes us right back to 
-17,203.2,"Through faith we understand that the worlds were framed by the word of God, so t"
-18,217.1,Through faith we understand... that the worlds were framed by the word of God. T
-19,233.6,"God spoke... and the universe came into being. Everything, out of nothing. You c"
-20,249.6,And if God spoke the stars into existence... if he made the mountains and the oc
-21,266.2,"In the next few verses, we meet Abel, Enoch, and Noah. Each of them walking by f"
-22,287.2,None of them had the whole picture. None of them saw the end from the beginning.
-23,297.9,And then comes a verse that matters very much.
-24,301.7,But without faith it is impossible to please him: for he that cometh to God must
-25,318.1,"Without faith, it's impossible to please God. Anyone who comes to him must belie"
-26,335.0,"Now, this isn't a threat. It's just how things are. You come to God by believing"
-27,357.0,"So tonight, if your faith feels small... that's all right. Faith the size of a m"
-28,386.5,"Walking by faith just means taking one step at a time, in his direction. Trustin"
-29,406.6,"So let that be enough for tonight. You don't have to solve every question, or fe"
-30,430.8,"Let's pray. Father, we rest our weight on you tonight. Teach us to trust you in "
-31,447.0,Goodnight.
+line,start_seconds,exact,check,text
+1,0.0,,,Welcome to our brand new SleepFit podcast series!
+2,4.78,,,This is the very first episode of Faith and Truth.
+3,8.98,,,I'm Sarah Mitchell.
+4,11.02,,,"Over the next six evenings, we'll spend a few quiet minutes together... with short reflections on living by faith, and holding to the truth of Scripture."
+5,22.3,,,"They're made for the end of your day, so you can slow down... and rest."
+6,26.62,,,"And tonight, we're asking a simple question... what does it mean to walk by faith?"
+7,34.9,,,"Hebrews, chapter eleven, opens with what might be the most famous definition of faith in all of Scripture."
+8,42.42,,,"Now faith is the substance of things hoped for, the evidence of things not seen."
+9,51.46,,,Faith is the substance of things hoped for... the evidence of things not seen.
+10,61.56,,,"You've probably seen those words painted on a church wall, or stitched onto a cushion."
+11,68.14,,,They've been there for centuries.
+12,70.6,,,"But what do they mean for you, tonight?"
+13,75.8,,,Here in the quiet... with the day behind you... and a mind too tired to strain after certainty.
+14,86.68,,,"Start with that word, substance."
+15,89.54,,,It means something solid.
+16,91.46,,,Something you can lean on.
+17,93.52,,,So faith isn't a feeling you work up inside yourself.
+18,97.6,,,It's not a mood.
+19,98.82,,,It's not a surge of confidence.
+20,101.22,,,"It's putting your weight on someone outside yourself... someone who's there, whether you feel it or not."
+21,107.58,,,Think of a chair.
+22,109.8,,,You don't sit down because you feel certain about the chair.
+23,114.08,,,You just sit... and the chair holds you.
+24,117.98,,,That's faith.
+25,119.7,,,You rest your weight on God... and he's the solid thing beneath you.
+26,125.94,,,The passage says faith is also the evidence of things not seen.
+27,131.4,,,"Now, evidence usually means proof you can photograph, or measure."
+28,137.08,,,This is a different kind.
+29,138.82,,,It's the proof that comes from trust.
+30,141.36,,,"Picture a child in the dark, reaching for a parent's hand."
+31,146.34,,,"She can't see it... but when her fingers close around it, that's her evidence."
+32,153.52,,,She knows she's not alone.
+33,156.24,,,And the very next verse says something important.
+34,159.86,,,For by it the elders obtained a good report.
+35,164.78,,,By faith.
+36,166.58,,,Not by sight... not by feeling... not by perfect understanding.
+37,175.5,,,"By faith, the elders obtained a good report."
+38,181.9,,,Every man and woman who walked with God before us walked the same way you're invited to walk tonight.
+39,189.76,,,They trusted him... in the dark.
+40,193.24,,,Then the writer of Hebrews does something unexpected.
+41,197.92,,,He takes us right back to the beginning... to the foundation of everything.
+42,202.68,,,"Through faith we understand that the worlds were framed by the word of God, so that things which are seen were not made of things which do appear."
+43,217.52,,,Through faith we understand... that the worlds were framed by the word of God.
+44,226.78,,,The things we see... were not made of things which do appear.
+45,233.9,,,God spoke... and the universe came into being.
+46,238.4,,,"Everything, out of nothing."
+47,241.48,,,"You can't see that with your eyes, or prove it in a laboratory."
+48,245.74,,,You understand it... by faith.
+49,249.76,,,And if God spoke the stars into existence... if he made the mountains and the oceans with a word... then he can hold you tonight.
+50,263.22,,,He can carry what you can't.
+51,266.34,,,"In the next few verses, we meet Abel, Enoch, and Noah."
+52,271.62,,,"Each of them walking by faith, in their own generation."
+53,275.88,,,Abel brought an offering that pleased God.
+54,279.52,,,"Enoch walked with God, and was taken up."
+55,283.18,,,Noah built an ark... when there was no sign of rain.
+56,287.3,,,None of them had the whole picture.
+57,290.5,,,None of them saw the end from the beginning.
+58,294.18,,,They just took the next step... in trust.
+59,298.06,,,And then comes a verse that matters very much.
+60,301.96,,,"But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him."
+61,318.28,,,"Without faith, it's impossible to please God."
+62,324.6,,,Anyone who comes to him must believe that he is there... and that he rewards those who diligently seek him.
+63,335.02,,,"Now, this isn't a threat."
+64,337.66,,,It's just how things are.
+65,340.3,,,"You come to God by believing he's there, and that he's good."
+66,346.34,,,You don't have to feel it perfectly.
+67,348.64,,,You don't have to talk yourself into certainty.
+68,352.26,,,You just turn toward him... like turning your face toward the sun.
+69,357.2,,,"So tonight, if your faith feels small... that's all right."
+70,364.76,,,Faith the size of a mustard seed is still faith.
+71,369.94,,,And if you're too tired to feel sure... you can still rest your weight on God.
+72,379.24,,,He doesn't ask you to hold yourself up.
+73,382.88,,,He asks you to let him hold you.
+74,386.56,,,"Walking by faith just means taking one step at a time, in his direction."
+75,392.52,,,"Trusting he's there, even when you can't see the path ahead."
+76,397.48,,,"And knowing he rewards those who seek him... not because they're strong, or clever... but simply because he is good."
+77,408.44,,,So let that be enough for tonight.
+78,412.7,,,"You don't have to solve every question, or feel every assurance."
+79,419.96,,,You can close your eyes... and rest in the one who spoke the worlds into being... and who knows your name.
+80,430.64,,,Let's pray.
+81,432.38,,,"Father, we rest our weight on you tonight."
+82,439.12,,,Teach us to trust you in the dark... and let us wake knowing we are held.
+83,446.4,,,Goodnight.

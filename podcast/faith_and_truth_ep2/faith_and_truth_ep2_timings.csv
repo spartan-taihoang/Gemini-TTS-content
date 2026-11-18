@@ -1,80 +1,82 @@
 line,start_seconds,exact,check,text
-1,0.0,yes,,Welcome to Faith and Truth.
-2,2.9,,,I'm Sarah Mitchell.
-3,9.4,,,"Tonight, we're asking a question that often comes up when life feels uncertain... how can I trust God's word, when I can't see what's ahead?"
-4,21.2,,,"We're looking at walking by faith... and tonight, our focus is the word that lights the way."
-5,28.5,,,"But first, let's begin with a prayer."
-6,32.5,,,"Father, quiet our hearts now."
-7,35.9,,,Open our minds to your truth.
-8,38.8,,,Help us hear what you want us to know tonight.
-9,42.3,,,In Jesus' name... amen.
-10,45.4,,,There's an image in Scripture that has comforted believers for thousands of years.
-11,52.4,,,You'll find it in Psalm one hundred nineteen... a long song of love for God's word.
-12,59.0,,,"Thy word is a lamp unto my feet, and a light unto my path."
-13,66.0,,,A lamp unto my feet... and a light unto my path.
-14,72.1,,,Think about that image for a moment.
-15,76.3,,,"In the ancient world, a lamp was a small clay vessel, filled with oil, with a wick that gave off a soft flame."
-16,85.7,,,It didn't light up the whole road.
-17,87.9,,,It didn't show you everything that lay ahead.
-18,91.1,,,It showed you... the next step.
-19,94.6,,,And that's exactly what the psalmist is telling us about God's word.
-20,99.6,,,"We often want Scripture to be a floodlight, don't we?"
-21,103.0,,,We want to open the Bible and find a detailed map of the next year... the next month... even the next week.
-22,110.8,,,We want certainty.
-23,112.8,,,"We want to see the whole road, from here to there."
-24,117.1,,,But that isn't what God promises.
-25,119.9,,,He promises a lamp for the next step... a light for the path right in front of you.
-26,126.1,,,"And this matters, because faith isn't about knowing everything in advance."
-27,131.2,,,Faith is trusting God... one step at a time.
-28,135.6,,,"Now, you might be wondering... how does Scripture actually do that?"
-29,139.8,,,How does it light the next step?
-30,142.0,yes,,"The apostle Paul wrote to a young pastor named Timothy, and explained what God's word is for."
-31,150.2,,,"All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works."
-32,168.6,,,"All Scripture, Paul says, is given by inspiration of God."
-33,172.9,,,And it's profitable.
-34,174.7,,,That word means useful... beneficial... valuable.
-35,180.4,,,Profitable for doctrine... teaching us what is true.
-36,184.6,,,For reproof... showing us what is not.
-37,188.5,,,For correction... showing us how to get back on track when we've wandered.
-38,193.9,,,And for instruction in righteousness... teaching us how to live in a way that pleases God.
-39,201.4,,,"Paul goes on... that the man of God may be perfect, thoroughly furnished unto all good works."
-40,208.2,,,And perfect here means complete.
-41,211.4,,,Mature.
-42,212.7,,,Equipped for what God has called you to do.
-43,216.3,,,So here's what this means.
-44,218.8,,,"Scripture doesn't necessarily tell you which job to take, or which house to buy, or whether to send that email tomorrow."
-45,227.1,,,But it does something better.
-46,229.2,,,It shapes the person who makes those decisions.
-47,233.1,,,"It teaches you who God is... faithful, holy, loving, just."
-48,239.5,,,"It teaches you who you are... made in his image, fallen, redeemed, loved."
-49,246.5,,,"It teaches you how God works... through grace, through patience, through ways that often surprise us."
-50,254.3,,,And when you know those things... you have light for the next step.
-51,258.8,,,Let me give you an example.
-52,260.5,,,"Suppose you're facing a choice tomorrow, and you're not sure what to do."
-53,265.1,,,"You open Scripture, and you don't find a verse that says, Do this specific thing."
-54,270.1,,,But you read about God's character... about his faithfulness to those who trust him.
-55,275.4,,,"You read about his wisdom, and how he guides his people."
-56,279.2,,,You read a command to love your neighbor... or to speak the truth... or to do your work as unto the Lord.
-57,286.6,,listen,And suddenly... you have light.
-58,287.9,,,You don't see the whole road.
-59,289.6,,,But you see the next faithful step.
-60,294.2,,,This is what it means for God's word to be a lamp.
-61,298.1,,,It's not that Scripture answers every question we bring to it.
-62,302.4,,,It's that Scripture equips us to walk faithfully... with the questions we carry.
-63,308.6,,,And here's the other side of this truth.
-64,311.9,,,"If we're only looking for a floodlight, we might miss the lamp that's already shining."
-65,318.0,,,We might overlook what God is showing us right now... because we're anxious about what we can't see further down the road.
-66,326.5,,,But when we accept that God gives light for one step at a time... we're free to take that step.
-67,333.7,,,Free to obey what we already know.
-68,337.0,,,Free to trust that when we need the next piece of guidance... God will give it.
-69,343.2,,,"So tonight, as you rest... consider this."
-70,346.9,,,You don't need to see the whole road.
-71,351.4,,,You don't need to have everything figured out before morning.
-72,355.2,,,What you need is to know God... and to trust that his word is enough light for the step in front of you.
-73,362.6,,,And it is.
-74,364.0,yes,,Let's close with a word of prayer.
-75,367.7,,,"Father, thank you for your word."
-76,372.7,,,"Thank you that it is a lamp, steady and true, showing us the way one step at a time."
-77,382.7,,,Help us to trust you with what we cannot see... and to walk faithfully in the light you've already given.
-78,392.4,,,In Jesus' name... amen.
-79,396.7,,,Good night.
+1,0.0,,,Welcome to Faith and Truth.
+2,2.2,,,This is Faith and Truth Episode 2!
+3,4.24,,,You may have already known me from episode one.
+4,7.92,,,I'm Sarah Mitchell.
+5,9.76,,,"Tonight, we're asking a question that often comes up when life feels uncertain... how can I trust God's word, when I can't see what's ahead?"
+6,21.74,,,"We're looking at walking by faith... and tonight, our focus is the word that lights the way."
+7,28.38,,,"But first, let's begin with a prayer."
+8,32.6,,,"Father, quiet our hearts now."
+9,35.84,,,Open our minds to your truth.
+10,38.66,,,Help us hear what you want us to know tonight.
+11,42.1,,,In Jesus' name... amen.
+12,46.64,,,There's an image in Scripture that has comforted believers for thousands of years.
+13,52.16,,,You'll find it in Psalm one hundred nineteen... a long song of love for God's word.
+14,60.22,,,"Thy word is a lamp unto my feet, and a light unto my path."
+15,66.82,,,A lamp unto my feet... and a light unto my path.
+16,73.02,,,Think about that image for a moment.
+17,75.76,,,"In the ancient world, a lamp was a small clay vessel, filled with oil, with a wick that gave off a soft flame."
+18,85.26,,,It didn't light up the whole road.
+19,87.8,,,It didn't show you everything that lay ahead.
+20,90.6,,,It showed you... the next step.
+21,94.48,,,And that's exactly what the psalmist is telling us about God's word.
+22,99.14,,,"We often want Scripture to be a floodlight, don't we?"
+23,102.64,,,We want to open the Bible and find a detailed map of the next year... the next month... even the next week.
+24,110.54,,,We want certainty.
+25,112.68,,,"We want to see the whole road, from here to there."
+26,116.68,,,But that isn't what God promises.
+27,119.38,,,He promises a lamp for the next step... a light for the path right in front of you.
+28,125.94,,,"And this matters, because faith isn't about knowing everything in advance."
+29,131.28,,,Faith is trusting God... one step at a time.
+30,135.14,,,"Now, you might be wondering... how does Scripture actually do that?"
+31,139.7,,,How does it light the next step?
+32,142.1,,,"The apostle Paul wrote to a young pastor named Timothy, and explained what God's word is for."
+33,149.94,,,"All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works."
+34,168.46,,,"All Scripture, Paul says, is given by inspiration of God."
+35,172.84,,,And it's profitable.
+36,174.56,,,That word means useful... beneficial... valuable.
+37,180.72,,,Profitable for doctrine... teaching us what is true.
+38,184.72,,,For reproof... showing us what is not.
+39,188.28,,,For correction... showing us how to get back on track when we've wandered.
+40,193.84,,,And for instruction in righteousness... teaching us how to live in a way that pleases God.
+41,201.08,,,"Paul goes on... that the man of God may be perfect, thoroughly furnished unto all good works."
+42,208.1,,,And perfect here means complete.
+43,211.68,,,Mature.
+44,212.96,,,Equipped for what God has called you to do.
+45,215.76,,,So here's what this means.
+46,218.72,,,"Scripture doesn't necessarily tell you which job to take, or which house to buy, or whether to send that email tomorrow."
+47,226.9,,,But it does something better.
+48,229.16,,,It shapes the person who makes those decisions.
+49,232.56,,,"It teaches you who God is... faithful, holy, loving, just."
+50,238.28,,,"It teaches you who you are... made in his image, fallen, redeemed, loved."
+51,246.44,,,"It teaches you how God works... through grace, through patience, through ways that often surprise us."
+52,254.16,,,And when you know those things... you have light for the next step.
+53,258.64,,,Let me give you an example.
+54,260.36,,,"Suppose you're facing a choice tomorrow, and you're not sure what to do."
+55,264.89,,,"You open Scripture, and you don't find a verse that says, Do this specific thing."
+56,270.07,,,But you read about God's character... about his faithfulness to those who trust him.
+57,275.23,,,"You read about his wisdom, and how he guides his people."
+58,278.87,,,You read a command to love your neighbor... or to speak the truth... or to do your work as unto the Lord.
+59,286.57,,,And suddenly... you have light.
+60,288.51,,,You don't see the whole road.
+61,291.43,,,But you see the next faithful step.
+62,294.09,,,This is what it means for God's word to be a lamp.
+63,297.97,,,It's not that Scripture answers every question we bring to it.
+64,302.23,,,It's that Scripture equips us to walk faithfully... with the questions we carry.
+65,308.29,,,And here's the other side of this truth.
+66,311.67,,,"If we're only looking for a floodlight, we might miss the lamp that's already shining."
+67,317.47,,,We might overlook what God is showing us right now... because we're anxious about what we can't see further down the road.
+68,326.35,,,But when we accept that God gives light for one step at a time... we're free to take that step.
+69,333.09,,,Free to obey what we already know.
+70,336.63,,,Free to trust that when we need the next piece of guidance... God will give it.
+71,342.97,,,"So tonight, as you rest... consider this."
+72,348.65,,,You don't need to see the whole road.
+73,351.23,,,You don't need to have everything figured out before morning.
+74,354.89,,,What you need is to know God... and to trust that his word is enough light for the step in front of you.
+75,362.29,,,And it is.
+76,363.37,,,Let's close with a word of prayer.
+77,368.55,,,"Father, thank you for your word."
+78,372.41,,,"Thank you that it is a lamp, steady and true, showing us the way one step at a time."
+79,382.09,,,Help us to trust you with what we cannot see... and to walk faithfully in the light you've already given.
+80,388.89,,,In Jesus' name... amen.
+81,395.69,,,Good night.

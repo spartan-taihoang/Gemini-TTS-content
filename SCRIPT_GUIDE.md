@@ -8,7 +8,7 @@ Give the assistant this file, the plain text, and the host's voice name. Ask for
 
 ## 1. Hard rules
 
-1. **Keep every word.** The text in the app (`transcript`, `prayer_text`) must match the audio, and `align_timings.py` matches lines by their wording. Never add, remove, reorder or reword sentences, including small "natural" fillers like "you know" or "now,".
+1. **Keep every word.** The text in the app (`transcript`, `prayer_text`) must match the audio, and `whisper_timings.py` matches lines by their wording. Never add, remove, reorder or reword sentences, including small "natural" fillers like "you know" or "now,".
 2. **Only these text changes are allowed:**
    - Write all-caps words in normal case when they are not meant to be stressed (`LORD` → `Lord`). The model stresses ALL-CAPS words.
    - Replace parentheses with `...` (`(by grace ye are saved.)` → `... by grace ye are saved.`).
@@ -158,4 +158,4 @@ In both, every word of the input is present, in order. Only tags were added.
 - [ ] The JSON parses.
 - [ ] Anything that looked truncated or garbled is listed under "Questions", not guessed.
 
-Also save the plain text, one transcript line per line, as `transcript.txt` next to the JSON. `align_timings.py` needs it.
+Also save the plain text, one transcript line per line, as `transcript.txt` next to the JSON. `whisper_timings.py` needs it.
