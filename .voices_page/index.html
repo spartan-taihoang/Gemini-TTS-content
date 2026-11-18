@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SleepFit Voices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: a night-quiet catalogue. Summary table first, then one card per Gemini voice with its characters and samples. */
+  --bg: #f4f5f8;
+  --surface: #ffffff;
+  --ink: #1b2030;
+  --muted: #5c6378;
+  --line: #dde0e9;
+  --accent: #4b55a8;
+  --accent-soft: #e6e8f6;
+  --warn: #9a5b00;
+  --warn-soft: #fbf0dc;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10131c; --surface: #181c28; --ink: #e6e8f0; --muted: #a0a6ba; --line: #2b3142;
+    --accent: #a6aef0; --accent-soft: #252a45; --warn: #f0b75c; --warn-soft: #33281a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10131c; --surface: #181c28; --ink: #e6e8f0; --muted: #a0a6ba; --line: #2b3142;
+  --accent: #a6aef0; --accent-soft: #252a45; --warn: #f0b75c; --warn-soft: #33281a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+main { max-width: 1040px; margin: 0 auto; padding: 40px 20px 64px; display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: 40px; }
+h2 { font-size: 26px; }
+h3 { font-size: 19px; font-family: var(--body); }
+p { margin: 0; max-width: 68ch; }
+.lede { color: var(--muted); font-size: 17px; }
+header { display: grid; gap: 12px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 24px; color: var(--muted); font-size: 14px; }
+.stats b { color: var(--ink); font-variant-numeric: tabular-nums; }
+section { display: grid; gap: 16px; }
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 760px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+tr:last-child td { border-bottom: 0; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.voice-tag { font-family: var(--mono); font-size: 13px; background: var(--accent-soft); color: var(--accent); padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+.voices { display: grid; gap: 20px; }
+.voice { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 18px; }
+.voice-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; justify-content: space-between; }
+.meters { display: flex; flex-wrap: wrap; gap: 8px; }
+.meter { font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-variant-numeric: tabular-nums; }
+.meter b { color: var(--ink); font-weight: 600; }
+.pitchbar { position: relative; height: 26px; border-radius: 6px; background: linear-gradient(90deg, var(--accent-soft), var(--line)); }
+.pitchbar span { position: absolute; top: 3px; bottom: 3px; width: 3px; border-radius: 2px; background: var(--accent); }
+.pitchbar em { position: absolute; top: 4px; font-style: normal; font-size: 11px; color: var(--muted); }
+.chars { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px; }
+.char { border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 10px; align-content: start; }
+.char .who { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.char .role { font-size: 13px; color: var(--muted); }
+.char ul { margin: 0; padding-left: 18px; font-size: 14px; color: var(--muted); }
+blockquote { margin: 0; padding-left: 12px; border-left: 3px solid var(--accent-soft); font-family: var(--display); font-size: 16px; font-style: italic; color: var(--ink); }
+audio { width: 100%; height: 36px; }
+.src { font-family: var(--mono); font-size: 12px; color: var(--muted); word-break: break-all; }
+.styles { display: flex; flex-wrap: wrap; gap: 6px; }
+.styles code { font-family: var(--mono); font-size: 12px; background: var(--bg); border: 1px solid var(--line); padding: 2px 7px; border-radius: 4px; }
+.notes { display: grid; gap: 12px; }
+.note { background: var(--warn-soft); border-left: 4px solid var(--warn); border-radius: 8px; padding: 14px 16px; display: grid; gap: 4px; }
+.note b { color: var(--ink); }
+.method { font-size: 14px; color: var(--muted); display: grid; gap: 8px; }
+.duet { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; display: grid; gap: 12px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) { h1 { font-size: 32px; } .voice { padding: 18px; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>SleepFit Voices</h1>
+  <p class="lede">The Gemini TTS voices used in the <code>sleepfit/</code> folder: which character each voice plays, where it is used, how it sounds as measured from the audio, and a short sample to listen to.</p>
+  <div class="stats">
+    <span><b>4</b> Gemini voices</span>
+    <span><b>6</b> roles (3 named characters, 3 unnamed)</span>
+    <span><b>19</b> finished audio files</span>
+    <span><b>≈ 102</b> minutes of narration</span>
+  </div>
+</header>
+
+<section aria-labelledby="sum">
+  <h2 id="sum">Overview</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Voice</th><th>Character</th><th>Used in</th><th>Files</th><th>Pitch (F0)</th><th>Pace</th></tr></thead>
+    <tbody>
+      <tr><td><span class="voice-tag">Charon</span></td><td>Prayer reader (unnamed)</td><td>Daily prayer</td><td class="num">2</td><td class="num">≈ 104 Hz</td><td class="num">106 wpm</td></tr>
+      <tr><td><span class="voice-tag">Charon</span></td><td>Meditation guide (unnamed)</td><td>Meditation: Laying Down the Day</td><td class="num">1</td><td class="num">≈ 92 Hz</td><td class="num">115 wpm</td></tr>
+      <tr><td><span class="voice-tag">Olin</span></td><td>David Lee</td><td>Podcast: Christian Living, episodes 1–6</td><td class="num">6</td><td class="num">≈ 99 Hz</td><td class="num">116 wpm</td></tr>
+      <tr><td><span class="voice-tag">Olin</span></td><td>Meditation guide (unnamed)</td><td>Meditation: A Quiet Mind, Breath Prayer, Evening Gratitude, Still Waters</td><td class="num">4</td><td class="num">≈ 123 Hz</td><td class="num">93 wpm</td></tr>
+      <tr><td><span class="voice-tag">Jori</span></td><td>Sarah Mitchell</td><td>Podcast: Faith and Truth, episodes 1–6</td><td class="num">6</td><td class="num">≈ 182 Hz</td><td class="num">122 wpm</td></tr>
+      <tr><td><span class="voice-tag">Koda</span></td><td>Maya Brooks (guest)</td><td>Christian Living episode 5, with David Lee</td><td class="num">1</td><td class="num">≈ 136 Hz</td><td class="num">120 wpm (whole episode)</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section aria-labelledby="voices">
+  <h2 id="voices">Voice by voice</h2>
+  <div class="voices">
+
+  <article class="voice" aria-labelledby="v-charon">
+    <div class="voice-head">
+      <h3 id="v-charon"><span class="voice-tag">Charon</span> Lowest, slow and reverent</h3>
+      <div class="meters"><span class="meter">F0 <b>92–104 Hz</b></span><span class="meter">prayer <b>106</b> wpm</span><span class="meter">meditation <b>115</b> wpm</span></div>
+    </div>
+    <div class="pitchbar" aria-label="Charon pitch on an 80 to 200 Hz scale"><span style="left:10%"></span><span style="left:20%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>The lowest of the four voices, and the voice for every daily prayer. Its styles move from a slow, reverent scripture reading into a warm, gentle prayer. The prayers play over <code>ambience_soft_pad</code>.</p>
+    <div class="styles"><code>calm, reverent, reading scripture aloud slowly</code><code>warm, gentle, prayerful, speaking slowly</code></div>
+    <div class="chars">
+      <div class="char">
+        <div class="who"><b>Prayer reader</b><span class="role">Daily prayer · Genesis 2:18, Psalm 4:8</span></div>
+        <blockquote>I will both lay me down in peace, and sleep: for thou, Lord, only makest me dwell in safety. Psalm four, verse eight…</blockquote>
+        <audio controls preload="none" src="audio/charon_prayer.mp3"></audio>
+        <span class="src">daily_prayer/psalm_4_8/psalm_4_8.mp3 · 0:00–0:27 (whole prayer)</span>
+      </div>
+      <div class="char">
+        <div class="who"><b>Meditation guide</b><span class="role">Meditation · Laying Down the Day</span></div>
+        <blockquote>Find a comfortable position… and let your body settle into rest. Close your eyes, if you haven't already…</blockquote>
+        <audio controls preload="none" src="audio/charon_meditation.mp3"></audio>
+        <span class="src">meditation/laying_down_the_day/laying_down_the_day.mp3 · 0:00–0:23</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="voice" aria-labelledby="v-olin">
+    <div class="voice-head">
+      <h3 id="v-olin"><span class="voice-tag">Olin</span> The main host: low and steady</h3>
+      <div class="meters"><span class="meter">F0 <b>99–123 Hz</b></span><span class="meter">podcast <b>116</b> wpm</span><span class="meter">meditation <b>93</b> wpm</span></div>
+    </div>
+    <div class="pitchbar" aria-label="Olin pitch on an 80 to 200 Hz scale"><span style="left:16%"></span><span style="left:36%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>The most used voice: 10 files, about 55 minutes. In the podcast it is David Lee, in a calm teaching tone. In meditation the same voice is styled very soft and slow. That is the slowest content in the folder at 93 wpm, and its measured pitch sits higher than in the podcast.</p>
+    <div class="styles"><code>thoughtful, calm teaching tone</code><code>tender, quiet storytelling</code><code>soft, slow, soothing guided meditation voice</code><code>tender, intimate, very soft, speaking slowly</code></div>
+    <div class="chars">
+      <div class="char">
+        <div class="who"><b>David Lee</b><span class="role">Host · Christian Living, episodes 1–6</span></div>
+        <blockquote>Hello again, and welcome back to the SleepFit podcast series. This is Christian Living, episode three: A Gentle Answer. I'm David Lee…</blockquote>
+        <audio controls preload="none" src="audio/olin_david.mp3"></audio>
+        <span class="src">podcast/christian_living_ep3/christian_living_ep3.mp3 · 0:00–0:23</span>
+      </div>
+      <div class="char">
+        <div class="who"><b>Meditation guide</b><span class="role">Meditation · A Quiet Mind, Breath Prayer, Evening Gratitude, Still Waters</span></div>
+        <blockquote>Let your eyes close gently. Feel the weight of your body, where it rests. Your shoulders can soften now…</blockquote>
+        <audio controls preload="none" src="audio/olin_meditation.mp3"></audio>
+        <span class="src">meditation/still_waters/still_waters.mp3 · 0:00–0:21</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="voice" aria-labelledby="v-jori">
+    <div class="voice-head">
+      <h3 id="v-jori"><span class="voice-tag">Jori</span> Highest and quickest</h3>
+      <div class="meters"><span class="meter">F0 <b>≈ 182 Hz</b></span><span class="meter">podcast <b>122</b> wpm</span></div>
+    </div>
+    <div class="pitchbar" aria-label="Jori pitch on an 80 to 200 Hz scale"><span style="left:85%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>The voice of Faith and Truth: 6 episodes, about 42 minutes. The highest pitch and the quickest pace of the four voices, which keeps Sarah Mitchell clearly apart from David Lee.</p>
+    <div class="styles"><code>thoughtful, calm teaching tone</code><code>tender, intimate, very soft, speaking slowly</code><code>reverent, slow, reading scripture aloud</code></div>
+    <div class="chars">
+      <div class="char">
+        <div class="who"><b>Sarah Mitchell</b><span class="role">Host · Faith and Truth, episodes 1–6</span></div>
+        <blockquote>Welcome to our brand new SleepFit podcast series! This is the very first episode of Faith and Truth. I'm Sarah Mitchell…</blockquote>
+        <audio controls preload="none" src="audio/jori_sarah.mp3"></audio>
+        <span class="src">podcast/faith_and_truth_ep1/faith_and_truth_ep1.mp3 · 0:00–0:22</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="voice" aria-labelledby="v-koda">
+    <div class="voice-head">
+      <h3 id="v-koda"><span class="voice-tag">Koda</span> The guest, mid-range pitch</h3>
+      <div class="meters"><span class="meter">F0 <b>≈ 136 Hz</b></span><span class="meter">18 turns</span></div>
+    </div>
+    <div class="pitchbar" aria-label="Koda pitch on an 80 to 200 Hz scale"><span style="left:47%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>Used in one episode so far, the first with two speakers. Its pitch sits between Olin and Jori, so it stays distinct next to David Lee. The styles are conversational, with a smile in the voice.</p>
+    <div class="styles"><code>warm, relaxed, unhurried, a soft smile in the voice</code><code>calm, thoughtful, conversational, slow</code><code>soft, gentle, reflective, slow</code></div>
+    <div class="chars">
+      <div class="char">
+        <div class="who"><b>Maya Brooks</b><span class="role">Guest · Christian Living, episode 5</span></div>
+        <blockquote>Thanks, David. It's good to be here. Hello, everyone. I'm Maya Brooks. And I promise to keep my voice nice and sleepy.</blockquote>
+        <audio controls preload="none" src="audio/koda_maya.mp3"></audio>
+        <span class="src">podcast/christian_living_ep5/christian_living_ep5.mp3 · 0:22–0:31</span>
+      </div>
+    </div>
+  </article>
+  </div>
+</section>
+
+<section aria-labelledby="duet">
+  <h2 id="duet">Two voices in one episode</h2>
+  <div class="duet">
+    <p>Christian Living episode 5 is the first episode with two speakers, David Lee (Olin) and Maya Brooks (Koda), rendered in one request with Gemini's multi-speaker mode. This clip covers the guest introduction and the first few exchanges.</p>
+    <audio controls preload="none" src="audio/duet_david_maya.mp3"></audio>
+    <span class="src">podcast/christian_living_ep5/christian_living_ep5.mp3 · 0:15–0:52</span>
+  </div>
+</section>
+
+<section aria-labelledby="review">
+  <h2 id="review">Worth a second look</h2>
+  <div class="notes">
+    <div class="note"><b>Meditations use two different voices.</b><p>Four meditations use Olin, while Laying Down the Day uses Charon and runs faster (115 vs 93 wpm). If the meditations belong to one collection, one voice would keep them consistent.</p></div>
+    <div class="note"><b>Koda is lower than Jori.</b><p>Maya Brooks is introduced as a woman ("past her bedtime"), but Koda measures about 136 Hz, well below Jori. Listen to Maya's sample to confirm the voice suits the character.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="method">
+  <h2 id="method">How this was measured</h2>
+  <div class="method">
+    <p><b>Pitch (F0):</b> the median fundamental frequency over voiced 40 ms frames, by autocorrelation on the sample clips on this page. Lower numbers mean a deeper voice. It is an estimate; listening is the final check.</p>
+    <p><b>Pace:</b> words in the JSON divided by the length of the whole MP3, pauses included. A lower number means slower reading or more pausing.</p>
+    <p><b>Voice descriptions:</b> based on these measurements and the <code>style</code> fields in the JSON, not on listening.</p>
+    <p>Scanned on 18 November 2026 across 19 episode JSON files in <code>sleepfit/</code> (podcast, meditation, daily_prayer). The <code>mindfit/</code> folder is out of scope.</p>
+  </div>
+</section>
+</main>
+</body>
+</html>
