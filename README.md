@@ -9,6 +9,7 @@ gemini-tts/
 ├── tts_episode.py          # main script: JSON -> MP3
 ├── whisper_timings.py      # measures start_seconds from the audio with local Whisper (no API calls)
 ├── to_m4a.py               # MP3 -> M4A, the only format SleepFit accepts
+├── push_episode.py         # upload m4a + transcript timings to a SleepFit admin API episode
 ├── podcast/
 │   └── <episode>/
 │       ├── <episode>.json
