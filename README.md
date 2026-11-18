@@ -82,7 +82,7 @@ python3 tts_episode.py daily_prayer/genesis_2_18/genesis_2_18.json
 ### What the script does
 
 1. Groups the `parts` into chunks: 12 parts per request by default (`TTS_PARTS_PER_REQUEST`), or 1 part per request with `TTS_PER_PART=1`.
-2. Calls the Gemini API (REST `v1beta`) once per chunk and saves each result in `<name>_parts/n<N>/`, where N is the parts per request (e.g. `n12/`, `n1/`). Changing N starts a new folder, so takes made with different settings are never mixed.
+2. Calls the Gemini API (REST `v1beta`: `generateContent` for one voice, `interactions` for a two-person episode, since only that endpoint accepts two speakers) once per chunk and saves each result in `<name>_parts/n<N>/`, where N is the parts per request (e.g. `n12/`, `n1/`). Changing N starts a new folder, so takes made with different settings are never mixed.
 3. Joins the chunks into `<name>.mp3`.
 4. If the JSON has `ambience`, also writes `<name>_ambience.mp3` with the background mixed in.
 5. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the exact start time of each part. In the default mode, use `whisper_timings.py` instead (see below).
@@ -115,6 +115,8 @@ To turn a plain-text script into this JSON (or to have an AI assistant do it), f
 |---|---|---|
 | `title` | no | A label for your own reference. The script does not use it |
 | `voice` | yes | Voice name, e.g. `Charon`, `Kore`, `Aoede`, `Enzo`. Listen to the voices in AI Studio before choosing |
+| `voices` | no | Two-person episode: `{"David": "Olin", "Maya": "Kore"}` (at most 2) instead of `voice`; then every part needs a `speaker` that is one of these names. Spoken words only in `text`, no name prefix |
+| `parts[].speaker` | with `voices` | Who speaks this part |
 | `parts[].style` | yes | How the whole part is delivered (emotion, pace, volume). Keep it short and in English |
 | `parts[].text` | yes | What is spoken, **word for word**. Tags can be added inline |
 | `ambience` | no | Adds a version with background audio. See the fields below |

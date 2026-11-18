@@ -31,6 +31,7 @@ Give the assistant this file, the plain text, and the host's voice name. Ask for
 ```
 
 - Use the same `voice` for every episode of a series. Ask if you don't know which voice to use.
+- **Two people (host and guest):** replace `voice` with `"voices": {"David": "Olin", "Maya": "Koda"}` (at most 2) and give every part a `"speaker"` from those names. A part is one person's turn, never both. Don't write `David:` in `text`; the name is only in `speaker`.
 - Add `"ambience": {"file": "ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6}` only when the user asks for a version with background audio. In-app podcasts are voice only.
 - Output valid JSON: straight double quotes around keys and values; typographic quotes and apostrophes inside the text are fine.
 

@@ -1,4 +1,4 @@
-# Render a styled episode JSON ({voice, parts:[{style,text}], ambience?}) to MP3 with Gemini TTS.
+# Render a styled episode JSON ({voice | voices, parts:[{speaker?,style,text}], ambience?}) to MP3 with Gemini TTS.
 # Usage: python3 tts_episode.py podcast/<episode>/<episode>.json  (settings from the shell or .env next to this script)
 # Outputs land next to the JSON: <name>.mp3 (voice only) and, if "ambience" is set, <name>_ambience.mp3.
 # Calls the v1beta REST endpoint directly: the SDK rejected speech_metadata/speechConfig.
@@ -29,6 +29,7 @@ load_dotenv(Path(__file__).resolve().parent / ".env")
 MODEL = os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
 MAX_RETRIES = 6  # backoff 15s, 30s, 60s ... capped at 5 min
 URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+INTERACTIONS_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
 # Parts per API call. 12 (~3 min of audio) keeps an episode at 2-3 requests, which matters on a
 # 10-requests-per-day quota, while a bad take stays cheap to redo. TTS_PER_PART=1 is shorthand for 1:
 # every part then gets an exact start time, at the cost of one request per part.
@@ -44,24 +45,56 @@ src = Path(sys.argv[1]).resolve()
 ep = json.loads(src.read_text(encoding="utf-8"))
 out = src.with_suffix(".mp3")
 
+# "voices": {"David": "Olin", "Maya": "Koda"} plus a "speaker" per part makes a two-person episode.
+# Checked before any request so a typo never costs quota.
+VOICES = ep.get("voices")
+if VOICES:
+    if len(VOICES) > 2:
+        sys.exit("voices: Gemini allows at most 2 speakers per request")
+    bad = [i + 1 for i, p in enumerate(ep["parts"]) if p.get("speaker") not in VOICES]
+    if bad:
+        sys.exit(f"parts {bad}: speaker must be one of {list(VOICES)}")
+elif "voice" not in ep:
+    sys.exit('set "voice", or "voices" with a "speaker" on every part')
 
-def synth(parts):
-    body = {
+
+def request(parts):
+    # Two-person episodes go through the Interactions API: generateContent rejects speech_config.speakers.
+    # Single-voice episodes keep the generateContent call every existing episode was made with.
+    if VOICES:
+        return INTERACTIONS_URL, {
+            "model": MODEL,
+            "input": [{"type": "user_input", "content": [
+                {"type": "text", "text": p["text"],
+                 "annotations": [{"type": "speech_metadata", "speaker": p["speaker"], "style": p["style"]}]}
+                for p in parts]}],
+            "response_format": {"type": "audio"},
+            "generation_config": {"speech_config": {"speakers": [
+                {"speaker": name, "voice": v} for name, v in VOICES.items()]}},
+        }
+    return URL, {
         "contents": [{"role": "user", "parts": [
             {"text": p["text"], "speech_metadata": {"style": p["style"]}} for p in parts]}],
-        "generationConfig": {
-            "responseModalities": ["AUDIO"],
-            "speechConfig": {"voiceConfig": {"voice": ep["voice"]}},
-        },
+        "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"voice": ep["voice"]}}},
     }
+
+
+def audio_of(res):
+    if VOICES:
+        return next(c["data"] for s in res["steps"] for c in s.get("content", []) if c.get("type") == "audio")
+    return res["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+
+
+def synth(parts):
+    url, body = request(parts)
     data = json.dumps(body).encode()
     for attempt in range(MAX_RETRIES + 1):
-        req = urllib.request.Request(URL, data=data, method="POST", headers={
+        req = urllib.request.Request(url, data=data, method="POST", headers={
             "x-goog-api-key": key, "Content-Type": "application/json"})
         try:
             with urllib.request.urlopen(req, timeout=600) as r:
                 res = json.load(r)
-            return base64.b64decode(res["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+            return base64.b64decode(audio_of(res))
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")
             # Overload and rate limits are transient; anything else is a real error.
