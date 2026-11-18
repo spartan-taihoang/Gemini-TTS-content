@@ -16,9 +16,10 @@ gemini-tts/
 │       └── <episode>_parts/         # per-chunk audio cache
 └── daily_prayer/
     ├── ambience_soft_pad.flac       # self-made background pad, no third-party license, loops seamlessly every 60 s
-    ├── <name>.json
-    ├── <name>.mp3
-    └── <name>_ambience.mp3          # version with background (when the JSON has "ambience")
+    └── <name>/
+        ├── <name>.json              # voice "Charon", "ambience" file "../ambience_soft_pad.flac"
+        ├── <name>.mp3
+        └── <name>_ambience.mp3      # version with background (when the JSON has "ambience")
 ```
 
 Every output file is written next to its JSON file.
@@ -67,7 +68,7 @@ TTS_PARTS_PER_REQUEST=12
 
 ```bash
 python3 tts_episode.py podcast/salvation_and_grace_ep1/salvation_and_grace_ep1.json
-python3 tts_episode.py daily_prayer/genesis_2_18.json
+python3 tts_episode.py daily_prayer/genesis_2_18/genesis_2_18.json
 ```
 
 | Environment variable | Default | Meaning |
@@ -99,7 +100,7 @@ To turn a plain-text script into this JSON (or to have an AI assistant do it), f
 {
   "title": "Faith and Truth - Episode 2",
   "voice": "Aoede",
-  "ambience": {"file": "ambience_soft_pad.flac", "volume_db": -12, "lead_in": 4, "tail": 6},
+  "ambience": {"file": "ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
   "parts": [
     {"style": "warm, gentle late-night welcome, speaking slowly",
      "text": "Welcome to Faith and Truth. <short pause> I'm Sarah Mitchell. <long pause>"},
@@ -120,7 +121,7 @@ To turn a plain-text script into this JSON (or to have an AI assistant do it), f
 `ambience` fields:
 
 - `file`: path to the background audio, relative to the JSON's folder.
-- `volume_db`: background level. -12 is a good default; use -9 for louder or -15 for quieter.
+- `volume_db`: how much to turn the pad down, in dB. -5 is the default (pad about 5 dB under the speaking voice); use -3 for louder or -8 for quieter. -12 (the old default) was too quiet to hear under the voice.
 - `lead_in`: seconds of background before the voice starts.
 - `tail`: seconds of background after the voice ends, fading out.
 

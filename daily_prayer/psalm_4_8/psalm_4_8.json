@@ -1,7 +1,7 @@
 {
   "title": "Daily prayer - Psalm 4:8",
-  "voice": "Enzo",
-  "ambience": {"file": "../genesis_2_18/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
+  "voice": "Charon",
+  "ambience": {"file": "../ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
   "parts": [
     {"style": "calm, reverent, reading scripture aloud slowly",
      "text": "I will both lay me down in peace, and sleep: <short pause> for thou, Lord, only makest me dwell in safety. <short pause> Psalm four, verse eight. <long pause>"},

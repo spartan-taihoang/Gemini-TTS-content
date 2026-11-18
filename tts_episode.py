@@ -135,7 +135,7 @@ if amb:
     fmt = "aformat=sample_rates=44100:channel_layouts=stereo"
     graph = (
         f"[0:a]{fmt},adelay={int(lead * 1000)}:all=1,apad=whole_dur={total}[v];"
-        f"[1:a]{fmt},volume={amb.get('volume_db', -20)}dB,atrim=duration={total},"
+        f"[1:a]{fmt},volume={amb.get('volume_db', -5)}dB,atrim=duration={total},"
         f"afade=t=in:d={min(lead, 3)},afade=t=out:st={total - fade_out}:d={fade_out}[bg];"
         "[v][bg]amix=inputs=2:duration=longest:normalize=0[m]"
     )
