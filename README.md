@@ -10,18 +10,27 @@ gemini-tts/
 ├── whisper_timings.py      # measures start_seconds from the audio with local Whisper (no API calls)
 ├── to_m4a.py               # MP3 -> M4A, the only format SleepFit accepts
 ├── push_episode.py         # upload m4a + transcript timings to a SleepFit admin API episode
-├── podcast/
-│   └── <episode>/
-│       ├── <episode>.json
-│       ├── <episode>.mp3            # generated
-│       ├── <episode>_timings.csv    # start_seconds per line (TTS_PER_PART=1 or whisper_timings.py)
-│       └── <episode>_parts/         # per-chunk audio cache
-└── daily_prayer/
-    ├── ambience_soft_pad.flac       # self-made background pad, no third-party license, loops seamlessly every 60 s
-    └── <name>/
-        ├── <name>.json              # voice "Charon", "ambience" file "../ambience_soft_pad.flac"
-        ├── <name>.mp3
-        └── <name>_ambience.mp3      # version with background (when the JSON has "ambience")
+└── sleepfit/
+    ├── shared_ambience/             # seamless background loops at -19 dB RMS; the .flac loops made here are self-made (no third-party license)
+    │   ├── ambience_soft_pad.flac       # warm pad (daily prayers)
+    │   ├── ambience_piano_rain.flac     # sparse soft piano + rain (meditation)
+    │   ├── ambience_piano.flac          # the same piano alone
+    │   ├── ambience_rain.flac           # the same rain alone
+    │   ├── make_ambience.py             # regenerates the three piano/rain loops (stdlib + ffmpeg)
+    │   ├── harmony_sound.flac           # meditation pad, made from harmony_sound.mp4 by make_seamless.py
+    │   └── make_seamless.py             # any recording -> seamless loop at -19 dB RMS (crossfades the end into the start)
+    ├── podcast/
+    │   └── <episode>/
+    │       ├── <episode>.json
+    │       ├── <episode>.mp3            # generated
+    │       ├── <episode>_timings.csv    # start_seconds per line (TTS_PER_PART=1 or whisper_timings.py)
+    │       └── <episode>_parts/         # per-chunk audio cache
+    ├── meditation/<name>/               # same files as a podcast episode
+    └── daily_prayer/
+        └── <name>/
+            ├── <name>.json              # voice "Charon", "ambience" file "../../shared_ambience/ambience_soft_pad.flac"
+            ├── <name>.mp3
+            └── <name>_ambience.mp3      # version with background (when the JSON has "ambience")
 ```
 
 Every output file is written next to its JSON file.
@@ -102,7 +111,7 @@ To turn a plain-text script into this JSON (or to have an AI assistant do it), f
 {
   "title": "Faith and Truth - Episode 2",
   "voice": "Aoede",
-  "ambience": {"file": "ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
+  "ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
   "parts": [
     {"style": "warm, gentle late-night welcome, speaking slowly",
      "text": "Welcome to Faith and Truth. <short pause> I'm Sarah Mitchell. <long pause>"},

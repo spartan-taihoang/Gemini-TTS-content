@@ -32,7 +32,8 @@ Give the assistant this file, the plain text, and the host's voice name. Ask for
 
 - Use the same `voice` for every episode of a series. Ask if you don't know which voice to use.
 - **Two people (host and guest):** replace `voice` with `"voices": {"David": "Olin", "Maya": "Koda"}` (at most 2) and give every part a `"speaker"` from those names. A part is one person's turn, never both. Don't write `David:` in `text`; the name is only in `speaker`.
-- Add `"ambience": {"file": "ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6}` only when the user asks for a version with background audio. In-app podcasts are voice only.
+- Add `"ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6}` only when the user asks for a version with background audio. In-app podcasts are voice only.
+- **Meditations** use `"volume_db": -12` (file `../../shared_ambience/harmony_sound.flac` or another loop there). The meditation voice speaks softly, around -25 dB against about -20 dB for a prayer, so -5 puts the background as loud as the voice; -12 keeps it about 6–7 dB under.
 - Output valid JSON: straight double quotes around keys and values; typographic quotes and apostrophes inside the text are fine.
 
 ## 3. Splitting into parts
@@ -97,7 +98,7 @@ Rules:
 
 ## 7. Daily prayers
 
-A daily prayer has a verse, a reference and a prayer. Every daily prayer uses `"voice": "Charon"` and `"ambience": {"file": "../ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6}` (the JSON sits in `daily_prayer/<name>/`). Use two parts:
+A daily prayer has a verse, a reference and a prayer. Every daily prayer uses `"voice": "Charon"` and `"ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6}` (the JSON sits in `daily_prayer/<name>/`). Use two parts:
 
 ```json
 {"style": "calm, reverent, reading scripture aloud slowly",

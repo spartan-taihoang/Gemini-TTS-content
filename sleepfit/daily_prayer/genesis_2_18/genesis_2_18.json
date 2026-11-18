@@ -1,7 +1,7 @@
 {
   "title": "Daily prayer - Genesis 2:18",
   "voice": "Charon",
-  "ambience": {"file": "../ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
+  "ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
   "parts": [
     {"style": "calm, reverent, reading scripture aloud slowly",
      "text": "And the Lord God said, <short pause> It is not good that the man should be alone; <short pause> I will make him an help meet for him. <short pause> Genesis, chapter two, verse eighteen. <long pause>"},
