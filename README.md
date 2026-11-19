@@ -10,6 +10,7 @@ gemini-tts/
 ├── whisper_timings.py      # measures start_seconds from the audio with local Whisper (no API calls)
 ├── to_m4a.py               # MP3 -> M4A, the only format SleepFit accepts
 ├── push_episode.py         # upload m4a + transcript timings to a SleepFit admin API episode
+├── push_track.py           # upload a meditation/sound m4a (ambience version if present) to a SleepFit audio track
 └── sleepfit/
     ├── shared_ambience/             # seamless background loops at -19 dB RMS; the .flac loops made here are self-made (no third-party license)
     │   ├── ambience_soft_pad.flac       # warm pad (daily prayers)
@@ -78,9 +79,11 @@ TTS_PARTS_PER_REQUEST=12
 ## Running
 
 ```bash
-python3 tts_episode.py podcast/salvation_and_grace_ep1/salvation_and_grace_ep1.json
-python3 tts_episode.py daily_prayer/genesis_2_18/genesis_2_18.json
+.venv/bin/python tts_episode.py sleepfit/podcast/faith_and_truth_ep6/faith_and_truth_ep6.json
+.venv/bin/python tts_episode.py sleepfit/daily_prayer/genesis_2_18/genesis_2_18.json
 ```
+
+Run it with a Python that has faster-whisper (`uv run python tts_episode.py ...`, which uses `pyproject.toml`, or the `.venv` from the top of `whisper_timings.py`), so every new chunk is checked for spoken tags (step 3 below). Plain `python3` still works, but prints a warning and skips that check.
 
 | Environment variable | Default | Meaning |
 |---|---|---|
@@ -93,9 +96,10 @@ python3 tts_episode.py daily_prayer/genesis_2_18/genesis_2_18.json
 
 1. Groups the `parts` into chunks: 12 parts per request by default (`TTS_PARTS_PER_REQUEST`), or 1 part per request with `TTS_PER_PART=1`.
 2. Calls the Gemini API (REST `v1beta`: `generateContent` for one voice, `interactions` for a two-person episode, since only that endpoint accepts two speakers) once per chunk and saves each result in `<name>_parts/n<N>/`, where N is the parts per request (e.g. `n12/`, `n1/`). Changing N starts a new folder, so takes made with different settings are never mixed.
-3. Joins the chunks into `<name>.mp3`.
-4. If the JSON has `ambience`, also writes `<name>_ambience.mp3` with the background mixed in.
-5. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the exact start time of each part. In the default mode, use `whisper_timings.py` instead (see below).
+3. Checks each new chunk with Whisper (locally, no API call). Gemini sometimes reads a tag aloud ("long pause") instead of performing it: far more often with Jori than with Olin, and a take that starts doing it tends to repeat it. If a tag word (`pause`, `chuckle`, `exhales`, …) is heard more often than the script itself contains it, that chunk is generated again, up to 3 takes. After 3 failed takes it keeps the last one and prints a WARNING naming the chunk.
+4. Joins the chunks into `<name>.mp3`.
+5. If the JSON has `ambience`, also writes `<name>_ambience.mp3` with the background mixed in.
+6. With `TTS_PER_PART=1`, writes `<name>_timings.csv` with the exact start time of each part. In the default mode, use `whisper_timings.py` instead (see below).
 
 On HTTP 429, 500 or 503 (overload or quota), the script retries up to 6 times. The wait starts at 15 seconds, doubles after each failure, and is capped at 5 minutes.
 
@@ -114,7 +118,7 @@ To turn a plain-text script into this JSON (or to have an AI assistant do it), f
   "ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
   "parts": [
     {"style": "warm, gentle late-night welcome, speaking slowly",
-     "text": "Welcome to Faith and Truth. <short pause> I'm Sarah Mitchell. <long pause>"},
+     "text": "Welcome to Faith and Truth. <short pause> I'm Sarah Mitchell."},
     {"style": "reverent, slow, reading scripture aloud",
      "text": "Now faith is the substance of things hoped for, the evidence of things not seen. <long pause>"}
   ]
@@ -149,7 +153,7 @@ To turn a plain-text script into this JSON (or to have an AI assistant do it), f
 
 Tags use **angle brackets**, not square brackets, and are always written in English:
 
-- Pauses: `<short pause>`, `<long pause>`
+- Pauses: `<short pause>`, and `<long pause>` only at the end of a scripture part (Gemini sometimes reads it aloud; see SCRIPT_GUIDE.md)
 - Breath and emotion: `<breath>`, `<exhales>`, `<sigh>`, `<chuckle>`, `<laugh>`, `<whispers>`, `<yawn>`, `<gasp>`, …
 
 For bedtime content, use mostly the pause tags, with an occasional `<exhales>`, and keep the other tags to a minimum.

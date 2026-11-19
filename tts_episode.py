@@ -103,7 +103,7 @@ def synth(parts):
             wait = min(15 * 2 ** attempt, 300)
             print(f"  HTTP {e.code}, retry {attempt + 1}/{MAX_RETRIES} in {wait}s", flush=True)
             time.sleep(wait)
-        except (urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:  # resets and drops are transient too
             if attempt == MAX_RETRIES:
                 sys.exit(f"network error: {e}")
             time.sleep(15)
@@ -121,6 +121,36 @@ def save_wav(path, audio):
         w.writeframes(audio)
 
 
+# Gemini sometimes speaks a tag ("long pause") instead of performing it, far more often with Jori than Olin,
+# and once a take starts doing it, it repeats. Each new chunk is transcribed locally with Whisper and redone if a
+# tag word shows up more often than the script itself says it. Needs faster-whisper (setup in whisper_timings.py).
+TAG_TAKES = 3
+_whisper = None
+
+
+def spoken_tags(wav, parts):
+    global _whisper
+    if _whisper is None:
+        try:
+            from faster_whisper import WhisperModel
+        except ImportError:
+            print("  WARNING faster-whisper not installed: chunks are NOT checked for spoken tags "
+                  "(run with the .venv from whisper_timings.py)", flush=True)
+            _whisper = False
+            return ""
+        _whisper = WhisperModel(os.environ.get("WHISPER_MODEL", "base.en"), device="cpu", compute_type="int8")
+    if not _whisper:
+        return ""
+    segments, _ = _whisper.transcribe(str(wav), language="en", vad_filter=False)
+    heard = re.findall(r"[a-z]+", " ".join(s.text for s in segments).lower())
+    script = " ".join(p["text"] for p in parts)
+    said = re.findall(r"[a-z]+", re.sub(r"<[^>]+>", " ", script).lower())
+    # last word of each tag: "pause", "chuckle", "exhales", ...
+    keys = {re.findall(r"[a-z]+", t.lower())[-1] for t in re.findall(r"<([^>]+)>", script)}
+    extra = {k: heard.count(k) - said.count(k) for k in keys}
+    return ", ".join(f'"{k}" x{c}' for k, c in sorted(extra.items()) if c > 0)
+
+
 def wav_seconds(path):
     with wave.open(str(path)) as w:
         return w.getnframes() / w.getframerate()
@@ -135,7 +165,15 @@ for n, i in enumerate(range(0, len(ep["parts"]), PARTS_PER_REQUEST)):
     files.append(wav)
     if wav.exists():  # delete a chunk file to regenerate only that chunk
         continue
-    save_wav(wav, synth(ep["parts"][i:i + PARTS_PER_REQUEST]))
+    chunk = ep["parts"][i:i + PARTS_PER_REQUEST]
+    for take in range(1, TAG_TAKES + 1):
+        save_wav(wav, synth(chunk))
+        spoken = spoken_tags(wav, chunk)
+        if not spoken:
+            break
+        print(f"  {wav.name} take {take}: tag read aloud ({spoken})", flush=True)
+    else:
+        print(f"  WARNING {wav.name}: still reads a tag after {TAG_TAKES} takes; listen, then delete it to retry")
     print("ok", wav)
 
 # With one part per request every part start is exact, so write them out; otherwise use whisper_timings.py.

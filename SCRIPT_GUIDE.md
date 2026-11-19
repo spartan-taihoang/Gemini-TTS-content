@@ -75,14 +75,15 @@ Tags use **angle brackets** and stay in English. Common ones:
 | Tag | Use |
 |---|---|
 | `<short pause>` | Between items of a list or parallel lines, before a key phrase, after a question before its answer |
-| `<long pause>` | At the end of almost every part; after a scripture quotation; after "Let's pray."; before the turn to the listener |
+| `<long pause>` | **Only** at the end of a scripture part. Gemini sometimes reads this tag aloud ("long pause"), far more with Jori, so it is kept to where a long silence really matters |
 | `<exhales>` | At most once per episode, at a moment of release ("…trying to be good enough… `<exhales>` here's rest.") |
 | `<breath>` | Rarely, before a long scripture verse |
 | `<chuckle>` | Once in the welcome, as a warm greeting ("Welcome to Salvation and Grace. `<chuckle>` I'm Jason Greene."). Optionally once more at a light moment: an everyday illustration or a gentle aside about ourselves ("We often want Scripture to be a floodlight, don't we? `<chuckle>`") |
 
 Rules:
 
-- End every part with `<long pause>`, except the final goodnight and parts that end in a question answered right away (use `<short pause>` there).
+- Don't end a part with a tag, except a scripture part, which ends with `<long pause>`. The end of a part and a change of style already make a pause: removing these tags in Faith and Truth ep6 gave as much silence as before (slightly more), and no tag was read aloud.
+- Inside a part, use `<short pause>`, never `<long pause>`. "Let's pray." is followed by `<short pause>`.
 - Put `<short pause>` after a line, not inside a phrase. Never more than one tag in a row.
 - Leave existing `...` in place: they already make a natural pause. Add `<short pause>` after `...` only where the line needs a clearer break.
 - `<chuckle>`: put one in the welcome, right after the show name or the host's name, never in the middle of the opening question. Use the welcome style with a smile: `warm, gentle late-night welcome, a soft smile in the voice, speaking slowly`. A second one, if any, goes in a teaching or illustration part with a smiling style (e.g. `gentle, a soft smile in the voice, illustrating`). Never in scripture, prayer, the goodnight, or near a hard truth (sin, death, judgment), where it sounds dismissive.
@@ -104,7 +105,7 @@ A daily prayer has a verse, a reference and a prayer. Every daily prayer uses `"
 {"style": "calm, reverent, reading scripture aloud slowly",
  "text": "And the Lord God said, <short pause> It is not good that the man should be alone; <short pause> I will make him an help meet for him. <short pause> Genesis, chapter two, verse eighteen. <long pause>"},
 {"style": "warm, gentle, prayerful, speaking slowly",
- "text": "Lord God, <short pause> thank You for seeing our need for companionship and care. <short pause> Bless the people You have placed beside me, <short pause> and help me to love them as You love me. <long pause> Amen."}
+ "text": "Lord God, <short pause> thank You for seeing our need for companionship and care. <short pause> Bless the people You have placed beside me, <short pause> and help me to love them as You love me. <short pause> Amen."}
 ```
 
 ## 8. Worked example
@@ -113,7 +114,7 @@ Welcome (every episode starts like this):
 
 ```json
 {"style": "warm, gentle late-night welcome, a soft smile in the voice, speaking slowly",
- "text": "Welcome to Salvation and Grace. <chuckle> I'm Jason Greene. <short pause> Tonight, we're asking a quiet question... <short pause> is there any place too far for God's grace to reach? <long pause>"}
+ "text": "Welcome to Salvation and Grace. <chuckle> I'm Jason Greene. <short pause> Tonight, we're asking a quiet question... <short pause> is there any place too far for God's grace to reach?"}
 ```
 
 Teaching passage:
@@ -140,11 +141,11 @@ Output parts:
 
 ```json
 {"style": "thoughtful, calm teaching tone",
- "text": "Paul begins with two words... <short pause> but God. <long pause> Everything changes... with those two words. <long pause>"},
+ "text": "Paul begins with two words... <short pause> but God. <short pause> Everything changes... with those two words."},
 {"style": "quiet, awed emphasis",
- "text": "But God. <long pause> Into that darkness... into that spiritual death... God moves. <short pause>"},
+ "text": "But God. <short pause> Into that darkness... into that spiritual death... God moves."},
 {"style": "gentle, steady, building conviction",
- "text": "Not because we deserved it. <short pause> Not because we earned it. <short pause> Not because we were good enough, or tried hard enough. <short pause> He moved because of his great love for us. <long pause>"}
+ "text": "Not because we deserved it. <short pause> Not because we earned it. <short pause> Not because we were good enough, or tried hard enough. <short pause> He moved because of his great love for us."}
 ```
 
 In both, every word of the input is present, in order. Only tags were added.
@@ -154,7 +155,7 @@ In both, every word of the input is present, in order. Only tags were added.
 - [ ] Removing all `<...>` tags from the parts gives back the input text, word for word (apart from the allowed changes in rule 2).
 - [ ] No transcript line is split across two parts.
 - [ ] Every `style` comes from the table, or is a short phrase in the same tone.
-- [ ] Every part except the last ends with a pause tag; no two tags are next to each other.
+- [ ] `<long pause>` appears only at the end of scripture parts; other parts end with their last word, no tag; no two tags are next to each other.
 - [ ] One `<chuckle>` in the welcome and at most one more elsewhere; at most one `<exhales>`; each in a fitting part.
 - [ ] No ALL-CAPS word except at most one deliberate stress.
 - [ ] The JSON parses.
