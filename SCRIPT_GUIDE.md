@@ -16,7 +16,7 @@ Give the assistant this file, the plain text, and the host's voice name. Ask for
    - Use ALL CAPS on at most one word per episode for deliberate stress (e.g. `RICH in mercy`).
 3. **Never put directions in `text`.** Anything in `text` is spoken aloud. Words like `(softly)`, `[pause]` or `Say gently:` go in `style` or become a tag.
 4. **Truncated or garbled text: flag it, don't guess.** If a sentence looks cut off (`could be releademanded.`), leave it as is and list it under "Questions" after the JSON. Copying from a terminal often cuts long lines; ask for the text as a file.
-5. **Don't name the app.** Write "Welcome to <series name>", never "SleepFit" or "the SleepFit podcast series": the app's name is not final. Episodes made before this rule keep their wording.
+5. **Don't name the app.** Write "Welcome to {series}", never "SleepFit" or "the SleepFit podcast series": the app's name is not final. Episodes made before this rule keep their wording.
 6. **Never split one transcript line across two parts.** A part may hold several lines, but each line belongs to exactly one part.
 
 ## 2. Output format
@@ -79,7 +79,7 @@ Tags use **angle brackets** and stay in English. Common ones:
 | `<long pause>` | **Only** at the end of a scripture part. Gemini sometimes reads this tag aloud ("long pause"), far more with Jori, so it is kept to where a long silence really matters |
 | `<exhales>` | At most once per episode, at a moment of release ("…trying to be good enough… `<exhales>` here's rest.") |
 | `<breath>` | Rarely, before a long scripture verse |
-| `<chuckle>` | Once in the welcome, as a warm greeting ("Welcome to Salvation and Grace. `<chuckle>` I'm Jason Greene."). Optionally once more at a light moment: an everyday illustration or a gentle aside about ourselves ("We often want Scripture to be a floodlight, don't we? `<chuckle>`") |
+| `<chuckle>` | At most once in the welcome, as a warm greeting (see "Welcomes" below for where it goes). Optionally once more at a light moment: an everyday illustration or a gentle aside about ourselves ("We often want Scripture to be a floodlight, don't we? `<chuckle>`") |
 
 Rules:
 
@@ -87,7 +87,7 @@ Rules:
 - Inside a part, use `<short pause>`, never `<long pause>`. "Let's pray." is followed by `<short pause>`.
 - Put `<short pause>` after a line, not inside a phrase. Never more than one tag in a row.
 - Leave existing `...` in place: they already make a natural pause. Add `<short pause>` after `...` only where the line needs a clearer break.
-- `<chuckle>`: put one in the welcome, right after the show name or the host's name, never in the middle of the opening question. Use the welcome style with a smile: `warm, gentle late-night welcome, a soft smile in the voice, speaking slowly`. A second one, if any, goes in a teaching or illustration part with a smiling style (e.g. `gentle, a soft smile in the voice, illustrating`). Never in scripture, prayer, the goodnight, or near a hard truth (sin, death, judgment), where it sounds dismissive.
+- `<chuckle>`: at most one in the welcome, after a warm phrase ("...for the end of your day. `<chuckle>`"), never in the middle of the opening question. Don't always put it before the host's name, and leave it out of some welcomes entirely (see "Welcomes" below). Use the welcome style with a smile: `warm, gentle late-night welcome, a soft smile in the voice, speaking slowly`. A second one, if any, goes in a teaching or illustration part with a smiling style (e.g. `gentle, a soft smile in the voice, illustrating`). Never in scripture, prayer, the goodnight, or near a hard truth (sin, death, judgment), where it sounds dismissive.
 - Don't use the other laughing, sighing or crying tags (`<laugh>`, `<laughter>`, `<giggle>`, `<sigh>`, `<sob>`, `<gasp>`) in this content.
 - Roughly one tag per sentence at most. More tags make the reading choppy.
 
@@ -109,13 +109,32 @@ A daily prayer has a verse, a reference and a prayer. Every daily prayer uses `"
  "text": "Lord God, <short pause> thank You for seeing our need for companionship and care. <short pause> Bless the people You have placed beside me, <short pause> and help me to love them as You love me. <short pause> Amen."}
 ```
 
-## 8. Worked example
+## 8. Welcomes
 
-Welcome (every episode starts like this):
+Each episode opens with a short welcome: the series, the host, and the episode's title, then the opening question. **Vary it from episode to episode** so a series doesn't start the same way every night, and don't repeat "`<chuckle>` I'm {host}." Pick a different pattern for each episode; at most one `<chuckle>`, and no `<chuckle>` at all in some episodes. Don't name the app (rule 5).
+
+Patterns, as used in Comfort in Trials (host David Lee):
+
+| Use | Welcome |
+|---|---|
+| First episode of a series | Good evening, and welcome to {series}... `<short pause>` a brand new series, for the end of your day. `<chuckle>` My name is {host}, `<short pause>` and tonight is episode one: {title}. |
+| A later episode, no chuckle | Hello again. `<short pause>` It's {host}, and you're listening to {series}. `<short pause>` This episode is called... `<short pause>` {title}. |
+| A later episode | Welcome back to {series}. `<short pause>` {first name} here... `<short pause>` and I'm glad you found your way back for episode {n}. `<chuckle>` It's called {title}. |
+| A later episode, no chuckle | Good evening, friend. `<short pause>` You're listening to {series}, and I'm your host, {host}. `<short pause>` Episode {n} is called {title}. |
+| A later episode | Here we are again, at the quiet end of another day. `<chuckle>` This is {host}, with episode {n} of {series}... `<short pause>` {title}. |
+| Last episode | Welcome back to {series}. `<short pause>` It's {host}, and this is episode {n}: {title}. `<short pause>` And tonight is a bittersweet one... `<short pause>` because this is the final episode of our series. `<chuckle>` But don't worry... `<short pause>` this isn't goodbye forever. `<short pause>` I'm sure we'll meet again. |
+
+- Write episode numbers as words ("episode four").
+- If the next sentence also starts with "Tonight", don't start the title line with "Tonight's episode"; use "This episode".
+- In `transcript.txt`, keep each sentence of the welcome on its own line, as the episode files do.
+
+## 9. Worked example
+
+Welcome, with the opening question (pattern from section 8):
 
 ```json
 {"style": "warm, gentle late-night welcome, a soft smile in the voice, speaking slowly",
- "text": "Welcome to Salvation and Grace. <chuckle> I'm Jason Greene. <short pause> Tonight, we're asking a quiet question... <short pause> is there any place too far for God's grace to reach?"}
+ "text": "Good evening, and welcome to Salvation and Grace... <short pause> a brand new series, for the end of your day. <chuckle> My name is Sarah Mitchell, <short pause> and this is episode one. <short pause> Tonight, we're asking a quiet question... <short pause> is there any place too far for God's grace to reach?"}
 ```
 
 Teaching passage:
@@ -151,13 +170,13 @@ Output parts:
 
 In both, every word of the input is present, in order. Only tags were added.
 
-## 9. Self-check before answering
+## 10. Self-check before answering
 
 - [ ] Removing all `<...>` tags from the parts gives back the input text, word for word (apart from the allowed changes in rule 2).
 - [ ] No transcript line is split across two parts.
 - [ ] Every `style` comes from the table, or is a short phrase in the same tone.
 - [ ] `<long pause>` appears only at the end of scripture parts; other parts end with their last word, no tag; no two tags are next to each other.
-- [ ] One `<chuckle>` in the welcome and at most one more elsewhere; at most one `<exhales>`; each in a fitting part.
+- [ ] The welcome uses a different pattern from the episode before it (section 8); at most one `<chuckle>` in the welcome and at most one more elsewhere; at most one `<exhales>`; each in a fitting part.
 - [ ] No ALL-CAPS word except at most one deliberate stress.
 - [ ] The JSON parses.
 - [ ] Anything that looked truncated or garbled is listed under "Questions", not guessed.
