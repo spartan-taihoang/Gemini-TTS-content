@@ -1,0 +1,60 @@
+{
+ "title": "Pathway to Rest",
+ "voice": "Olin",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_piano.flac",
+  "volume_db": -14,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let this be a moment to rest. <short pause> Settle into where you are lying. <short pause> Let your body sink down into the surface beneath you. <short pause> Release the weight of your shoulders. <short pause> Let your jaw unclench. <short pause> Soften your eyes. <short pause> Take a slow breath in through your nose... <short pause> and let it go gently. <short pause> Again, breathe in slowly... <short pause> and release."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You have carried much today. <short pause> The weight of tasks, and thoughts, and worries. <short pause> You do not have to carry them into this night. <short pause> There is One who invites you to come just as you are. <short pause> Tired. Weary. Burdened. <short pause> He does not ask you to fix yourself first. <short pause> He does not require that you arrive strong, or sorted. <short pause> He simply says... come."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in that invitation now. <short pause> And as you breathe out... let your striving go."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Picture yourself standing at the edge of a worn path. <short pause> The way is gentle, sloping downward. <short pause> You begin to walk. <short pause> Each step is easy. <short pause> The ground is soft beneath your feet. <short pause> You are not rushing. <short pause> There is no hurry here."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The path leads you toward a place of rest. <short pause> Someone is waiting there for you. <short pause> He knows your name. <short pause> He knows what you have carried. <short pause> And he is not troubled by any of it. <short pause> Take another slow breath. <short pause> As you come closer, you hear his voice. <short pause> It is steady, and kind."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest. <short pause> Matthew, chapter eleven, verse twenty-eight. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "This is not a command. <short pause> It is an offer. <short pause> Jesus does not pull you toward himself. <short pause> He waits. <short pause> He invites. <short pause> And when you come... he gives rest. <short pause> Not as a reward for effort... but as a gift. <short pause> Let yourself receive it now."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in rest. <short pause> Breathe out the weight you have been holding."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You do not need to solve anything tonight. <short pause> You do not need to plan, or prepare. <short pause> You are held. <short pause> You are safe. <short pause> The One who spoke the stars into being is watching over you. <short pause> He does not sleep. <short pause> He does not grow weary. <short pause> And he has made space for you to rest."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your breathing slow even more. <short pause> Let your thoughts drift, like leaves on water. <short pause> You can let go now. <short pause> The night is a gift. <short pause> Sleep is a mercy. <short pause> And you are beloved."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May the Lord give you rest this night. <short pause> May his peace cover you like a blanket. <short pause> May you wake tomorrow, knowing you are his."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

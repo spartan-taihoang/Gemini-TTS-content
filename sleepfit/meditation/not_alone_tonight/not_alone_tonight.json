@@ -1,0 +1,60 @@
+{
+ "title": "Not Alone Tonight",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your shoulders drop, away from your ears. <short pause> Unclench your jaw. <short pause> Let the mattress hold you. <short pause> Breathe in slowly through your nose... and out through your mouth. <short pause> Again, slow and easy."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The room is quiet now. <short pause> The day has ended. <short pause> Maybe you feel the loneliness of the hour... the weight of being by yourself. <short pause> But here is the truth that meets you tonight. <short pause> You are not alone."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The Lord is with you in this room, at this moment. <short pause> He knows your name... and he knows this night. <short pause> He sees you. <short pause> Take another slow breath."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "In the darkness, his presence is real. <short pause> Not an idea, or a memory... but a living presence. <short pause> Closer than the air you breathe. <short pause> The God who made the stars is here with you now. <short pause> He does not hurry. <short pause> He does not turn away. <short pause> He stays. <short pause> Breathe in his nearness. <short pause> Breathe out the loneliness."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Scripture tells us something beautiful about this."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "And the Lord, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed. <short pause> Deuteronomy, chapter thirty-one, verse eight. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "He goes before you into tomorrow. <short pause> He is with you in this quiet now. <short pause> He will never leave you... never forsake you. <short pause> He will be with you. <short pause> Let those words settle over you like a blanket. <short pause> He will be with you. <short pause> Not might be. Not could be. <short pause> Will be."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "His promise does not change with your feelings. <short pause> It does not waver when you feel small, or forgotten. <short pause> He is here. <short pause> Breathe slowly again. <short pause> Feel the stillness around you. <short pause> In this stillness, God is present."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "He knows what this day held. <short pause> He knows the ache of the evening. <short pause> And he has not left you to carry it alone. <short pause> You can rest now. <short pause> You can let go of the striving, the worry, the need to be strong. <short pause> He is strong for you. <short pause> He holds this night. <short pause> He holds you."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "As you close your eyes, know this. <short pause> You are seen. You are known. You are loved. <short pause> And you are not alone tonight."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May the Lord bless you, and keep you. <short pause> May he make his face shine upon you, and give you peace. <short pause> Now... and through the night."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

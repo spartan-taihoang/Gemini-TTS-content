@@ -1,0 +1,52 @@
+{
+ "title": "Nurturing Positivity",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into stillness now. <short pause> Release the weight of your shoulders... soften your jaw... and let your hands rest. <short pause> Close your eyes, if you haven't already. <short pause> Take a slow breath in through your nose... and let it go. <short pause> Again, breathe in gently... <short pause> and release."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "As you lie here in the quiet, your mind may still be turning over the day. <short pause> There may be worries that linger... or thoughts that circle without resolution. <short pause> Tonight, you are invited to turn your attention elsewhere. <short pause> Not to ignore what is real... but to let your mind rest on what is good."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Think for a moment of something true you know. <short pause> Perhaps it is that you are held by a love that does not fail. <short pause> Or that morning will come, bringing mercy that is new."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Now bring to mind something honest... something pure. <short pause> It might be the face of someone who has shown you kindness. <short pause> It might be a moment of beauty you noticed today... however small."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Let your thoughts move gently toward what is lovely. <short pause> Not what is broken, or bitter... but what stirs gratitude in you. <short pause> What is of good report."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Scripture offers this counsel."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things. <short pause> Philippians, chapter four, verse eight. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "This is the work of peace. <short pause> To choose where your mind will dwell, as the day ends. <short pause> Breathe in slowly once more. <short pause> And as you breathe out... let go of what you cannot carry into sleep. <short pause> Rest now in what is true, and good."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May your sleep be sound... and may you wake to the kindness of God."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

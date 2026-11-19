@@ -1,0 +1,68 @@
+{
+ "title": "Tranquility from Within",
+ "voice": "Olin",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into this place of rest. <short pause> Feel the weight of your head against the pillow... your shoulders releasing downward. <short pause> There is nothing you need to do right now... except be here. <short pause> Let your breathing slow, and deepen. <short pause> Breathe in slowly through your nose. <short pause> Breathe out gently through your mouth. <short pause> With each breath, let your body soften a little more."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we turn our hearts toward a peace that comes from beyond ourselves. <short pause> The world offers many things it calls peace. <short pause> A quiet house. A finished task. A resolved conflict. <short pause> These are good things... but they are fragile things. <short pause> They can be disturbed by a single phone call, a sleepless night, a change in circumstance. <short pause> But there is another peace... a peace that runs deeper than any trouble."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in that truth. <short pause> Breathe out anything that feels uncertain, or unsettled."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "This peace is not something you create, or maintain through your own effort. <short pause> It is a gift, freely given. <short pause> Christ offers it to all who come to him. <short pause> It does not depend on your circumstances being just right. <short pause> It does not waver when life feels hard. <short pause> The peace he gives is rooted in who he is... not in what is happening around you."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your breathing continue... slow, and steady. <short pause> As you breathe, imagine laying down the weight of the day. <short pause> The conversations that did not go as planned. <short pause> The tasks left undone. <short pause> The worry about tomorrow. <short pause> You do not need to carry these things into your sleep."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Jesus spoke to his disciples on the night before his death. <short pause> He knew what was coming... the betrayal, and suffering, that awaited him. <short pause> And in that moment... he spoke words of peace."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid. <short pause> John, chapter fourteen, verse twenty-seven."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Peace I leave with you. My peace I give unto you. <short pause> Not as the world gives. <short pause> The peace of Christ is not dependent on everything going well. <short pause> It is not a shallow calm that disappears at the first sign of trouble. <short pause> It is a deep, abiding assurance... that you are held by one who is greater than any storm."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The world cannot give you this peace... because it does not have it to give. <short pause> And the world cannot take it away... because it did not come from the world in the first place. <short pause> Breathe in deeply. <short pause> Breathe out slowly."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Let your body rest in the knowledge that this peace is yours. <short pause> Not because you have earned it... but because Christ has given it. <short pause> You may still feel anxious at times. <short pause> You may still face days that are difficult. <short pause> But beneath all of that, there is a peace that remains. <short pause> A peace that whispers... you are not alone. <short pause> You are known. You are loved. You are safe in the hands of the one who made you."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "As you prepare to sleep, let this peace settle over you like a blanket. <short pause> Let it quiet the restless thoughts. <short pause> Let it ease the tension in your body. <short pause> There is nothing you need to fix, or figure out, right now. <short pause> This is a time to receive... not to strive. <short pause> Breathe in the peace of Christ. <short pause> Breathe out everything else."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The Lord is with you in this quiet moment. <short pause> He is with you through the night. <short pause> He will be with you when you wake. <short pause> His peace does not come and go. <short pause> It is constant... unchanging... sure. <short pause> Rest now in that tranquility."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May the peace of Christ, which surpasses all understanding, guard your heart and mind... tonight, and always."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

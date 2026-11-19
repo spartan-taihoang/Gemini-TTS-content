@@ -1,0 +1,48 @@
+{
+ "title": "Conscious Breath",
+ "voice": "Olin",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -7,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Find a comfortable place to rest tonight. <short pause> Let your body settle into stillness. <short pause> Notice your breath... moving in, and out, without effort."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Each breath you take is a gift. <short pause> You do not make the air. You do not create the rhythm. <short pause> You simply receive. <short pause> Breathe in slowly... filling your lungs with God's provision. <short pause> Breathe out... releasing the day."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Your breath connects you to the One who formed you. <short pause> It is ordinary, and miraculous, at once. <short pause> Let yourself breathe a little slower now. <short pause> There is no hurry. There is nowhere else to be. <short pause> With each breath... you are held in God's care."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Scripture says this clearly."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "The Spirit of God hath made me, and the breath of the Almighty hath given me life. <short pause> Job, chapter thirty-three, verse four. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The same Spirit that gives life... remains with you now. <short pause> As you breathe tonight, you are sustained by the breath of God. <short pause> Let your breathing be your prayer. <short pause> No words are needed. <short pause> Just this gentle receiving... again, and again."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Rest in the presence of the One who breathed life into you... and keeps you still."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May you sleep in peace... held by the God who gives every breath."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "title": "Under His Wings",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_piano.flac",
+  "volume_db": -13,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your eyes close gently. <short pause> Feel the weight of your body, resting where you lie. <short pause> Your shoulders, your back, your legs... all held, and supported. <short pause> Take a slow breath in through your nose. <short pause> And let it go, softly, through your mouth. <short pause> Again, breathe in... <short pause> and release."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we rest in the image of being covered. <short pause> Of finding shelter... not by our own strength, but by turning toward the Lord."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Think for a moment of a bird, small and fragile, caught in a sudden storm. <short pause> The wind rises, the sky darkens, and the bird cannot fly against it. <short pause> But the mother bird spreads her wings wide... and beneath them, the little one finds safety. <short pause> Warmth. <short pause> Stillness. <short pause> Not because it earned that shelter... but because that is what the mother does."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "The psalmist knew this image. <short pause> When everything felt uncertain... when danger pressed close... when the heart could not find peace on its own... there was a word to hold onto. <short pause> A promise that God himself would be that covering."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in now... and as you do, imagine drawing near to that shelter. <short pause> Breathe out... and let yourself rest beneath it."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You do not have to strive tonight. <short pause> You do not have to solve what is unsolved, or fix what is broken, or understand what is unclear. <short pause> You are invited simply to be still... and to let yourself be kept. <short pause> The Scripture says it this way."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "He shall cover thee with his feathers, and under his wings shalt thou trust: his truth shall be thy shield and buckler. <short pause> Psalm ninety-one, verse four. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "He shall cover you. <short pause> Not you covering yourself. <short pause> Not you earning refuge, or proving you deserve it. <short pause> But God, bending low... spreading his care over you like feathers, like a shield."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Under his wings, you may trust. <short pause> There is no storm tonight that is stronger than his keeping. <short pause> No worry that can reach beneath that cover. <short pause> No fear that can pull you from his hold. <short pause> Let your breath slow even more now. <short pause> In and out... easy, and soft."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Picture yourself small... safe... covered. <short pause> The darkness around you is not a threat... but a quiet place where you can finally let go. <short pause> His truth is your shield. <short pause> You do not need to be strong right now. <short pause> You only need to rest."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "So rest now. <short pause> Let your body soften a little more. <short pause> Let your mind grow quiet. <short pause> And know that you are held... watched over... covered in the care of the one who does not sleep, who does not forget, who does not let go."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "The Lord is your refuge tonight. <short pause> Under his wings, you are safe. <short pause> And in that safety... may you find deep, and gentle sleep."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

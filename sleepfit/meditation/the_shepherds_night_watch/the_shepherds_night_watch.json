@@ -1,0 +1,68 @@
+{
+ "title": "The Shepherd's Night Watch",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -7,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your eyes close gently now. <short pause> Let the day fall away behind you. <short pause> Feel the weight of your body against the bed. <short pause> Your shoulders, your back, your legs... each part held, and safe. <short pause> Draw in a slow breath. <short pause> Let it go, without hurry. <short pause> Again, breathing in... <short pause> and out."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we walk with the shepherd through the oldest night prayer. <short pause> The twenty-third psalm. <short pause> A song sung by David under stars... sung by travelers on dusty roads... sung by mothers over cradles. <short pause> And now, sung over you."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "The Lord is my shepherd. <short pause> Not a shepherd far away... but my shepherd. <short pause> The one who knows your name... who counted every hair... who sees you now, in the dark. <short pause> I shall not want. <short pause> Not because you have everything... but because the shepherd is enough."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "He makes you lie down in green pastures. <short pause> Picture that soft grass, cool and deep. <short pause> The shepherd does not drive you there. <short pause> He makes you lie down... as a father lays down a tired child."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "He leads you beside still waters. <short pause> Water that does not rush or churn... but rests. <short pause> The shepherd knows you cannot drink from a raging stream. <short pause> He brings you to the quiet place."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "He restores your soul. <short pause> All that is scattered in you... he gathers. <short pause> All that is worn... he mends. <short pause> Breathe that in now. <short pause> Restoration... slow, and sure."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "He leads you in paths of righteousness, for his name's sake. <short pause> Not because you have earned the way... but because his name is faithful. <short pause> And now, the valley. <short pause> The place we all must walk at times. <short pause> The shadow, the unknown... the fear that wakes us in the night."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me. <short pause> Psalm twenty-three, verse four. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You do not walk it alone. <short pause> The shepherd is with you. <short pause> His rod and staff, the tools of his trade... they comfort you. <short pause> The rod to defend. The staff to guide. <short pause> Even here, in the dark valley... you are tended."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "He prepares a table before you, in the presence of your enemies. <short pause> A feast, even when the world presses close. <short pause> He anoints your head with oil. <short pause> The sign of blessing... of being set apart... of being loved. <short pause> Your cup runs over. <short pause> Not empty. Not half full. <short pause> But spilling over, with goodness you did not measure out yourself."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Surely goodness and mercy shall follow you all the days of your life. <short pause> Not sometimes. Not if you earn it. <short pause> But surely. <short pause> They follow you, like two faithful hounds at the shepherd's command. <short pause> And you will dwell in the house of the Lord forever. <short pause> This is where the path leads. <short pause> Not wandering... but home."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Let your breathing soften now. <short pause> Let the shepherd keep watch while you sleep. <short pause> He does not slumber. <short pause> He will not forget you in the night."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "The Lord bless you, and keep you. <short pause> The Lord make his face shine upon you, and be gracious to you. <short pause> The Lord lift up his countenance upon you, and give you peace. <short pause> Now... and through all the night."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

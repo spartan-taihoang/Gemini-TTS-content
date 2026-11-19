@@ -1,0 +1,76 @@
+{
+ "title": "Held in His Hand",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into this place of rest. <short pause> Feel the weight of your head against the pillow... the give of the mattress beneath you. <short pause> You do not have to hold yourself up anymore. <short pause> Take a slow breath in... and let it go. <short pause> Again, breathing in... <short pause> and out."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we turn our thoughts to a truth that runs through all of Scripture. <short pause> You are held. <short pause> Not by your own strength... but by hands that do not tire."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "There are days when you feel you must keep everything together by sheer will. <short pause> When the weight of responsibility sits heavy on your shoulders. <short pause> When you wonder if you can bear it all. <short pause> Breathe in slowly. <short pause> And release."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "God does not ask you to carry what he is already carrying. <short pause> He does not stand at a distance, watching to see if you will manage. <short pause> He is close... and he is strong."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Think of a child learning to walk, reaching up to hold a parent's hand. <short pause> The child grips tightly, thinking her small fingers are keeping her upright. <short pause> But it is the parent who holds... who steadies... who bears the true weight. <short pause> The child is safe not because of her grip... but because of the hand that will not let go."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your breathing slow, and deepen. <short pause> You have been gripping so tightly. <short pause> Trying to hold onto your plans, your people, your sense of control. <short pause> What if you loosened your fingers tonight? <short pause> What if you let yourself be held... instead of always holding on?"
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "God spoke through the prophet Isaiah to a people who were afraid. <short pause> They had every reason to fear, by any earthly measure. <short pause> And into their fear, he spoke these words."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness. <short pause> Isaiah, chapter forty-one, verse ten."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Fear not, for I am with you. <short pause> Not because the danger has passed. Not because you have found your footing. <short pause> But because he is with you. <short pause> He will strengthen you. He will help you. <short pause> He will uphold you with his righteous right hand."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "That word, uphold. <short pause> It means to support... to sustain... to keep from falling. <short pause> Not to prop you up until you can stand on your own... but to bear you continually. <short pause> Breathe in that promise."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "His hand is underneath you now, as you lie here in the dark. <short pause> It was underneath you today, when you felt unsteady. <short pause> It will be underneath you tomorrow. <short pause> You do not have to be strong enough. <short pause> You do not have to have it all figured out. <short pause> You are not held by your own competence, or your own faith, or your own effort. <short pause> You are held by him."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your shoulders drop, away from your ears. <short pause> Unclench your jaw. <short pause> Release the tension you have been carrying in your body. <short pause> There is nothing you need to do right now. <short pause> No problem you need to solve in this moment. <short pause> You can rest in his hand."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The same hand that formed the mountains and set the stars in place... is gentle enough to hold you. <short pause> Strong enough that nothing can pull you from his grasp. <short pause> Close your eyes, if they are not already closed. <short pause> Feel yourself sinking deeper into rest."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tomorrow will come with its own needs and tasks. <short pause> But tonight... you are simply held. <short pause> The God who does not slumber or sleep is watching over you. <short pause> You can let go."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May you sleep in the safety of his presence. <short pause> May you rest in the strength of his hand. <short pause> And may you wake knowing that what holds you tonight will hold you still."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

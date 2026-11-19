@@ -1,0 +1,52 @@
+{
+ "title": "Tomorrow Can Wait",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_piano.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into the quiet of this moment. <short pause> Feel the weight of your head on the pillow... your shoulders releasing into rest. <short pause> There is nothing left to do tonight. <short pause> Take a slow breath in... and let it go. <short pause> Again, breathing in... and breathing out. <short pause> Let your breathing find its own gentle rhythm."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tomorrow is waiting... and that is all it needs to do. <short pause> The tasks you did not finish. The words you did not say. The plans you have not made. <short pause> They are still there, and they will be there in the morning. <short pause> Tonight, you are released from them."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Your mind may want to remind you of what is coming. <short pause> It may list the things you need to remember... the problems you need to solve. <short pause> Notice those thoughts... and let them drift past like clouds. <short pause> You do not need to hold them right now. <short pause> Breathe in peace... breathe out the weight of tomorrow."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Jesus spoke to people who carried the burden of tomorrow on their backs every single day. <short pause> He knew how the mind turns over worries in the dark. <short pause> And he said this."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof. <short pause> Matthew, chapter six, verse thirty-four. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tomorrow has enough to carry on its own. <short pause> It does not need you to carry it tonight. <short pause> Let your breath be a simple prayer... a quiet yes to this present rest. <short pause> In and out... held by something larger than your worry."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Your body knows how to rest, even when your mind does not. <short pause> Let your body lead you now. <short pause> Softening... settling... releasing."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tomorrow will come with its own grace, its own provision. <short pause> Tonight, you are safe. <short pause> You are held."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "And you are loved, just as you are... in this quiet, unfinished moment."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}
