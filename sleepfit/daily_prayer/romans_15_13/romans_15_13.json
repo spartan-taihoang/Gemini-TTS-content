@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Romans 15:13",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost. <short pause> Romans, chapter fifteen, verse thirteen."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "God of hope, fill me tonight with the joy and peace that come from trusting You. <short pause> Let hope overflow in my heart by the power of Your Holy Spirit. <short pause> I quiet my anxious thoughts and receive the rest You offer to those who believe. <short pause> Amen."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Numbers 6:24-26",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "The Lord bless thee, and keep thee: <short pause> The Lord make his face shine upon thee, and be gracious unto thee: <short pause> The Lord lift up his countenance upon thee, and give thee peace. <short pause> Numbers, chapter six, verses twenty-four to twenty-six."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, bless me and keep me as I sleep. <short pause> Let Your face shine on me with grace. <short pause> Lift Your eyes to me and give me peace. <short pause> I rest in the blessing You speak over me tonight and always. <short pause> Amen."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - John 16:33",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "These things I have spoken unto you, that in me ye might have peace. <short pause> In the world ye shall have tribulation: <short pause> but be of good cheer; <short pause> I have overcome the world. <short pause> John, chapter sixteen, verse thirty-three."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord Jesus, the world brings trouble, but You bring peace. <short pause> You have already overcome everything that weighs on me tonight. <short pause> I take courage in Your victory and let Your peace settle over my mind and heart as I prepare for sleep. <short pause> Amen."
+  }
+ ]
+}

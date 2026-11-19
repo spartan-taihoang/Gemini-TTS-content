@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 127:2",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: <short pause> for so he giveth his beloved sleep. <short pause> Psalm one hundred twenty-seven, verse two."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, quiet my striving mind and give me the sleep You give to those You love. <short pause> Amen."
+  }
+ ]
+}

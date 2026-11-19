@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - 2 Corinthians 12:9",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "And he said unto me, My grace is sufficient for thee: <short pause> for my strength is made perfect in weakness. <short pause> Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me. <short pause> Second Corinthians, chapter twelve, verse nine."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, Your grace is enough for me, even in my weakness. <short pause> When I am tired and limited, Your strength shows itself most clearly. <short pause> Tonight I thank You that my frailty makes room for Your power to rest upon me. <short pause> I am complete in You. <short pause> Amen."
+  }
+ ]
+}

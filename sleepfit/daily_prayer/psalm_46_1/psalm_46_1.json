@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 46:1",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "God is our refuge and strength, a very present help in trouble. <short pause> Psalm forty-six, verse one."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, You are my refuge when everything feels uncertain. <short pause> You are my strength when I have none of my own. <short pause> In trouble, You are near. <short pause> Tonight I rest in that truth, sheltered and safe in You. <short pause> Amen."
+  }
+ ]
+}

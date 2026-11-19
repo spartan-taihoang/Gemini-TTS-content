@@ -100,11 +100,11 @@ Rules:
 
 ## 7. Daily prayers
 
-A daily prayer has a verse, a reference and a prayer. Every daily prayer uses `"voice": "Charon"` and `"ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6}` (the JSON sits in `daily_prayer/<name>/`). Use two parts:
+A daily prayer has a verse, a reference and a prayer. Daily prayers use no `<long pause>` at all, not even after the verse: the change from the scripture part to the prayer part already makes the pause, and that tag was read aloud in other episodes. Every daily prayer uses `"voice": "Cruz"` and `"ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -9, "lead_in": 2, "tail": 4}` (a short prayer needs only a brief intro and fade; Cruz speaks louder than Charon did, so -9 keeps the pad about 5 dB under the voice) (the JSON sits in `daily_prayer/<name>/`). Use two parts:
 
 ```json
 {"style": "calm, reverent, reading scripture aloud slowly",
- "text": "And the Lord God said, <short pause> It is not good that the man should be alone; <short pause> I will make him an help meet for him. <short pause> Genesis, chapter two, verse eighteen. <long pause>"},
+ "text": "And the Lord God said, <short pause> It is not good that the man should be alone; <short pause> I will make him an help meet for him. <short pause> Genesis, chapter two, verse eighteen."},
 {"style": "warm, gentle, prayerful, speaking slowly",
  "text": "Lord God, <short pause> thank You for seeing our need for companionship and care. <short pause> Bless the people You have placed beside me, <short pause> and help me to love them as You love me. <short pause> Amen."}
 ```

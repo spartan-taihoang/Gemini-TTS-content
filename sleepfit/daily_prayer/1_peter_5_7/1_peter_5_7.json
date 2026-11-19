@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - 1 Peter 5:7",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Casting all your care upon him; <short pause> for he careth for you. <short pause> First Peter, chapter five, verse seven."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Caring Father, I cast all my worries on You tonight because You truly care for me. <short pause> The burdens I have been carrying are too heavy, but You are strong enough to hold them all. <short pause> I give them to You now and sleep in peace. <short pause> Amen."
+  }
+ ]
+}

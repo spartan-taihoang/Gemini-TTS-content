@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Romans 8:28",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose. <short pause> Romans, chapter eight, verse twenty-eight."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, even the hard and confusing parts of my life are not beyond Your reach. <short pause> You work all things together for good because I am Yours. <short pause> I may not see the pattern yet, but I trust Your loving purpose as I close my eyes tonight. <short pause> Amen."
+  }
+ ]
+}

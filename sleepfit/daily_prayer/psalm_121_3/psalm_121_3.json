@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 121:3",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "He will not suffer thy foot to be moved: <short pause> he that keepeth thee will not slumber. <short pause> Psalm one hundred twenty-one, verse three."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, You never sleep. <short pause> While I rest, You are awake and watching over me. <short pause> You will not let me stumble or fall. <short pause> I can close my eyes in peace, knowing You are keeping me through the night. <short pause> Amen."
+  }
+ ]
+}

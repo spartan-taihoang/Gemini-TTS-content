@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Isaiah 40:11",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "He shall feed his flock like a shepherd: <short pause> he shall gather the lambs with his arm, and carry them in his bosom, and shall gently lead those that are with young. <short pause> Isaiah, chapter forty, verse eleven."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Good Shepherd, thank You for gathering me close when I am weak and vulnerable. <short pause> You carry me with tenderness and lead me gently through each day. <short pause> I rest tonight in Your strong and caring arms, trusting Your watchful love over me. <short pause> Amen."
+  }
+ ]
+}
