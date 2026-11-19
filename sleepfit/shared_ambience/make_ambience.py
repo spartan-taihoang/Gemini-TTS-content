@@ -1,7 +1,7 @@
-# Original 60 s seamless loops: sparse soft piano (additive synthesis), gentle stereo rain, and the two mixed.
+# Original 60 s seamless loop: sparse soft piano (additive synthesis).
 # Usage: python3 sleepfit/shared_ambience/make_ambience.py <scratch dir> sleepfit/shared_ambience  (needs ffmpeg)
-# Writes ambience_piano.flac, ambience_rain.flac and ambience_piano_rain.flac, each at -19 dB RMS like ambience_soft_pad.flac.
-# Tweak the chords, note velocities or the rain level, rerun, and listen; random.Random(7) keeps a run reproducible.
+# Writes ambience_piano.flac at -19 dB RMS like ambience_soft_pad.flac. Rain and crickets now come from CC0 recordings
+# (SOURCES.md), not from here. Tweak the chords or note velocities, rerun, and listen; random.Random(7) keeps it reproducible.
 import array, math, random, subprocess, sys
 from pathlib import Path
 W = Path(sys.argv[1]); OUT = Path(sys.argv[2])
@@ -67,29 +67,12 @@ p = read_f32(W / "piano.f32")
 piano = p[:2 * N]
 for i in range(2 * N, min(len(p), 2 * NT)): piano[i - 2 * N] += p[i]
 
-# --- rain: pink + brown noise, band-limited, slow 30 s swell (divides the loop, so it stays seamless)
-XF = int(3 * SR)
-ff("-f", "lavfi", "-i", f"anoisesrc=c=pink:r={SR}:a=0.5:seed=11:d={LOOP + 3}", "-f", "lavfi", "-i", f"anoisesrc=c=pink:r={SR}:a=0.5:seed=23:d={LOOP + 3}",
-   "-f", "lavfi", "-i", f"anoisesrc=c=brown:r={SR}:a=0.5:seed=5:d={LOOP + 3}",
-   "-filter_complex", "[0:a][1:a]join=inputs=2:channel_layout=stereo[p];[2:a]pan=stereo|c0=c0|c1=c0,volume=0.6[b];"
-   "[p][b]amix=inputs=2:normalize=0,highpass=f=250,lowpass=f=6500,equalizer=f=3000:t=q:w=1:g=-4",
-   "-f", "f32le", str(W / "rain.f32"))
-r = read_f32(W / "rain.f32")
-rain = r[:2 * N]
-for i in range(XF):  # crossfade the extra 3 s into the start
-    a = i / XF
-    for c in (0, 1):
-        rain[2 * i + c] = rain[2 * i + c] * a + r[2 * (N + i) + c] * (1 - a)
-
 def rms(x): return math.sqrt(sum(v * v for v in x) / len(x))
 target = 10 ** (-19 / 20)  # same loudness as ambience_soft_pad.flac, so one volume_db works for every loop
 
 
-def render(name, gp, gr):
-    mix = array.array("f", [0.0]) * (2 * N)
-    for i in range(2 * N):
-        t = (i // 2) / SR
-        mix[i] = piano[i] * gp + rain[i] * gr * (1 + 0.15 * math.sin(2 * math.pi * t / 30))  # 30 s swell divides the loop
+def render(name, gp):
+    mix = array.array("f", [v * gp for v in piano])
     g = target / rms(mix); pk = max(abs(v) for v in mix) * g
     if pk > 10 ** (-3 / 20): g *= 10 ** (-3 / 20) / pk
     write_f32(W / "mix.f32", [v * g for v in mix])
@@ -104,7 +87,4 @@ def render(name, gp, gr):
     print("wrote", OUT / name)
 
 
-gp, gr = 1.0 / max(rms(piano), 1e-9), 1.0 / max(rms(rain), 1e-9)
-render("ambience_piano.flac", gp, 0)
-render("ambience_rain.flac", 0, gr)
-render("ambience_piano_rain.flac", gp, 0.35 * gr)  # rain ~9 dB under the piano
+render("ambience_piano.flac", 1.0 / max(rms(piano), 1e-9))

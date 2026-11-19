@@ -12,13 +12,17 @@ gemini-tts/
 ├── push_episode.py         # upload m4a + transcript timings to a SleepFit admin API episode
 ├── push_track.py           # upload a meditation/sound m4a (ambience version if present) to a SleepFit audio track
 └── sleepfit/
-    ├── shared_ambience/             # seamless background loops at -19 dB RMS; the .flac loops made here are self-made (no third-party license)
-    │   ├── ambience_soft_pad.flac       # warm pad (daily prayers)
-    │   ├── ambience_piano_rain.flac     # sparse soft piano + rain (meditation)
-    │   ├── ambience_piano.flac          # the same piano alone
-    │   ├── ambience_rain.flac           # the same rain alone
-    │   ├── make_ambience.py             # regenerates the three piano/rain loops (stdlib + ffmpeg)
+    ├── shared_ambience/             # background loops and app sounds; every .flac loops seamlessly
+    │   ├── ambience_soft_pad.flac       # warm pad (daily prayers, meditations), self-made
+    │   ├── ambience_piano.flac          # sparse soft piano (meditations), self-made by make_ambience.py
     │   ├── harmony_sound.flac           # meditation pad, made from harmony_sound.mp4 by make_seamless.py
+    │   ├── bird_sound.flac, ocean_sound.flac   # made by make_seamless.py
+    │   ├── raining_in_bangkok.flac      # Gentle Rain on dev (from rain_sound.wav, CC0)
+    │   ├── rain_on_the_window.flac      # Rain on the Window on dev (from rain_on_the_window.wav, CC0)
+    │   ├── cricket_sound.flac           # Summer Night Crickets on dev (from cricket_sound.wav, CC0)
+    │   ├── river_stream.flac            # Quiet Stream on dev (from river_stream.wav, CC0)
+    │   ├── *.wav                        # the Freesound originals of the four loops above
+    │   ├── make_ambience.py             # regenerates the piano loop (stdlib + ffmpeg)
     │   └── make_seamless.py             # any recording -> seamless loop at -19 dB RMS (crossfades the end into the start)
     ├── podcast/
     │   └── <episode>/

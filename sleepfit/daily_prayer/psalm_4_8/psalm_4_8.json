@@ -1,12 +1,20 @@
 {
-  "title": "Daily prayer - Psalm 4:8",
-  "voice": "Charon",
-  "ambience": {"file": "../../shared_ambience/ambience_soft_pad.flac", "volume_db": -5, "lead_in": 4, "tail": 6},
-  "parts": [
-    {"style": "calm, reverent, reading scripture aloud slowly",
-     "text": "I will both lay me down in peace, and sleep: <short pause> for thou, Lord, only makest me dwell in safety. <short pause> Psalm four, verse eight. <long pause>"},
-
-    {"style": "warm, gentle, prayerful, speaking slowly",
-     "text": "Lord, <short pause> as I lie down tonight, let me rest in Your safety <short pause> and wake in Your peace. <long pause> Amen."}
-  ]
+ "title": "Daily prayer - Psalm 4:8",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "I will both lay me down in peace, and sleep: <short pause> for thou, Lord, only makest me dwell in safety. <short pause> Psalm four, verse eight."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, as I lie down tonight, let me rest in Your safety and wake in Your peace. <short pause> Amen."
+  }
+ ]
 }
