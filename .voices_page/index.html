@@ -38,6 +38,8 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
 main { max-width: 1040px; margin: 0 auto; padding: 40px 20px 64px; display: grid; gap: 40px; }
 h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; margin: 0; line-height: 1.15; }
 h1 { font-size: 40px; }
@@ -88,12 +90,12 @@ audio { width: 100%; height: 36px; }
 <main>
 <header>
   <h1>SleepFit Voices</h1>
-  <p class="lede">The Gemini TTS voices used in the <code>sleepfit/</code> folder: which character each voice plays, where it is used, how it sounds as measured from the audio, and a short sample to listen to.</p>
+  <p class="lede">The Gemini TTS voices used in <code>sleepfit/</code>: which character each voice plays, where it is used, how it sounds as measured from the audio, and a short sample to listen to. Updated 19 November 2026.</p>
   <div class="stats">
     <span><b>4</b> Gemini voices</span>
-    <span><b>6</b> roles (3 named characters, 3 unnamed)</span>
-    <span><b>19</b> finished audio files</span>
-    <span><b>≈ 102</b> minutes of narration</span>
+    <span><b>8</b> roles (5 named characters, 3 narrators)</span>
+    <span><b>76</b> finished audio files</span>
+    <span><b>≈ 247</b> minutes of narration</span>
   </div>
 </header>
 
@@ -103,12 +105,14 @@ audio { width: 100%; height: 36px; }
   <table>
     <thead><tr><th>Voice</th><th>Character</th><th>Used in</th><th>Files</th><th>Pitch (F0)</th><th>Pace</th></tr></thead>
     <tbody>
-      <tr><td><span class="voice-tag">Charon</span></td><td>Prayer reader (unnamed)</td><td>Daily prayer</td><td class="num">2</td><td class="num">≈ 104 Hz</td><td class="num">106 wpm</td></tr>
-      <tr><td><span class="voice-tag">Charon</span></td><td>Meditation guide (unnamed)</td><td>Meditation: Laying Down the Day</td><td class="num">1</td><td class="num">≈ 92 Hz</td><td class="num">115 wpm</td></tr>
-      <tr><td><span class="voice-tag">Olin</span></td><td>David Lee</td><td>Podcast: Christian Living, episodes 1–6</td><td class="num">6</td><td class="num">≈ 99 Hz</td><td class="num">116 wpm</td></tr>
-      <tr><td><span class="voice-tag">Olin</span></td><td>Meditation guide (unnamed)</td><td>Meditation: A Quiet Mind, Breath Prayer, Evening Gratitude, Still Waters</td><td class="num">4</td><td class="num">≈ 123 Hz</td><td class="num">93 wpm</td></tr>
-      <tr><td><span class="voice-tag">Jori</span></td><td>Sarah Mitchell</td><td>Podcast: Faith and Truth, episodes 1–6</td><td class="num">6</td><td class="num">≈ 182 Hz</td><td class="num">122 wpm</td></tr>
-      <tr><td><span class="voice-tag">Koda</span></td><td>Maya Brooks (guest)</td><td>Christian Living episode 5, with David Lee</td><td class="num">1</td><td class="num">≈ 136 Hz</td><td class="num">120 wpm (whole episode)</td></tr>
+      <tr><td><span class="voice-tag">Cruz</span></td><td>Daily prayer reader</td><td>All 31 daily prayers</td><td class="num">31</td><td class="num">≈ 95 Hz</td><td class="num">105 wpm</td></tr>
+      <tr><td><span class="voice-tag">Cruz</span></td><td>Meditation guide</td><td>Psalms for the Night, Trust &amp; Surrender, Nurturing Positivity</td><td class="num">11</td><td class="num">≈ 90 Hz</td><td class="num">117 wpm</td></tr>
+      <tr><td><span class="voice-tag">Cruz</span></td><td>Cruz Castle (guest)</td><td>Comfort in Trials episode 6, with David Lee</td><td class="num">1</td><td class="num">≈ 94 Hz</td><td class="num">132 wpm (whole episode)</td></tr>
+      <tr><td><span class="voice-tag">Olin</span></td><td>David Lee</td><td>Podcasts: Christian Living 1–6, Comfort in Trials 1–6</td><td class="num">12</td><td class="num">≈ 111 Hz</td><td class="num">118 wpm</td></tr>
+      <tr><td><span class="voice-tag">Olin</span></td><td>Meditation guide</td><td>Peace Before Sleep, Healing &amp; Restoration</td><td class="num">9</td><td class="num">≈ 111 Hz</td><td class="num">107 wpm</td></tr>
+      <tr><td><span class="voice-tag">Jori</span></td><td>Sarah Mitchell</td><td>Podcasts: Faith and Truth 1–6, Salvation and Grace 1–7</td><td class="num">13</td><td class="num">≈ 182 Hz</td><td class="num">127 wpm</td></tr>
+      <tr><td><span class="voice-tag">Koda</span></td><td>Maya Brooks (guest)</td><td>Christian Living episode 5, with David Lee</td><td class="num">1</td><td class="num">≈ 136 Hz</td><td class="num">122 wpm (whole episode)</td></tr>
+      <tr><td><span class="voice-tag">Koda</span></td><td>Jason Greene (guest)</td><td>Salvation and Grace episode 6, with Sarah Mitchell</td><td class="num">1</td><td class="num">≈ 125 Hz</td><td class="num">144 wpm (whole episode)</td></tr>
     </tbody>
   </table>
   </div>
@@ -118,48 +122,54 @@ audio { width: 100%; height: 36px; }
   <h2 id="voices">Voice by voice</h2>
   <div class="voices">
 
-  <article class="voice" aria-labelledby="v-charon">
+  <article class="voice" aria-labelledby="v-cruz">
     <div class="voice-head">
-      <h3 id="v-charon"><span class="voice-tag">Charon</span> Lowest, slow and reverent</h3>
-      <div class="meters"><span class="meter">F0 <b>92–104 Hz</b></span><span class="meter">prayer <b>106</b> wpm</span><span class="meter">meditation <b>115</b> wpm</span></div>
+      <h3 id="v-cruz"><span class="voice-tag">Cruz</span> The lowest voice, now the main narrator</h3>
+      <div class="meters"><span class="meter">F0 <b>89–98 Hz</b></span><span class="meter">prayer <b>105</b> wpm</span><span class="meter">meditation <b>117</b> wpm</span></div>
     </div>
-    <div class="pitchbar" aria-label="Charon pitch on an 80 to 200 Hz scale"><span style="left:10%"></span><span style="left:20%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
-    <p>The lowest of the four voices, and the voice for every daily prayer. Its styles move from a slow, reverent scripture reading into a warm, gentle prayer. The prayers play over <code>ambience_soft_pad</code>.</p>
-    <div class="styles"><code>calm, reverent, reading scripture aloud slowly</code><code>warm, gentle, prayerful, speaking slowly</code></div>
+    <div class="pitchbar" aria-label="Cruz pitch on an 80 to 200 Hz scale"><span style="left:8%"></span><span style="left:15%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>The deepest of the four voices and the most used: 43 files, about 65 minutes. It replaced Charon on every daily prayer and voices three meditation collections. It also plays Cruz Castle, the guest in the final Comfort in Trials episode. Cruz speaks louder than Charon did, so prayers mix the soft pad at -9 dB instead of -5.</p>
+    <div class="styles"><code>calm, reverent, reading scripture aloud slowly</code><code>warm, gentle, prayerful, speaking slowly</code><code>soft, slow, soothing guided meditation voice</code></div>
     <div class="chars">
       <div class="char">
-        <div class="who"><b>Prayer reader</b><span class="role">Daily prayer · Genesis 2:18, Psalm 4:8</span></div>
-        <blockquote>I will both lay me down in peace, and sleep: for thou, Lord, only makest me dwell in safety. Psalm four, verse eight…</blockquote>
-        <audio controls preload="none" src="audio/charon_prayer.mp3"></audio>
-        <span class="src">daily_prayer/psalm_4_8/psalm_4_8.mp3 · 0:00–0:27 (whole prayer)</span>
+        <div class="who"><b>Daily prayer reader</b><span class="role">31 daily prayers · soft pad at -9 dB</span></div>
+        <blockquote>Casting all your care upon him; for he careth for you. First Peter, chapter five, verse seven…</blockquote>
+        <audio controls preload="none" src="audio/cruz_prayer.mp3"></audio>
+        <span class="src">daily_prayer/1_peter_5_7/1_peter_5_7.mp3 · 0:00–0:35 (whole prayer)</span>
       </div>
       <div class="char">
-        <div class="who"><b>Meditation guide</b><span class="role">Meditation · Laying Down the Day</span></div>
-        <blockquote>Find a comfortable position… and let your body settle into rest. Close your eyes, if you haven't already…</blockquote>
-        <audio controls preload="none" src="audio/charon_meditation.mp3"></audio>
-        <span class="src">meditation/laying_down_the_day/laying_down_the_day.mp3 · 0:00–0:23</span>
+        <div class="who"><b>Meditation guide</b><span class="role">Psalms for the Night, Trust &amp; Surrender, Nurturing Positivity</span></div>
+        <blockquote>Let your body settle into the surface beneath you. Feel the weight of your head, your shoulders, your legs… all held.</blockquote>
+        <audio controls preload="none" src="audio/cruz_meditation.mp3"></audio>
+        <span class="src">meditation/a_heart_at_rest/a_heart_at_rest.mp3 · 0:00–0:22</span>
+      </div>
+      <div class="char">
+        <div class="who"><b>Cruz Castle</b><span class="role">Guest · Comfort in Trials episode 6</span></div>
+        <blockquote>A carpenter who lost most of a year to a back injury, and found that "there was always enough."</blockquote>
+        <audio controls preload="none" src="audio/duet_david_cruz.mp3"></audio>
+        <span class="src">podcast/comfort_in_trials_ep6/comfort_in_trials_ep6.mp3 · 0:23–0:38 (David introduces Cruz)</span>
       </div>
     </div>
   </article>
 
   <article class="voice" aria-labelledby="v-olin">
     <div class="voice-head">
-      <h3 id="v-olin"><span class="voice-tag">Olin</span> The main host: low and steady</h3>
-      <div class="meters"><span class="meter">F0 <b>99–123 Hz</b></span><span class="meter">podcast <b>116</b> wpm</span><span class="meter">meditation <b>93</b> wpm</span></div>
+      <h3 id="v-olin"><span class="voice-tag">Olin</span> David Lee: low and steady</h3>
+      <div class="meters"><span class="meter">F0 <b>≈ 111 Hz</b></span><span class="meter">podcast <b>118</b> wpm</span><span class="meter">meditation <b>107</b> wpm</span></div>
     </div>
-    <div class="pitchbar" aria-label="Olin pitch on an 80 to 200 Hz scale"><span style="left:16%"></span><span style="left:36%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
-    <p>The most used voice: 10 files, about 55 minutes. In the podcast it is David Lee, in a calm teaching tone. In meditation the same voice is styled very soft and slow. That is the slowest content in the folder at 93 wpm, and its measured pitch sits higher than in the podcast.</p>
-    <div class="styles"><code>thoughtful, calm teaching tone</code><code>tender, quiet storytelling</code><code>soft, slow, soothing guided meditation voice</code><code>tender, intimate, very soft, speaking slowly</code></div>
+    <div class="pitchbar" aria-label="Olin pitch on an 80 to 200 Hz scale"><span style="left:26%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>Hosts two podcast series, Christian Living and Comfort in Trials, as David Lee, in a calm teaching tone: 12 episodes, about 72 minutes. The same voice guides the Peace Before Sleep and Healing &amp; Restoration meditations, styled softer and slower. Olin rarely reads a tag aloud.</p>
+    <div class="styles"><code>thoughtful, calm teaching tone</code><code>tender, quiet storytelling</code><code>soft, slow, soothing guided meditation voice</code></div>
     <div class="chars">
       <div class="char">
-        <div class="who"><b>David Lee</b><span class="role">Host · Christian Living, episodes 1–6</span></div>
-        <blockquote>Hello again, and welcome back to the SleepFit podcast series. This is Christian Living, episode three: A Gentle Answer. I'm David Lee…</blockquote>
+        <div class="who"><b>David Lee</b><span class="role">Host · Christian Living, Comfort in Trials</span></div>
+        <blockquote>Hello again, and welcome back… This is Christian Living, episode three: A Gentle Answer. I'm David Lee…</blockquote>
         <audio controls preload="none" src="audio/olin_david.mp3"></audio>
-        <span class="src">podcast/christian_living_ep3/christian_living_ep3.mp3 · 0:00–0:23</span>
+        <span class="src">podcast/christian_living_ep3/christian_living_ep3.mp3 · 0:00–0:25</span>
       </div>
       <div class="char">
-        <div class="who"><b>Meditation guide</b><span class="role">Meditation · A Quiet Mind, Breath Prayer, Evening Gratitude, Still Waters</span></div>
-        <blockquote>Let your eyes close gently. Feel the weight of your body, where it rests. Your shoulders can soften now…</blockquote>
+        <div class="who"><b>Meditation guide</b><span class="role">Peace Before Sleep, Healing &amp; Restoration</span></div>
+        <blockquote>Let your eyes close gently. Feel the weight of your body, where it rests…</blockquote>
         <audio controls preload="none" src="audio/olin_meditation.mp3"></audio>
         <span class="src">meditation/still_waters/still_waters.mp3 · 0:00–0:21</span>
       </div>
@@ -168,15 +178,15 @@ audio { width: 100%; height: 36px; }
 
   <article class="voice" aria-labelledby="v-jori">
     <div class="voice-head">
-      <h3 id="v-jori"><span class="voice-tag">Jori</span> Highest and quickest</h3>
-      <div class="meters"><span class="meter">F0 <b>≈ 182 Hz</b></span><span class="meter">podcast <b>122</b> wpm</span></div>
+      <h3 id="v-jori"><span class="voice-tag">Jori</span> Sarah Mitchell: highest and quickest</h3>
+      <div class="meters"><span class="meter">F0 <b>≈ 182 Hz</b></span><span class="meter">podcast <b>127</b> wpm</span></div>
     </div>
     <div class="pitchbar" aria-label="Jori pitch on an 80 to 200 Hz scale"><span style="left:85%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
-    <p>The voice of Faith and Truth: 6 episodes, about 42 minutes. The highest pitch and the quickest pace of the four voices, which keeps Sarah Mitchell clearly apart from David Lee.</p>
+    <p>Sarah Mitchell now hosts both Faith and Truth and Salvation and Grace: 13 episodes, about 83 minutes. Jori reads tags aloud far more often than the other voices, so its scripts keep long pauses to a minimum and every chunk is checked with Whisper.</p>
     <div class="styles"><code>thoughtful, calm teaching tone</code><code>tender, intimate, very soft, speaking slowly</code><code>reverent, slow, reading scripture aloud</code></div>
     <div class="chars">
       <div class="char">
-        <div class="who"><b>Sarah Mitchell</b><span class="role">Host · Faith and Truth, episodes 1–6</span></div>
+        <div class="who"><b>Sarah Mitchell</b><span class="role">Host · Faith and Truth, Salvation and Grace</span></div>
         <blockquote>Welcome to our brand new SleepFit podcast series! This is the very first episode of Faith and Truth. I'm Sarah Mitchell…</blockquote>
         <audio controls preload="none" src="audio/jori_sarah.mp3"></audio>
         <span class="src">podcast/faith_and_truth_ep1/faith_and_truth_ep1.mp3 · 0:00–0:22</span>
@@ -186,18 +196,24 @@ audio { width: 100%; height: 36px; }
 
   <article class="voice" aria-labelledby="v-koda">
     <div class="voice-head">
-      <h3 id="v-koda"><span class="voice-tag">Koda</span> The guest, mid-range pitch</h3>
-      <div class="meters"><span class="meter">F0 <b>≈ 136 Hz</b></span><span class="meter">18 turns</span></div>
+      <h3 id="v-koda"><span class="voice-tag">Koda</span> The guest voice</h3>
+      <div class="meters"><span class="meter">F0 <b>125–136 Hz</b></span><span class="meter">2 guests</span></div>
     </div>
-    <div class="pitchbar" aria-label="Koda pitch on an 80 to 200 Hz scale"><span style="left:47%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
-    <p>Used in one episode so far, the first with two speakers. Its pitch sits between Olin and Jori, so it stays distinct next to David Lee. The styles are conversational, with a smile in the voice.</p>
-    <div class="styles"><code>warm, relaxed, unhurried, a soft smile in the voice</code><code>calm, thoughtful, conversational, slow</code><code>soft, gentle, reflective, slow</code></div>
+    <div class="pitchbar" aria-label="Koda pitch on an 80 to 200 Hz scale"><span style="left:38%"></span><span style="left:47%"></span><em style="left:6px">80 Hz</em><em style="right:6px">200 Hz</em></div>
+    <p>Used for two guests in two different series. Its pitch sits between Olin and Jori, so it stays distinct next to either host.</p>
+    <div class="styles"><code>warm, relaxed, unhurried, a soft smile in the voice</code><code>calm, thoughtful, conversational, slow</code><code>tender, quiet storytelling</code></div>
     <div class="chars">
       <div class="char">
-        <div class="who"><b>Maya Brooks</b><span class="role">Guest · Christian Living, episode 5</span></div>
-        <blockquote>Thanks, David. It's good to be here. Hello, everyone. I'm Maya Brooks. And I promise to keep my voice nice and sleepy.</blockquote>
+        <div class="who"><b>Maya Brooks</b><span class="role">Guest · Christian Living episode 5</span></div>
+        <blockquote>Thanks, David. It's good to be here. Hello, everyone. I'm Maya Brooks.</blockquote>
         <audio controls preload="none" src="audio/koda_maya.mp3"></audio>
         <span class="src">podcast/christian_living_ep5/christian_living_ep5.mp3 · 0:22–0:31</span>
+      </div>
+      <div class="char">
+        <div class="who"><b>Jason Greene</b><span class="role">Guest · Salvation and Grace episode 6</span></div>
+        <blockquote>Shares the year his father was ill, when he was too tired and ashamed to pray.</blockquote>
+        <audio controls preload="none" src="audio/duet_sarah_jason.mp3"></audio>
+        <span class="src">podcast/salvation_and_grace_ep6/salvation_and_grace_ep6.mp3 · 0:00–0:17 (Sarah introduces Jason)</span>
       </div>
     </div>
   </article>
@@ -207,27 +223,52 @@ audio { width: 100%; height: 36px; }
 <section aria-labelledby="duet">
   <h2 id="duet">Two voices in one episode</h2>
   <div class="duet">
-    <p>Christian Living episode 5 is the first episode with two speakers, David Lee (Olin) and Maya Brooks (Koda), rendered in one request with Gemini's multi-speaker mode. This clip covers the guest introduction and the first few exchanges.</p>
+    <p>Three episodes pair a host with a guest, rendered with Gemini's multi-speaker mode: Christian Living 5 (David Lee and Maya Brooks), Salvation and Grace 6 (Sarah Mitchell and Jason Greene) and Comfort in Trials 6 (David Lee and Cruz Castle). This clip is the first of them.</p>
     <audio controls preload="none" src="audio/duet_david_maya.mp3"></audio>
     <span class="src">podcast/christian_living_ep5/christian_living_ep5.mp3 · 0:15–0:52</span>
+  </div>
+</section>
+
+<section aria-labelledby="bg">
+  <h2 id="bg">Backgrounds and sounds</h2>
+  <div class="method">
+    <p><b>Behind the voice:</b> the soft pad (daily prayers at -9 dB, some meditations), harmony and a soft piano (meditations at -10 to -14 dB). The pad and piano are generated by scripts in the repo; harmony was made seamless from a supplied recording.</p>
+    <p><b>Sound tracks on dev</b>, each from a Creative Commons 0 recording on Freesound, made into a seamless loop:</p>
+  </div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Sound on dev</th><th>Freesound recording</th><th>Author</th><th>License</th></tr></thead>
+    <tbody>
+      <tr><td>Gentle Rain</td><td><a href="https://freesound.org/people/kijjaz/sounds/856405/">20260531 Raining in Bangkok 01</a></td><td>kijjaz</td><td>CC0</td></tr>
+      <tr><td>Rain on the Window</td><td><a href="https://freesound.org/people/ekilyekil/sounds/855740/">Spectrally Matched Rain Ambient - Part 5</a></td><td>ekilyekil</td><td>CC0</td></tr>
+      <tr><td>Summer Night Crickets</td><td><a href="https://freesound.org/people/Defelozedd94/sounds/522299/">Crickets At Night - Raw sound</a></td><td>Defelozedd94</td><td>CC0</td></tr>
+      <tr><td>Quiet Stream</td><td><a href="https://freesound.org/people/miregrobar/sounds/69943/">quiet_stream.wav</a></td><td>miregrobar</td><td>CC0</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="method">
+    <p><b>Why these can ship in a paid app.</b> Each Freesound page above states the sound is released under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a>: the author has waived their copyright as far as the law allows. Freesound's summary for each says you may copy, modify, distribute and perform the sound, <i>even for commercial purposes</i>, without asking the author's permission. That covers bundling a sound in a subscription app sold on the App Store, editing it (trimming, looping, levelling, as done here), and playing it as a standalone track.</p>
+    <p><b>No credit is required</b> under CC0. Crediting the author anyway ("Sound by kijjaz on Freesound") is a courtesy, not an obligation.</p>
+    <p><b>What still matters.</b> CC0 is the uploader's own declaration; Freesound moderates uploads, but the waiver is only as good as the uploader's right to give it. Keep, for every file, the page link, a screenshot showing the CC0 license and the download date. Not every Freesound sound is CC0: some require attribution (CC BY) and some forbid commercial use (CC BY-NC), so check the license on each page before using a new sound. This is general information, not legal advice.</p>
   </div>
 </section>
 
 <section aria-labelledby="review">
   <h2 id="review">Worth a second look</h2>
   <div class="notes">
-    <div class="note"><b>Meditations use two different voices.</b><p>Four meditations use Olin, while Laying Down the Day uses Charon and runs faster (115 vs 93 wpm). If the meditations belong to one collection, one voice would keep them consistent.</p></div>
-    <div class="note"><b>Koda is lower than Jori.</b><p>Maya Brooks is introduced as a woman ("past her bedtime"), but Koda measures about 136 Hz, well below Jori. Listen to Maya's sample to confirm the voice suits the character.</p></div>
+    <div class="note"><b>Koda plays both Maya Brooks and Jason Greene.</b><p>The two guests are in different series, but anyone who hears both episodes may notice they share a voice.</p></div>
+    <div class="note"><b>Cruz is both the narrator and a guest.</b><p>Listeners of the daily prayers and Cruz meditations will hear the same voice as Cruz Castle in Comfort in Trials 6.</p></div>
+    <div class="note"><b>Long pauses after Scripture.</b><p>The <code>&lt;long pause&gt;</code> tag is the one most often read aloud. Daily prayers no longer use it at all; dropping it can shorten the pause after a verse to under a second.</p></div>
   </div>
 </section>
 
 <section aria-labelledby="method">
   <h2 id="method">How this was measured</h2>
   <div class="method">
-    <p><b>Pitch (F0):</b> the median fundamental frequency over voiced 40 ms frames, by autocorrelation on the sample clips on this page. Lower numbers mean a deeper voice. It is an estimate; listening is the final check.</p>
-    <p><b>Pace:</b> words in the JSON divided by the length of the whole MP3, pauses included. A lower number means slower reading or more pausing.</p>
+    <p><b>Pitch (F0):</b> the median fundamental frequency over voiced 40 ms frames, by autocorrelation on the sample clips (or on the guest's own lines). Lower numbers mean a deeper voice. It is an estimate; listening is the final check.</p>
+    <p><b>Pace:</b> words in the JSON divided by the length of the whole MP3, pauses included.</p>
     <p><b>Voice descriptions:</b> based on these measurements and the <code>style</code> fields in the JSON, not on listening.</p>
-    <p>Scanned on 18 November 2026 across 19 episode JSON files in <code>sleepfit/</code> (podcast, meditation, daily_prayer). The <code>mindfit/</code> folder is out of scope.</p>
+    <p>Scanned on 19 November 2026 across 76 audio files in <code>sleepfit/</code> (podcast, meditation, daily_prayer). The <code>mindfit/</code> folder is out of scope.</p>
   </div>
 </section>
 </main>
