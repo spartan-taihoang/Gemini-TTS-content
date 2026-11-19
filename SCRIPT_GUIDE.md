@@ -16,7 +16,8 @@ Give the assistant this file, the plain text, and the host's voice name. Ask for
    - Use ALL CAPS on at most one word per episode for deliberate stress (e.g. `RICH in mercy`).
 3. **Never put directions in `text`.** Anything in `text` is spoken aloud. Words like `(softly)`, `[pause]` or `Say gently:` go in `style` or become a tag.
 4. **Truncated or garbled text: flag it, don't guess.** If a sentence looks cut off (`could be releademanded.`), leave it as is and list it under "Questions" after the JSON. Copying from a terminal often cuts long lines; ask for the text as a file.
-5. **Never split one transcript line across two parts.** A part may hold several lines, but each line belongs to exactly one part.
+5. **Don't name the app.** Write "Welcome to <series name>", never "SleepFit" or "the SleepFit podcast series": the app's name is not final. Episodes made before this rule keep their wording.
+6. **Never split one transcript line across two parts.** A part may hold several lines, but each line belongs to exactly one part.
 
 ## 2. Output format
 

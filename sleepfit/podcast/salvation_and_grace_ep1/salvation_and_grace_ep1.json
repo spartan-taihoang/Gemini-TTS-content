@@ -3,8 +3,16 @@
  "voice": "Jori",
  "parts": [
   {
-   "style": "warm, gentle late-night welcome, speaking slowly",
-   "text": "Welcome to Salvation and Grace. <short pause> I'm Sarah Mitchell. Tonight, we're asking a quiet question... <short pause> is there any place too far for God's grace to reach?"
+   "style": "warm, gentle late-night welcome, a soft smile in the voice, speaking slowly",
+   "text": "Welcome to Salvation and Grace, a brand new series. <chuckle> I'm Sarah Mitchell. <short pause> Over the next three evenings, we'll sit with one of the biggest words in all of Scripture... <short pause> grace."
+  },
+  {
+   "style": "slow, deliberate, each phrase landing softly",
+   "text": "What it is. <short pause> Where it comes from. <short pause> And why it reaches further than we ever imagined."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "So dim the lights, settle in, and let the day go quiet. <short pause> Tonight, we're asking a quiet question... <short pause> is there any place too far for God's grace to reach?"
   },
   {
    "style": "soft, empathetic, thoughtful",
