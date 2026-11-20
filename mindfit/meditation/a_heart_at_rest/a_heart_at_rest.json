@@ -1,0 +1,72 @@
+{
+ "title": "A Heart at Rest",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -5,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into the surface beneath you. <short pause> Feel the weight of your head, your shoulders, your legs... all held. <short pause> There is nothing you need to hold up right now. <short pause> Breathe in slowly through your nose. <short pause> Let the breath out... long, and easy. <short pause> Again, a slow breath in. <short pause> And out... letting go."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we turn to an image the psalmist gives us... a picture of a soul at rest. <short pause> Not a soul striving, or achieving... but a soul that has stopped asking, and simply rests."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Think of a small child who has cried, and reached, and wanted. <short pause> And then, held close... the child grows quiet. <short pause> The wanting fades. <short pause> The questions stop. <short pause> There is only the warmth... the nearness... the being held. <short pause> Breathe in. <short pause> Breathe out."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You have carried questions today. <short pause> Worries about tomorrow. Regrets about yesterday. Things you cannot solve in this moment. <short pause> Let them be, for now. <short pause> You do not have to hold them through the night."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Imagine setting each one down... the way a child sets down a toy when sleep is near. <short pause> Not because the questions do not matter... but because you are being held. <short pause> Breathe in, slowly. <short pause> Breathe out, softly."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "The psalmist wrote of this kind of rest. <short pause> A soul quieted, stilled... like a child who has stopped fussing, and simply leans into the one who holds them. <short pause> Listen to these words."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child. <short pause> Psalm one hundred thirty-one, verse two. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "A soul weaned, quieted... no longer grasping. <short pause> This is the rest God offers you tonight. <short pause> Not because you have earned it, or figured everything out... but because you are his."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your breathing slow even more. <short pause> Feel the rise and fall of your chest... steady, and sure. <short pause> You are safe here. <short pause> You are held."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The questions will keep until morning. <short pause> The burdens are not yours to carry through the dark hours. <short pause> Quiet your soul now... the way that child quiets. <short pause> Not by effort... but by trust. <short pause> Not by understanding... but by leaning in."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in peace. <short pause> Breathe out whatever you have been holding too tightly. <short pause> Let your body grow heavier... softer... stiller. <short pause> Let your mind release its grip on the day."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You are a child of God... and this is your time to rest. <short pause> The one who made you watches over you now. <short pause> He does not sleep. <short pause> He does not forget. <short pause> You can let go."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Feel the quiet settling around you, and within you. <short pause> This is not emptiness... but fullness. <short pause> The fullness of being held... of being known... of being loved. <short pause> Breathe slowly. <short pause> Rest deeply."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "And now, receive this blessing. <short pause> May your soul be quieted, like a weaned child. <short pause> May you rest in the arms of the one who holds you. <short pause> May you sleep in peace... and wake in his mercy."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 23:1",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "The Lord is my shepherd; <short pause> I shall not want. <short pause> Psalm twenty-three, verse one."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, You are my shepherd. <short pause> You know what I need before I ask, and You provide for me. <short pause> Tonight I rest in Your care, trusting that under Your watch I lack nothing. <short pause> I belong to You. <short pause> Amen."
+  }
+ ]
+}

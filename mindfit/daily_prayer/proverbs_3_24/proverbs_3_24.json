@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Proverbs 3:24",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "When thou liest down, thou shalt not be afraid: <short pause> yea, thou shalt lie down, and thy sleep shall be sweet. <short pause> Proverbs, chapter three, verse twenty-four."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, take every fear from my heart tonight and make my sleep sweet. <short pause> Amen."
+  }
+ ]
+}

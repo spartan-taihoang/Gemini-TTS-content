@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 55:22",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Cast thy burden upon the Lord, and he shall sustain thee: <short pause> he shall never suffer the righteous to be moved. <short pause> Psalm fifty-five, verse twenty-two."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, I give You everything I have been carrying. <short pause> The weight is Yours now, not mine. <short pause> You promise to hold me steady, and I trust that promise. <short pause> Let me sleep tonight knowing You sustain me. <short pause> Amen."
+  }
+ ]
+}

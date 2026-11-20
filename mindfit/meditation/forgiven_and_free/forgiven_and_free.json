@@ -1,0 +1,64 @@
+{
+ "title": "Forgiven and Free",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_piano.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your eyes close gently. <short pause> Feel the weight of your body sinking into the bed beneath you. <short pause> Your head rests on the pillow. Your shoulders soften. <short pause> Breathe in slowly through your nose... <short pause> and out through your mouth. <short pause> Again, in through your nose... <short pause> and out, letting the day fall away."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "This has been a day like any other day... full of moments large and small. <short pause> Some of those moments you are proud of. Others you wish you could take back. <short pause> Perhaps you spoke a word you regret. Perhaps you lost patience. <short pause> Perhaps you failed to love as you meant to love."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "It is easy, here in the quiet, to replay those moments. <short pause> To turn them over in your mind, examining each one... wondering what you should have done instead. <short pause> But tonight, you do not have to carry that weight. <short pause> Breathe in. <short pause> And breathe out... releasing the grip of guilt."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "God does not ask you to lie awake rehearsing your failures. <short pause> He invites you to bring them to him... and leave them there. <short pause> When you confess what is true, he does not turn away. <short pause> He forgives. <short pause> And when God forgives, he does not keep a record. <short pause> He does not hold your sin at arm's length, ready to bring it back when you stumble again. <short pause> He removes it."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in deeply. <short pause> And out, slowly. <short pause> Scripture tells us just how far he removes it."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "As far as the east is from the west, so far hath he removed our transgressions from us. <short pause> Psalm one hundred three, verse twelve. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The east and the west are not two points on a map that might one day meet. <short pause> They stretch on forever... never touching. <short pause> That is the distance God places between you and your sin, when he forgives you. <short pause> Infinite separation. <short pause> Complete removal."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You cannot travel far enough to find what he has taken away. <short pause> So tonight, you do not need to search for it either. <short pause> You do not need to dig up what he has buried. <short pause> You do not need to remember what he has chosen to forget. <short pause> Let your breathing slow even more now. <short pause> In... and out."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You are forgiven. <short pause> Not because you have earned it... but because God is merciful. <short pause> Not because your sin was small... but because his love is great. <short pause> And you are free."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Free from the burden of carrying what he has already carried for you. <short pause> Free from the voice that says you must prove yourself worthy. <short pause> Free to rest in the truth that you are his... and he does not let go."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Feel your body grow heavy... peaceful... still. <short pause> There is nothing left to fix tonight. <short pause> Nothing left to solve, or carry, or defend. <short pause> Breathe in. <short pause> And out."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "You are loved... forgiven... and free. <short pause> And now... you may sleep."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

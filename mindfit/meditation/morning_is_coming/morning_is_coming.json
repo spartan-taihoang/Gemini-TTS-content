@@ -1,0 +1,64 @@
+{
+ "title": "Morning Is Coming",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_piano.flac",
+  "volume_db": -12,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let this be a quiet moment. <short pause> The day is done. Whatever it held... it is finished now. <short pause> You can let your shoulders drop. <short pause> Let your hands rest open, and still. <short pause> Feel the weight of your body, held safely where you lie. <short pause> There is nothing more for you to carry tonight. <short pause> Breathe in slowly... <short pause> and out, a little longer. <short pause> Let each breath be soft, and easy."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Some days are heavy. Some days ask too much of us. <short pause> There are moments when weariness runs deeper than the body... when discouragement feels like a blanket you cannot throw off. <short pause> Tonight, if that is where you are... you are not alone."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "God sees the weight you have carried. <short pause> He knows the hours that felt too long... the words that hurt... the disappointments that piled up like stones. <short pause> And even now... he is near."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Take another slow breath in. <short pause> And release it fully."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "This day will not last forever. <short pause> Darkness does not have the final word. <short pause> There is a promise woven into the rhythm of time itself. <short pause> Night falls, yes. <short pause> But morning always comes."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "The psalmist knew this. <short pause> He had seen sorrow... and he had seen the faithfulness of God meet him there. <short pause> And so he wrote these words."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning. <short pause> Psalm thirty, verse five. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Weeping may endure for a night... but joy comes in the morning. <short pause> Not because we have solved everything. Not because the trouble has vanished. <short pause> But because God's mercy is new every day. <short pause> Because he does not leave us in the dark."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your breathing slow even more now. <short pause> Picture the sky before dawn. <short pause> Still, and quiet... but not empty. <short pause> The light is already on its way."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You do not have to manufacture hope tonight. <short pause> You do not have to fix what is broken before you sleep. <short pause> You only have to rest... trusting that God is faithful. <short pause> He holds tomorrow. <short pause> He holds you. <short pause> And when the morning comes... his mercies will come with it."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "So close your eyes... and breathe. <short pause> Let the silence settle around you, like a refuge."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "The Lord bless you, and keep you. <short pause> The Lord make his face shine upon you, and be gracious to you. <short pause> The Lord lift up his countenance upon you... and give you peace."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

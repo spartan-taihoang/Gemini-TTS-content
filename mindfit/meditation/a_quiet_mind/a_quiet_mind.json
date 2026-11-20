@@ -1,0 +1,76 @@
+{
+ "title": "A Quiet Mind",
+ "voice": "Olin",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -12,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Find a comfortable position... and let your body settle into the bed. <short pause> Close your eyes, if you have not already. <short pause> Take a slow breath in through your nose... and let it go. <short pause> Again, breathe in gently... <short pause> and release."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we rest in the truth that God keeps our minds in peace... when we trust in him."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "You may notice thoughts moving through your awareness. <short pause> Plans for tomorrow. Something you forgot to do. A worry that keeps returning. <short pause> These thoughts are like clouds, drifting across the sky. <short pause> You do not have to chase them, or push them away. <short pause> Simply notice them... and let them pass. <short pause> Breathe in slowly. <short pause> Breathe out."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Beneath the moving thoughts, is something steady. <short pause> Beneath the noise, is stillness. <short pause> Beneath the rush... is God. <short pause> He does not change with your circumstances. <short pause> He is the same when your mind is calm, and when it races. <short pause> You can turn your attention to him now... like turning your face toward light."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Another thought may come. <short pause> Let it drift by, like a cloud. <short pause> Breathe in. <short pause> And out."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Your mind does not have to be empty to be at peace. <short pause> It only needs to be anchored."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "When a ship is anchored, the water still moves around it. <short pause> Waves rise and fall... but the ship stays. <short pause> Let your thoughts be like those waves. <short pause> They come... they go. <short pause> But you remain anchored in the presence of God. <short pause> Breathe slowly."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "There is an ancient promise that speaks to this. <short pause> Listen as it is read."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee. <short pause> Isaiah, chapter twenty-six, verse three. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Perfect peace. <short pause> Not because your mind is perfectly still... but because your mind is stayed on him. <short pause> When you notice you have wandered into worry, or planning... you have not failed. <short pause> Simply return. <short pause> Turn your attention back to God... like turning your face back to the light."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in his peace. <short pause> Breathe out what you cannot carry."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The clouds keep drifting. <short pause> That is their nature. <short pause> But the sky behind them does not move. <short pause> God is that steady sky. <short pause> Your trust in him is the anchor. <short pause> Let your breath be slow, and easy."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Rest now in his keeping. <short pause> He holds you through the night. <short pause> Your racing thoughts do not trouble him. <short pause> He is not anxious. <short pause> He is not overwhelmed. <short pause> And he keeps you in perfect peace."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let yourself sink deeper into rest. <short pause> Breathe."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "The Lord bless you, and keep you. <short pause> The Lord make his face to shine upon you, and be gracious to you. <short pause> The Lord lift up his countenance upon you... and give you peace."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

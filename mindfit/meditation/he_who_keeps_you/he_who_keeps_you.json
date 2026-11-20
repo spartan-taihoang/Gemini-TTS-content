@@ -1,0 +1,68 @@
+{
+ "title": "He Who Keeps You",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -12,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into this place of rest. <short pause> Feel the weight of your head on the pillow... the support beneath you. <short pause> You do not need to hold yourself up anymore. <short pause> Let your shoulders drop. Soften your jaw. <short pause> Breathe in slowly through your nose. <short pause> And out through your mouth... releasing the day."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, we rest in a simple truth. <short pause> God stays awake... so you do not have to. <short pause> There is no worry you must carry into the night. <short pause> No problem you must solve before morning. <short pause> The One who made you does not grow tired. <short pause> He does not need sleep as you do."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Breathe in that truth. <short pause> Breathe out your need to stay alert."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "When night falls, and you close your eyes... God remains. <short pause> When your strength fades... his does not. <short pause> He watches over all that concerns you. <short pause> The people you love. The burdens you carry. <short pause> The questions that have no answers yet. <short pause> Let your breath slow even more."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Nothing is forgotten while you sleep. <short pause> Nothing is left unattended. <short pause> The psalmist knew this, when he looked to the hills, and asked where his help would come from. <short pause> He remembered that his help came from the maker of heaven and earth. <short pause> The God who does not slumber."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Behold, he that keepeth Israel shall neither slumber nor sleep. <short pause> Psalm one hundred twenty-one, verse four. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "He will not slumber, nor sleep. <short pause> This is not a God who needs rest from his work. <short pause> He is not like us, limited by the hours of the day. <short pause> While you sleep... he is awake. <short pause> While you let go... he holds on."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Take another slow breath. <short pause> Feel yourself sinking deeper into rest."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You were made to need sleep. <short pause> This is not weakness. It is design. <short pause> Your body requires this rhythm of waking and sleeping, working and resting. <short pause> God built you this way on purpose. <short pause> And in his kindness, he never requires from you what he did not give you the capacity to do."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "He does not ask you to be awake when you need to sleep. <short pause> He does not ask you to carry what he has promised to carry. <short pause> He keeps watch... so you can close your eyes."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Let your whole body relax now. <short pause> Let every muscle soften. <short pause> There is nothing for you to manage in this moment. <short pause> No vigilance required."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "The keeper of Israel neither slumbers nor sleeps. <short pause> And you are kept by him. <short pause> So rest now, beloved. <short pause> Let sleep come as it will. <short pause> You are held. You are watched over."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "And the One who keeps you... never closes his eyes."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Goodnight."
+  }
+ ]
+}

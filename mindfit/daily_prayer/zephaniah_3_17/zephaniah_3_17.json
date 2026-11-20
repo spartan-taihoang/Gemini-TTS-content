@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Zephaniah 3:17",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "The Lord thy God in the midst of thee is mighty; <short pause> he will save, he will rejoice over thee with joy; <short pause> he will rest in his love, he will joy over thee with singing. <short pause> Zephaniah, chapter three, verse seventeen."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Mighty God, You are here with me, closer than my own breath. <short pause> You delight in me and quiet me with Your love. <short pause> The thought that You rejoice over me with singing fills my heart with wonder. <short pause> I rest in Your joyful presence tonight. <short pause> Amen."
+  }
+ ]
+}

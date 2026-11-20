@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 34:4",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "I sought the Lord, and he heard me, and delivered me from all my fears. <short pause> Psalm thirty-four, verse four."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "God, I come to You tonight with all that troubles me. <short pause> You hear me when I call. <short pause> You have lifted fear from my heart before, and I trust You to do it again. <short pause> I lay my worries before You now. <short pause> Amen."
+  }
+ ]
+}

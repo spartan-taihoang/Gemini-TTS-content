@@ -1,0 +1,56 @@
+{
+ "title": "Casting Your Cares",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/harmony_sound.flac",
+  "volume_db": -10,
+  "lead_in": 4,
+  "tail": 6
+ },
+ "parts": [
+  {
+   "style": "warm, gentle, calm, settling into a slow bedtime tone",
+   "text": "Let your body settle into this place of rest. <short pause> Feel the weight of your head on the pillow... the support beneath you. <short pause> You can let go now. <short pause> Breathe in slowly... and as you breathe out, let your shoulders drop. <short pause> Again, breathe in... <short pause> and release."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "Tonight, you are invited to bring your worries into the light, one at a time... and place them into hands stronger than your own. <short pause> You do not have to carry everything yourself."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Think of one concern that has been weighing on you today. <short pause> Name it quietly in your mind. <short pause> See it clearly, just as it is. <short pause> Now imagine holding it in your open hands... like a stone you have been gripping too tightly. <short pause> Breathe in... and as you breathe out, release it. <short pause> Let it go into the care of the One who never sleeps... who never grows weary."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "Bring to mind another worry... something that has followed you into this evening. <short pause> Acknowledge it without judgment. <short pause> Hold it in your hands. <short pause> And now... let it go. <short pause> One more breath, slow and steady."
+  },
+  {
+   "style": "soft, slow, soothing guided meditation voice",
+   "text": "If there is another care pressing on your heart... name it now. <short pause> Hold it up... and release it into the hands of God."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You are not alone in this. <short pause> You are held, even now."
+  },
+  {
+   "style": "reverent, slow, reading scripture aloud",
+   "text": "Casting all your care upon him; for he careth for you. <short pause> First Peter, chapter five, verse seven. <long pause>"
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "All your care. <short pause> Not some of it. Not only the small things. <short pause> But all of it. <short pause> He cares for you. <short pause> Let that truth settle over you like a blanket."
+  },
+  {
+   "style": "tender, intimate, very soft, speaking slowly",
+   "text": "You can rest now. <short pause> There is nothing left for you to hold onto tonight. <short pause> Your worries are no longer yours to manage alone. <short pause> Breathe in peace. <short pause> Breathe out everything else. <short pause> Let your mind grow quiet. <short pause> Let your body soften. <short pause> You are safe here. <short pause> You are cared for."
+  },
+  {
+   "style": "prayerful, hushed, very slow, a gentle blessing",
+   "text": "May you sleep in the shelter of his presence... free from the burdens of the day. <short pause> May his peace guard your heart and mind through the hours of this night."
+  },
+  {
+   "style": "soft, near-whispered, soothing goodnight",
+   "text": "Rest well. <short pause> Goodnight."
+  }
+ ]
+}

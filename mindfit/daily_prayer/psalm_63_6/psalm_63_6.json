@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 63:6",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "When I remember thee upon my bed, and meditate on thee in the night watches. <short pause> Psalm sixty-three, verse six."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, as I lie here in the quiet, my thoughts turn to You. <short pause> Through the long watches of the night, You are with me. <short pause> I remember who You are and what You have done, and my heart is at peace. <short pause> Amen."
+  }
+ ]
+}

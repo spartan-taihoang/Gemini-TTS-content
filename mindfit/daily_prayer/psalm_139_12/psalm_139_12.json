@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 139:12",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Yea, the darkness hideth not from thee; <short pause> but the night shineth as the day: <short pause> the darkness and the light are both alike to thee. <short pause> Psalm one hundred thirty-nine, verse twelve."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "God, the darkness does not hide me from You. <short pause> Night and day are the same in Your sight. <short pause> As I lie down in the dark, I know You see me clearly and You are near. <short pause> I am not alone. <short pause> Amen."
+  }
+ ]
+}

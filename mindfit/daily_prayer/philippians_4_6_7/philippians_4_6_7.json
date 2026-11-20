@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Philippians 4:6-7",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Be careful for nothing; <short pause> but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. <short pause> And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus. <short pause> Philippians, chapter four, verses six and seven."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Heavenly Father, I bring You everything that weighs on my mind tonight. <short pause> With thanksgiving, I lay my requests before You. <short pause> Guard my heart and mind with Your peace that goes beyond understanding. <short pause> I release my worries into Your keeping and rest in Christ Jesus. <short pause> Amen."
+  }
+ ]
+}

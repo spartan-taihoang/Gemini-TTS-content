@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Isaiah 41:10",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Fear thou not; <short pause> for I am with thee: <short pause> be not dismayed; <short pause> for I am thy God: <short pause> I will strengthen thee; <short pause> yea, I will help thee; <short pause> yea, I will uphold thee with the right hand of my righteousness. <short pause> Isaiah, chapter forty-one, verse ten."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Father, when fear whispers tonight, remind me that You are with me. <short pause> You are my God, and Your right hand holds me steady. <short pause> Thank You for Your strength when mine runs out, for Your help when I cannot manage alone. <short pause> I belong to You. <short pause> Amen."
+  }
+ ]
+}

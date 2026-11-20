@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Lamentations 3:22-23",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "It is of the Lord’s mercies that we are not consumed, because his compassions fail not. <short pause> They are new every morning: <short pause> great is thy faithfulness. <short pause> Lamentations, chapter three, verses twenty-two and twenty-three."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Merciful God, Your compassion never runs dry. <short pause> Every morning I wake to fresh mercy, no matter what yesterday held. <short pause> Your faithfulness is great beyond measure. <short pause> Tonight I thank You for sustaining me, and I look forward to tomorrow's new grace. <short pause> Amen."
+  }
+ ]
+}

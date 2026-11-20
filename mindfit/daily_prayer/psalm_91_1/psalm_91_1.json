@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 91:1",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. <short pause> Psalm ninety-one, verse one."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, I come into Your presence tonight, into the secret place where You shelter those who trust You. <short pause> Under Your shadow I am safe. <short pause> I rest here, hidden and held, through all the hours of darkness. <short pause> Amen."
+  }
+ ]
+}

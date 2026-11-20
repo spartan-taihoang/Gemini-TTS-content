@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Psalm 145:18",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "The Lord is nigh unto all them that call upon him, to all that call upon him in truth. <short pause> Psalm one hundred forty-five, verse eighteen."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Lord, You are near to everyone who calls on You in truth. <short pause> I call on You now, simply and honestly. <short pause> I need You tonight. <short pause> Thank You for drawing close, for listening, for being right here with me. <short pause> Amen."
+  }
+ ]
+}

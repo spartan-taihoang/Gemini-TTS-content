@@ -1,0 +1,20 @@
+{
+ "title": "Daily prayer - Matthew 11:28",
+ "voice": "Cruz",
+ "ambience": {
+  "file": "../../shared_ambience/ambience_soft_pad.flac",
+  "volume_db": -9,
+  "lead_in": 2,
+  "tail": 4
+ },
+ "parts": [
+  {
+   "style": "calm, reverent, reading scripture aloud slowly",
+   "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest. <short pause> Matthew, chapter eleven, verse twenty-eight."
+  },
+  {
+   "style": "warm, gentle, prayerful, speaking slowly",
+   "text": "Jesus, I bring You the weight of this day. <short pause> Take my burdens and give me Your rest. <short pause> Amen."
+  }
+ ]
+}
