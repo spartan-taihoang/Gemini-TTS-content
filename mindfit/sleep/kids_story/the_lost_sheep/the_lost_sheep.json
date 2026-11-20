@@ -3,7 +3,7 @@
   "voice": "Cruz",
   "parts": [
     {"style": "warm, gentle bedtime welcome, speaking slowly",
-     "text": "Hello again, my friend. <short pause> Is your pillow just right? <short pause> Good. <short pause> Tonight I have a story that Jesus told, about a shepherd and one little sheep who wandered away."},
+     "text": "Hello again, my friend. <short pause> Is your pillow just right? <short pause> Good. <short pause> Tonight's story is about a kind shepherd, and one little sheep who wandered away."},
     {"style": "tender, quiet storytelling",
      "text": "Once there was a shepherd who had one hundred sheep. <short pause> One hundred! <short pause> Big sheep and little sheep. <short pause> Fluffy sheep and sleepy sheep. <short pause> And the shepherd knew every single one of them."},
     {"style": "gentle, slow, painting a calm scene",
@@ -21,13 +21,13 @@
     {"style": "soft, heartfelt, slower",
      "text": "The shepherd found her! <short pause> He untangled her wool from the thorns, very gently. <short pause> He didn't scold her. <short pause> He lifted her up onto his shoulders, and carried her all the way home."},
     {"style": "warm, joyful but soft, speaking slowly",
-     "text": "When he got home, he called to his friends and neighbors. <short pause> Come and celebrate with me!"},
-    {"style": "slow, reflective, letting the words sink in",
-     "text": "Rejoice with me; for I have found my sheep which was lost. <long pause>"},
+     "text": "When he got home, he called to his friends and neighbors. <short pause> Come and celebrate with me! <short pause> I have found my little sheep!"},
+    {"style": "gentle, slow, painting a calm scene",
+     "text": "He set her down in the soft straw, right in the middle of the flock. <short pause> The other sheep snuggled close around her, warm and woolly. <short pause> And the little sheep gave a big, sleepy yawn."},
     {"style": "tender, intimate, very soft, speaking slowly",
-     "text": "Jesus told this story so we would know something very important. <short pause> God is like that shepherd. <short pause> And you are like that little sheep. <short pause> If you ever feel far away, or lost, or alone, he comes looking for you. <short pause> Every single time."},
-    {"style": "prayerful, hushed, very slow",
-     "text": "Dear God, <short pause> thank You for being my Good Shepherd. <short pause> Thank You that You always know where I am, and You never stop caring for me. <short pause> Please carry me safely through the night. <short pause> Amen."},
+     "text": "Do you know what this story means, my friend? <short pause> It means that you matter, just like that one little sheep. <short pause> If you ever feel far away, or lost, or alone, the people who love you will always come looking for you. <short pause> Every single time."},
+    {"style": "soft, slow, soothing",
+     "text": "Let's count slowly, like the shepherd, and let your body get heavy and still. <short pause> One... <short pause> two... <short pause> three... <short pause> four... <short pause> five."},
     {"style": "soft, near-whispered, soothing goodnight",
      "text": "All one hundred sheep are home now. <short pause> The gate is closed. <short pause> The stars are shining. <short pause> And you are safe, too. <short pause> Goodnight, my friend."}
   ]
