@@ -1,0 +1,9 @@
+{
+  "title": "Bible audio - Psalms 117",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
+  "key": "GEMINI_FREE_01",
+  "parts": [
+    {"style": "gentle, reflective, slow", "text": "O Praise the Lord, all ye nations: praise him, all ye people. For his merciful kindness is great toward us: and the truth of the Lord endureth for ever. Praise ye the Lord."}
+  ]
+}

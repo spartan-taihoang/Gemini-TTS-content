@@ -1,0 +1,10 @@
+{
+  "title": "Bible audio - Psalms 92",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
+  "key": "GEMINI_FREE_01",
+  "parts": [
+    {"style": "gentle, reflective, slow", "text": "IT IS A GOOD THING TO GIVE THANKS UNTO THE Lord, AND TO SING PRAISES UNTO THY NAME, O MOST HIGH: To shew forth thy lovingkindness in the morning, and thy faithfulness every night, Upon an instrument of ten strings, and upon the psaltery; upon the harp with a solemn sound. For thou, Lord, hast made me glad through thy work: I will triumph in the works of thy hands. O Lord, how great are thy works! and thy thoughts are very deep. A brutish man knoweth not; neither doth a fool understand this. When the wicked spring as the grass, and when all the workers of iniquity do flourish; it is that they shall be destroyed for ever: But thou, Lord, art most high for evermore."},
+    {"style": "gentle, reflective, slow", "text": "For, lo, thine enemies, O Lord, for, lo, thine enemies shall perish; all the workers of iniquity shall be scattered. But my horn shalt thou exalt like the horn of an unicorn: I shall be anointed with fresh oil. Mine eye also shall see my desire on mine enemies, and mine ears shall hear my desire of the wicked that rise up against me. The righteous shall flourish like the palm tree: he shall grow like a cedar in Lebanon. Those that be planted in the house of the Lord shall flourish in the courts of our God. They shall still bring forth fruit in old age; they shall be fat and flourishing; To shew that the Lord is upright: he is my rock, and there is no unrighteousness in him."}
+  ]
+}
