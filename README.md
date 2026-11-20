@@ -11,9 +11,10 @@ gemini-tts/
 ├── to_m4a.py               # MP3 -> M4A, the only format SleepFit accepts
 ├── push_episode.py         # upload m4a + transcript timings to a SleepFit admin API episode
 ├── push_track.py           # upload a meditation/sound m4a (ambience version if present) to a SleepFit audio track
+├── push_prayer.py          # upload a daily prayer m4a (ambience version if present) to a SleepFit daily prayer
 └── sleepfit/
     ├── shared_ambience/             # background loops and app sounds; every .flac loops seamlessly
-    │   ├── ambience_soft_pad.flac       # warm pad (daily prayers, meditations), self-made
+    │   ├── ambience_soft_pad.flac       # warm pad (daily prayers, meditations), synthesized by make_pad.py
     │   ├── ambience_piano.flac          # sparse soft piano (meditations), self-made by make_ambience.py
     │   ├── harmony_sound.flac           # meditation pad, made from harmony_sound.mp4 by make_seamless.py
     │   ├── bird_sound.flac, ocean_sound.flac   # made by make_seamless.py
