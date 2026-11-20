@@ -1,8 +1,11 @@
-# Generated audio and caches: rebuild with tts_episode.py
+# Generated audio and caches: rebuild with tts_episode.py or tts_bible.py
 *_parts/
+_batches/
+_probe/
 
 # Local environment
 .venv/
 __pycache__/
 .DS_Store
 .env
+free_*.env
