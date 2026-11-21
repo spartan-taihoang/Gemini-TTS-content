@@ -1,0 +1,9 @@
+{
+  "title": "Bible audio - Psalms 134",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
+  "key": "GEMINI_FREE_06",
+  "parts": [
+    {"style": "gentle, reflective, slow", "text": "Behold, bless ye the Lord, all ye servants of the Lord, which by night stand in the house of the Lord. Lift up your hands in the sanctuary, and bless the Lord. The Lord that made heaven and earth bless thee out of Zion."}
+  ]
+}

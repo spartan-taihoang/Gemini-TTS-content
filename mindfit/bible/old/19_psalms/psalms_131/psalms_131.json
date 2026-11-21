@@ -1,0 +1,9 @@
+{
+  "title": "Bible audio - Psalms 131",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
+  "key": "GEMINI_FREE_06",
+  "parts": [
+    {"style": "gentle, reflective, slow", "text": "Lord, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me. Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child. Let Israel hope in the Lord from henceforth and for ever."}
+  ]
+}
