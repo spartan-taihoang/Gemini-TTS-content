@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Mark 7",
-  "voice": "Charon",
-  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "Then came together unto him the Pharisees, and certain of the scribes, which came from Jerusalem. And when they saw some of his disciples eat bread with defiled, that is to say, with unwashen, hands, they found fault. For the Pharisees, and all the Jews, except they wash their hands oft, eat not, holding the tradition of the elders. And when they come from the market, except they wash, they eat not. And many other things there be, which they have received to hold, as the washing of cups, and pots, brasen vessels, and of tables. Then the Pharisees and scribes asked him, Why walk not thy disciples according to the tradition of the elders, but eat bread with unwashen hands?"},

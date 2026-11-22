@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Mark 10",
-  "voice": "Charon",
-  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And he arose from thence, and cometh into the coasts of Judaea by the farther side of Jordan: and the people resort unto him again; and, as he was wont, he taught them again. And the Pharisees came to him, and asked him, Is it lawful for a man to put away his wife? tempting him. And he answered and said unto them, What did Moses command you? And they said, Moses suffered to write a bill of divorcement, and to put her away. And Jesus answered and said unto them, For the hardness of your heart he wrote you this precept. But from the beginning of the creation God made them male and female. For this cause shall a man leave his father and mother, and cleave to his wife;"},

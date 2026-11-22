@@ -91,8 +91,13 @@ class TTSFailed(Exception):
 
 
 class NoAudio(TTSFailed):
-    # HTTP 200 without audio: finishReason RECITATION means the safety filter judged the text too close to a memorised
-    # source (Bible verses are), so another model may still voice it.
+    # HTTP 200 without audio (after the retries for other finish reasons).
+    pass
+
+
+class Recitation(NoAudio):
+    # finishReason RECITATION: the filter judged the text too close to a memorised source (Bible verses are). It repeats
+    # on every model and key, so the batch fails at once instead of trying the others.
     pass
 
 
@@ -284,8 +289,10 @@ def synth(parts, model, voice, style_mode="metadata", key_var=None):
             except (KeyError, IndexError):  # the model sometimes answers 200 with no audio (finishReason OTHER); retry
                 reason = (res.get("candidates") or [{}])[0].get("finishReason", "no candidates")
                 # A recitation block repeats: across 38 retries in the logs none ever produced audio, and every try costs
-                # one of the 100 requests per model per day, so fail at once and let the next model try.
-                if attempt == MAX_RETRIES or reason == "RECITATION":
+                # one of the 100 requests per model per day, so fail at once without trying other models or keys.
+                if reason == "RECITATION":
+                    raise Recitation(f"{model}: response had no audio ({reason})")
+                if attempt == MAX_RETRIES:
                     raise NoAudio(f"{model}: response had no audio ({reason})")
                 print(f"  {model}: response had no audio ({reason}), retry {attempt + 1}/{MAX_RETRIES}", flush=True)
                 time.sleep(5)
@@ -496,6 +503,10 @@ def synth_with_fallback(parts, active):
             if index == active:
                 active += 1
             print(f"  {slot_label(slot)} is out of daily quota; switching to {slot_label(SLOTS[index + 1])}", flush=True)
+        except Recitation as e:  # the same block on every model and key: stop here, no more requests for this batch
+            reasons.append(f"[{key_var}] {e}")
+            print(f"  [{key_var}] {e}; not trying other models or keys", flush=True)
+            return None, None, active, reasons
         except (NoAudio, Transient) as e:
             reasons.append(f"[{key_var}] {e}")
             print(f"  [{key_var}] {e}; trying the next model/key for this batch", flush=True)

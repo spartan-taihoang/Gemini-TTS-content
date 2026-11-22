@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Matthew 12",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "At that time Jesus went on the sabbath day through the corn; and his disciples were an hungred, and began to pluck the ears of corn, and to eat. But when the Pharisees saw it, they said unto him, Behold, thy disciples do that which is not lawful to do upon the sabbath day. But he said unto them, Have ye not read what David did, when he was an hungred, and they that were with him; How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests? Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless?"},

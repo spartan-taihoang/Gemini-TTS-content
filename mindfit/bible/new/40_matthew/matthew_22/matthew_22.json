@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Matthew 22",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And Jesus answered and spake unto them again by parables, and said, The kingdom of heaven is like unto a certain king, which made a marriage for his son, And sent forth his servants to call them that were bidden to the wedding: and they would not come. Again, he sent forth other servants, saying, Tell them which are bidden, Behold, I have prepared my dinner: my oxen and my fatlings are killed, and all things are ready: come unto the marriage. But they made light of it, and went their ways, one to his farm, another to his merchandise: And the remnant took his servants, and entreated them spitefully, and slew them. But when the king heard thereof, he was wroth: and he sent forth his armies, and destroyed those murderers, and burned up their city."},

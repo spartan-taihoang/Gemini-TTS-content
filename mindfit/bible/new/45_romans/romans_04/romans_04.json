@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Romans 4",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "sincere, clear, measured", "text": "What shall we say then that Abraham our father, as pertaining to the flesh, hath found? For if Abraham were justified by works, he hath whereof to glory; but not before God. For what saith the scripture? Abraham believed God, and it was counted unto him for righteousness. Now to him that worketh is the reward not reckoned of grace, but of debt. But to him that worketh not, but believeth on him that justifieth the ungodly, his faith is counted for righteousness. Even as David also describeth the blessedness of the man, unto whom God imputeth righteousness without works, Saying, Blessed are they whose iniquities are forgiven, and whose sins are covered. Blessed is the man to whom the Lord will not impute sin."},

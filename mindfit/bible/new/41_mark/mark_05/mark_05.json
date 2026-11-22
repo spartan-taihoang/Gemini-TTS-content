@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Mark 5",
-  "voice": "Charon",
-  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And they came over unto the other side of the sea, into the country of the Gadarenes. And when he was come out of the ship, immediately there met him out of the tombs a man with an unclean spirit, Who had his dwelling among the tombs; and no man could bind him, no, not with chains: Because that he had been often bound with fetters and chains, and the chains had been plucked asunder by him, and the fetters broken in pieces: neither could any man tame him. And always, night and day, he was in the mountains, and in the tombs, crying, and cutting himself with stones. But when he saw Jesus afar off, he ran and worshipped him,"},

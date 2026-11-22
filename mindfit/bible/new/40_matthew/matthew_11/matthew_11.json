@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Matthew 11",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And it came to pass, when Jesus had made an end of commanding his twelve disciples, he departed thence to teach and to preach in their cities. Now when John had heard in the prison the works of Christ, he sent two of his disciples, And said unto him, Art thou he that should come, or do we look for another? Jesus answered and said unto them, Go and shew John again those things which ye do hear and see: The blind receive their sight, and the lame walk, the lepers are cleansed, and the deaf hear, the dead are raised up, and the poor have the gospel preached to them. And blessed is he, whosoever shall not be offended in me."},

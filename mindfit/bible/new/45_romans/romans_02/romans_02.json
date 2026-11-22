@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Romans 2",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "sincere, clear, measured", "text": "Therefore thou art inexcusable, O man, whosoever thou art that judgest: for wherein thou judgest another, thou condemnest thyself; for thou that judgest doest the same things. But we are sure that the judgment of God is according to truth against them which commit such things. And thinkest thou this, O man, that judgest them which do such things, and doest the same, that thou shalt escape the judgment of God? Or despisest thou the riches of his goodness and forbearance and longsuffering; not knowing that the goodness of God leadeth thee to repentance? But after thy hardness and impenitent heart treasurest up unto thyself wrath against the day of wrath and revelation of the righteous judgment of God; Who will render to every man according to his deeds:"},

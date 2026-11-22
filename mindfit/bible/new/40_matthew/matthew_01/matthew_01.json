@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Matthew 1",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "even, steady, unhurried", "text": "The book of the generation of Jesus Christ, the son of David, the son of Abraham. Abraham begat Isaac; and Isaac begat Jacob; and Jacob begat Judas and his brethren; And Judas begat Phares and Zara of Thamar; and Phares begat Esrom; and Esrom begat Aram; And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson begat Salmon; And Salmon begat Booz of Rachab; and Booz begat Obed of Ruth; and Obed begat Jesse; And Jesse begat David the king; and David the king begat Solomon of her that had been the wife of Urias; And Solomon begat Roboam; and Roboam begat Abia; and Abia begat Asa; And Asa begat Josaphat; and Josaphat begat Joram; and Joram begat Ozias; And Ozias begat Joatham; and Joatham begat Achaz; and Achaz begat Ezekias;"},

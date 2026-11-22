@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Romans 15",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "sincere, clear, measured", "text": "We then that are strong ought to bear the infirmities of the weak, and not to please ourselves. Let every one of us please his neighbour for his good to edification. For even Christ pleased not himself; but, as it is written, The reproaches of them that reproached thee fell on me. For whatsoever things were written aforetime were written for our learning, that we through patience and comfort of the scriptures might have hope. Now the God of patience and consolation grant you to be likeminded one toward another according to Christ Jesus: That ye may with one mind and one mouth glorify God, even the Father of our Lord Jesus Christ. Wherefore receive ye one another, as Christ also received us to the glory of God."},

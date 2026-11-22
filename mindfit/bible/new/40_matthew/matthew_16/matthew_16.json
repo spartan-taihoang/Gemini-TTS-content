@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Matthew 16",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "The Pharisees also with the Sadducees came, and tempting desired him that he would shew them a sign from heaven. He answered and said unto them, When it is evening, ye say, It will be fair weather: for the sky is red. And in the morning, It will be foul weather to day: for the sky is red and lowring. O ye hypocrites, ye can discern the face of the sky; but can ye not discern the signs of the times? A wicked and adulterous generation seeketh after a sign; and there shall no sign be given unto it, but the sign of the prophet Jonas. And he left them, and departed. And when his disciples were come to the other side, they had forgotten to take bread."},

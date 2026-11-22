@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Mark 12",
-  "voice": "Charon",
-  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And he began to speak unto them by parables. A certain man planted a vineyard, and set an hedge about it, and digged a place for the winefat, and built a tower, and let it out to husbandmen, and went into a far country. And at the season he sent to the husbandmen a servant, that he might receive from the husbandmen of the fruit of the vineyard. And they caught him, and beat him, and sent him away empty. And again he sent unto them another servant; and at him they cast stones, and wounded him in the head, and sent him away shamefully handled. And again he sent another; and him they killed, and many others; beating some, and killing some."},

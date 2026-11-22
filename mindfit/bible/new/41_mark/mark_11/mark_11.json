@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Mark 11",
-  "voice": "Charon",
-  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And when they came nigh to Jerusalem, unto Bethphage and Bethany, at the mount of Olives, he sendeth forth two of his disciples, And saith unto them, Go your way into the village over against you: and as soon as ye be entered into it, ye shall find a colt tied, whereon never man sat; loose him, and bring him. And if any man say unto you, Why do ye this? say ye that the Lord hath need of him; and straightway he will send him hither. And they went their way, and found the colt tied by the door without in a place where two ways met; and they loose him. And certain of them that stood there said unto them, What do ye, loosing the colt?"},

@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Romans 9",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "sincere, clear, measured", "text": "I say the truth in Christ, I lie not, my conscience also bearing me witness in the Holy Ghost, That I have great heaviness and continual sorrow in my heart. For I could wish that myself were accursed from Christ for my brethren, my kinsmen according to the flesh: Who are Israelites; to whom pertaineth the adoption, and the glory, and the covenants, and the giving of the law, and the service of God, and the promises; Whose are the fathers, and of whom as concerning the flesh Christ came, who is over all, God blessed for ever. Amen. Not as though the word of God hath taken none effect. For they are not all Israel, which are of Israel:"},

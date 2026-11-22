@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Romans 14",
-  "voice": "Charon",
-  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "sincere, clear, measured", "text": "Him that is weak in the faith receive ye, but not to doubtful disputations. For one believeth that he may eat all things: another, who is weak, eateth herbs. Let not him that eateth despise him that eateth not; and let not him which eateth not judge him that eateth: for God hath received him. Who art thou that judgest another man’s servant? to his own master he standeth or falleth. Yea, he shall be holden up: for God is able to make him stand. One man esteemeth one day above another: another esteemeth every day alike. Let every man be fully persuaded in his own mind. He that regardeth the day, regardeth it unto the Lord; and he that regardeth not the day, to the Lord he doth not regard it. He that eateth, eateth to the Lord, for he giveth God thanks; and he that eateth not, to the Lord he eateth not, and giveth God thanks."},

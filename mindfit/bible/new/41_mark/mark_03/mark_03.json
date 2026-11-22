@@ -1,7 +1,7 @@
 {
   "title": "Bible audio - Mark 3",
-  "voice": "Charon",
-  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Cruz",
+  "model": "gemini-3.8-flash-lite-tts",
   "key": "GEMINI_API_KEY_02",
   "parts": [
     {"style": "warm, calm, measured", "text": "And he entered again into the synagogue; and there was a man there which had a withered hand. And they watched him, whether he would heal him on the sabbath day; that they might accuse him. And he saith unto the man which had the withered hand, Stand forth. And he saith unto them, Is it lawful to do good on the sabbath days, or to do evil? to save life, or to kill? But they held their peace. And when he had looked round about on them with anger, being grieved for the hardness of their hearts, he saith unto the man, Stretch forth thine hand. And he stretched it out: and his hand was restored whole as the other."},
