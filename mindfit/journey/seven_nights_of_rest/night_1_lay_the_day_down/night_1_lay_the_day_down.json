@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 1: Lay the day down",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night one, Lay the Day Down. <short pause> These are for bedtime, so please don't listen while you drive. <short pause> Each night, we'll put out one more light in a quiet house... and learn a few words to fall asleep on."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "Tonight we begin at the front door. <short pause> Picture it, with the day still standing just inside. <short pause> The bags, the shoes, the unfinished jobs. <short pause> And you, with your hand on the lock, feeling that you'd better stay up and watch over it all. <short pause> But there is an old song for people like that, in Psalm one hundred twenty-seven, verse one."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "Except the Lord build the house, they labour in vain that build it: except the Lord keep the city, the watchman waketh but in vain."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "The builder may put the tools down. <short pause> The watchman may go home. <short pause> It was never only your hands holding this up, and never only your eyes keeping it safe. <short pause> There is a Keeper for the night shift... <short pause> and He has already arrived."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "So hand the day over. <short pause> Set down what got done, and say, thank You. <short pause> Set down what went wrong, and say, forgive me, and mend it. <short pause> Set down what isn't finished... and leave it by the door. <short pause> It can stand there until morning.",
+     "silence_after": 6},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Lord, I give You the keys. <short pause> Watch over this house, and everyone I love. <short pause> I am going off duty now. <short pause> The day is Yours. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Now put out the light by the door. <short pause> Let your shoulders sink... and your hands grow heavy. <short pause> If you wake, you don't need to get up and check. <short pause> Just say it softly... <short pause> the day is Yours. <short pause> Goodnight.",
+     "silence_after": 8}
+  ]
+}

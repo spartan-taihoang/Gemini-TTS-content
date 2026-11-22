@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 2: Still waters",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night two, Still Waters. <short pause> Last thing at the front door, we say, the day is Yours. <short pause> Now we walk through to the kitchen, where the tap has stopped running... and the house is growing quiet."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "When sleep won't come, people tell us to count sheep. <short pause> But in the Bible, you are not the one who counts. <short pause> You are the sheep. <short pause> The prophet Jeremiah speaks of flocks passing under the hands of the one who counts them, home for the night. <short pause> And David knew that Shepherd by heart, in Psalm twenty-three."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "The Lord is my shepherd; I shall not want. He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "A sheep lying down by the water doesn't know how many are in the flock. <short pause> It doesn't know where tomorrow's grass is. <short pause> It only needs to know whose it is. <short pause> Keeping count is the Shepherd's work... <short pause> and He does not lose His place."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "So let yourself be counted. <short pause> Imagine His hand resting lightly on your head as you go by. <short pause> Not hurrying you. <short pause> Not inspecting you. <short pause> Only knowing you... this one is Mine. <short pause> Feel the weight of that hand, and let your body lie down under it.",
+     "silence_after": 6},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Good Shepherd, count me in tonight. <short pause> And count the ones I worry about, wherever they are lying. <short pause> Lead my thoughts to quiet water, and restore my soul while I sleep. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Put out the kitchen light. <short pause> And say the words we have, as slowly as you like. <short pause> The day is Yours... <short pause> I am counted. <short pause> There is nothing left to add up. <short pause> Goodnight.",
+     "silence_after": 8}
+  ]
+}

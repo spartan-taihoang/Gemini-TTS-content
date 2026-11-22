@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 7: Sweet sleep",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night seven, Sweet Sleep. <short pause> There is one light left, beside your bed. <short pause> You can leave it on, if the dark is hard for you. <short pause> And you can open your eyes whenever you need to."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "Think back through the house. <short pause> The door is locked, and the day is handed over. <short pause> The kitchen is still. The curtains are drawn. <short pause> The desk and the shelf and the hall are dark. <short pause> Someone else is awake in this house, and He loves you. <short pause> So hear this promise, from Proverbs chapter three, verse twenty-four."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "It says lie down, and then it says it again... as though to someone who sat back up. <short pause> Lie down. <short pause> You don't have to feel brave to do that. <short pause> Fear may come into the room. <short pause> It doesn't get to be the one who keeps watch."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "So here are all seven, one for every light. <short pause> The day is Yours. <short pause> I am counted. <short pause> I am covered. <short pause> Sleep is a gift. <short pause> Not mine to know. <short pause> Thank You. <short pause> I will not be afraid.",
+     "silence_after": 6},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Lord, thank You for these seven nights, and for all the nights to come. <short pause> Stay by this bed. <short pause> Make my sleep sweet... and when I wake, let me still be with You. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Once more, very softly... and you don't need to reach the end. <short pause> The day is Yours... <short pause> I am counted... <short pause> I am covered... <short pause> Sleep is a gift... <short pause> Not mine to know... <short pause> Thank You... <short pause> I will not be afraid. <short pause> Goodnight.",
+     "silence_after": 10}
+  ]
+}

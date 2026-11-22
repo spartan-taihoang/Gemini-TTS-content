@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 4: He gives sleep",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night four, He Gives Sleep. <short pause> The day is Yours. I am counted. I am covered. <short pause> Tonight we stop at the desk, where one small lamp is still on... because somebody is still trying."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "Sometimes we even work at sleeping. <short pause> We watch the clock. We do the sums. <short pause> If I drop off now, I'll get five hours. <short pause> And the harder we try, the further away it goes. <short pause> The same psalm that sent the watchman home has a word for tired workers, in Psalm one hundred twenty-seven, verse two."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "Notice who does the giving. <short pause> Sleep is His gift, so it can't be earned. <short pause> And if it comes slowly, you are no less His beloved. <short pause> Lying awake is not a failing. <short pause> If it happens night after night, you can ask a doctor for help... and be beloved there, too."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "Jesus once told of a farmer who scattered seed, and went to bed. <short pause> He was speaking of God's kingdom, but we can borrow the picture. <short pause> The farmer sleeps, and the seed grows, he doesn't know how. <short pause> Choose one thing you planted today. <short pause> Leave it in the dark soil with God... and take your hands away.",
+     "silence_after": 6},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Giver of sleep, I stop trying. <short pause> Grow what I cannot grow. <short pause> I will take rest as it comes, a little or a lot, from Your hand. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Turn the clock to the wall, and put out the lamp on the desk. <short pause> The day is Yours... <short pause> I am counted... <short pause> I am covered... <short pause> Sleep is a gift. <short pause> Goodnight, beloved.",
+     "silence_after": 8}
+  ]
+}

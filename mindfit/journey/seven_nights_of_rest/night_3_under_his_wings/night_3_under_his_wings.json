@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 3: Under His wings",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night three, Under His Wings. <short pause> The day is Yours... and I am counted. <short pause> Tonight we go softly from window to window, and draw the curtains. <short pause> If you aren't safe where you are, please reach someone who can help before you rest."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "The dark outside a window can make a worry look very large. <short pause> Psalm ninety-one doesn't pretend that the night is empty of trouble. <short pause> It tells us where we can spend it. <short pause> Listen to how it begins... and then to the picture it gives us, a little later, in verse four."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. <short pause> He shall cover thee with his feathers, and under his wings shalt thou trust: his truth shall be thy shield and buckler."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "Feathers. <short pause> Not a wall of iron, but something warm, and close, with a heartbeat under it. <short pause> A wing doesn't explain the storm to the little ones beneath it. <short pause> It covers them... <short pause> and it stays."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "Draw your blanket up now, and let it be a picture of that wing. <short pause> Feel it settle along your arms. <short pause> Then, in your heart, draw it over someone you love. <short pause> And someone who is alone tonight. <short pause> Say each name once... and tuck it in. <short pause> There is room for them all.",
+     "silence_after": 8},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Most High God, cover what I cannot protect. <short pause> Cover this room, and those names, and the trouble I don't understand. <short pause> Whatever this night holds, let me spend it close to You. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Put out the light at the window. <short pause> These three lines are a whole evening prayer, for this night or any night. <short pause> The day is Yours... <short pause> I am counted... <short pause> I am covered. <short pause> Goodnight.",
+     "silence_after": 8}
+  ]
+}

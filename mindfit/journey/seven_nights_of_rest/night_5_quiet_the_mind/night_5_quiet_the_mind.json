@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 5: Quiet the mind",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night five, Quiet the Mind. <short pause> If your thoughts turn toward harming yourself, please don't wait for sleep. Call your local emergency number or a crisis line now. <short pause> Otherwise, come with me to the bookshelf... where the big questions are kept."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "A tired mind takes down the heaviest books. <short pause> How will it all turn out? <short pause> Why did it happen? <short pause> How can I fix every one of them? <short pause> David had a kingdom full of questions like that. <short pause> And he learned to be humble enough to leave some on the shelf. <short pause> This is Psalm one hundred thirty-one, verse one."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "Lord, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "There is such relief in admitting that. <short pause> You were not made to understand everything, or to run the world from a pillow. <short pause> Some things belong on God's shelf. <short pause> He can reach it... <short pause> and you don't have to."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "Let's make that a breath prayer, with no holding and no counting. <short pause> As you breathe in... not mine to know. <short pause> As you breathe out... I am Yours. <short pause> Breathe in... not mine to know. <short pause> And out... I am Yours. <short pause> Keep it going gently, on your own.",
+     "silence_after": 10},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Lord, these matters are too high for me, and they are not too high for You. <short pause> Keep them safe. <short pause> Quiet my mind, and keep me small and near. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Put out the light by the shelf. <short pause> The day is Yours... <short pause> I am counted... <short pause> I am covered... <short pause> Sleep is a gift... <short pause> Not mine to know. <short pause> Goodnight.",
+     "silence_after": 8}
+  ]
+}

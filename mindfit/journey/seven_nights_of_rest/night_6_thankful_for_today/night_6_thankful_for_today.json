@@ -1,0 +1,22 @@
+{
+  "title": "Journey - Seven Nights of Rest - Night 6: Thankful for today",
+  "voice": "Koda",
+  "parts": [
+    {"style": "warm, soft bedtime welcome, slow and unhurried",
+     "text": "Welcome to Seven Nights of Rest. <short pause> This is night six, Thankful for Today. <short pause> We have nearly put the whole house to bed. <short pause> Tonight we walk slowly down the hall, toward your room... and we look kindly at how you got here."},
+    {"style": "gentle, quiet bedtime storytelling, slow",
+     "text": "We usually think of night as the end. <short pause> The day is used up, and we count what is left. <short pause> But when the Bible tells of the very first day, it puts things in a surprising order. <short pause> It's in Genesis chapter one, verse five."},
+    {"style": "reverent, very slow, reading scripture aloud",
+     "text": "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day."},
+    {"style": "tender, soft, slow, resting between sentences",
+     "text": "Did you notice which comes first? <short pause> It's the evening. <short pause> That is one reason many of God's people have begun their day at sundown. <short pause> Before you do one useful thing, there is darkness, and rest, and God at work. <short pause> So this isn't only the end of today. <short pause> It is the beginning of something given."},
+    {"style": "slow, deliberate, each phrase landing softly",
+     "text": "Count the small mercies backward, starting from your pillow. <short pause> Whoever made this bed, or this cloth. <short pause> Thank You. <short pause> The last kind voice you heard. <short pause> Thank You. <short pause> Something you ate. A step that held. The breath you are taking now. <short pause> Thank You. <short pause> Keep walking backward, until you grow too drowsy to count.",
+     "silence_after": 8},
+    {"style": "prayerful, very slow, soft but clearly spoken",
+     "text": "Father, thank You for all that carried me to this pillow. <short pause> I saw so little of it. <short pause> Begin tomorrow without me, while I sleep. <short pause> Amen."},
+    {"style": "soft, very slow goodnight, resting between phrases",
+     "text": "Put out the light in the hall. <short pause> The day is Yours... <short pause> I am counted... <short pause> I am covered... <short pause> Sleep is a gift... <short pause> Not mine to know... <short pause> Thank You. <short pause> Goodnight.",
+     "silence_after": 8}
+  ]
+}
