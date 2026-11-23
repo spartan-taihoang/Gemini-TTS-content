@@ -13,10 +13,12 @@ Loops shared with SleepFit, as published on MindFit dev (each 20:00, -22 LUFS):
 | Loop | Used in | Origin |
 |---|---|---|
 | `raining_in_bangkok.flac` (from `rain_sound.wav`) | `sleep/soundscape/gentle_rain` | Freesound, CC0 (per the SleepFit README; link not recorded) |
-| `rain_on_the_window.flac` (from `rain_on_the_window.wav`) | `sleep/soundscape/rain_on_the_window` | Freesound, CC0 (link not recorded) |
-| `river_stream.flac` (from `river_stream.wav`) | `sleep/soundscape/quiet_stream` | Freesound, CC0 (link not recorded) |
+| `rain_on_the_window.flac` (from `rain_on_the_window.wav`) | `sleep/soundscape/rain_on_the_window`, `ambient/rain_on_the_window` | Freesound, CC0 (link not recorded) |
+| `river_stream.flac` (from `river_stream.wav`) | `sleep/soundscape/quiet_stream`, `ambient/quiet_stream` | Freesound, CC0 (link not recorded) |
 | `cricket_sound.flac` (from `cricket_sound.wav`) | `sleep/soundscape/summer_night_crickets` | Freesound, CC0 (link not recorded) |
 | `ocean_sound.flac` | `sleep/soundscape/ocean_waves` | made with `make_seamless.py` from a recording: **source and license not recorded, check before release** |
-| `harmony_sound.flac` | `sleep/soundscape/soft_harmony`, meditation backgrounds | made with `make_seamless.py` from `harmony_sound.mp4`: **source and license not recorded, check before release** |
-| `ambience_piano.flac` | `sleep/relaxing_music/soft_piano`, `quiet_keys`, `piano_by_the_stream` | self-made (`make_ambience.py`) |
-| `ambience_soft_pad.flac` | `quiet_keys`, prayer backgrounds | self-made |
+| `harmony_sound.flac` | `sleep/soundscape/soft_harmony`, `ambient/harmony`, meditation backgrounds | made with `make_seamless.py` from `harmony_sound.mp4`: **source and license not recorded, check before release** |
+| `ambience_piano.flac` | `sleep/relaxing_music/soft_piano`, `quiet_keys`, `piano_by_the_stream`, `ambient/piano` | self-made (`make_ambience.py`) |
+| `ambience_soft_pad.flac` | `quiet_keys`, `ambient/soft_pad`, prayer backgrounds | self-made |
+
+The `ambient/` loops are not 20:00: they are whole repeats of the seamless loop (no fades) at -22 LUFS, with the wrap of harmony and soft pad moved to a quiet point.
