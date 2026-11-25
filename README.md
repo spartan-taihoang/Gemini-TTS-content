@@ -9,6 +9,8 @@ gemini-tts/
 ├── tts_episode.py          # main script: JSON -> MP3
 ├── whisper_timings.py      # measures start_seconds from the audio with local Whisper (no API calls)
 ├── to_m4a.py               # MP3 -> M4A, the only format SleepFit accepts
+├── cue_clips.py            # short-cue episode (TTS_PER_PART=1) -> one trimmed M4A per cue ("cues" in the JSON)
+├── push_breath_voice.py    # upload clips/<cue>.m4a to a MindFit admin API and assign each breath voice cue
 ├── push_episode.py         # upload m4a + transcript timings to a SleepFit admin API episode
 ├── push_track.py           # upload a meditation/sound m4a (ambience version if present) to a SleepFit audio track
 ├── push_prayer.py          # upload a daily prayer m4a (ambience version if present) to a SleepFit daily prayer
@@ -183,6 +185,32 @@ Tips:
 
 - Keep styles short. Do not put age, gender or accent in a style; those come from the `voice`.
 - When the delivery changes noticeably, start a new part with its own style.
+
+## MindFit breath voice
+
+The breath screen speaks two short cues: `intro` (during the 5-second countdown) and `finish` (at the end). They live in
+`mindfit/breath_voice/breath_voice.json` (`"cues"` names each part) and are made one request per cue, so a single cue can
+be redone without touching the other:
+
+```bash
+TTS_PER_PART=1 uv run python tts_episode.py mindfit/breath_voice/breath_voice.json   # one take per cue
+python3 cue_clips.py mindfit/breath_voice/breath_voice.json                          # -> clips/<cue>.m4a, silence trimmed
+```
+
+To redo one cue, delete its `breath_voice_parts/n1/chunk_NN.wav` and run both again.
+
+Put them on an environment once its backend has the breath voice table (deployed from master):
+
+```bash
+export MINDFIT_ADMIN_TOKEN=<admin bearer token>
+python3 push_breath_voice.py mindfit/breath_voice/breath_voice.json                                # dev
+python3 push_breath_voice.py mindfit/breath_voice/breath_voice.json https://api.mindfit.appsfy.ai  # prod
+python3 push_breath_voice.py mindfit/breath_voice/breath_voice.json http://localhost:8080          # local
+```
+
+The token is the `Authorization: Bearer ...` value the MindFit admin sends (signed in as an admin: browser dev tools,
+Network, any `/api/v1/admin/` request). It lasts 24 hours by default (`JWT_TOKEN_EXPIRATION`). The script uploads every clip, confirms it and
+assigns it to its cue; it stops at the first refused call and sends nothing when a clip is missing.
 
 ## Entering `start_seconds` in web-admin
 

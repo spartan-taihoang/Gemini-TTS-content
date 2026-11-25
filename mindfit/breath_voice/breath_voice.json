@@ -1,0 +1,9 @@
+{
+ "title": "Breath voice cues",
+ "voice": "Rina",
+ "cues": ["intro", "finish"],
+ "parts": [
+  {"style": "warm, gentle, calm, speaking slowly", "text": "Find a comfortable position and settle in."},
+  {"style": "tender, soft, speaking slowly", "text": "Well done. Notice how you feel."}
+ ]
+}
